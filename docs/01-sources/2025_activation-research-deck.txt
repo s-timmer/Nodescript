@@ -1,0 +1,42 @@
+NodeScript Activation Research — slide deck. Source: PDF upload.
+
+Research on user activation patterns and onboarding bottlenecks.
+
+Key findings:
+- Activation bottleneck sits between "landing on dashboard" and "aha moment"
+- More precise than "blank canvas" framing — it's about the gap between seeing the interface and understanding what's possible
+- Users who get 1:1 guidance convert well, confirming product value exists
+
+User learning styles identified:
+- Video learners (want walkthroughs)
+- Reverse engineers (want to open existing workspaces and trace dependencies)
+- Trial-and-error experimenters (want examples they can break and rebuild)
+- Documentation readers (want structured reference material)
+
+The Paradigm Shift Problem:
+- JavaScript developers face cognitive load translating imperative thinking to graph-based composition
+- Some resort to code nodes rather than mastering visual composition
+- Deeper than UI learning — requires mental model shift
+
+Hidden Features Problem:
+- Users consistently didn't discover frames, loops, conditional logic
+- Variable creation in graphs was unknown
+- Reusable nodes/modules weren't found
+- Features exist but are poorly signposted
+
+Production Readiness Gaps:
+- Error handling too weak for production use
+- No traditional logging or stack traces
+- Monitoring and debugging painful for deployed systems
+- Steep gap between free-tier casual use and production
+
+Template Trap insight:
+- Pre-built templates attract wrong users (want off-the-shelf)
+- Ideal users tweak and experiment with templates
+- Confirmed Boris's "experimenter" filter
+
+Bright Spot — Liam:
+- Became highly active paid user
+- Built sophisticated AI content platform
+- Pattern: pushed through friction → found deep value
+- Question: how to lower friction without filtering out power users

@@ -1,0 +1,40 @@
+NodeScript Competitor Analyses document. Source: Google Doc.
+
+Market definition: "Visual, technical, hosted workflow and integration building platforms"
+- Visual: Node/flow-based programming interface
+- Technical: Requires coding knowledge
+- Hosted: Cloud-based deployment
+- Workflow: Multi-step processes and automation
+- Integration: Connecting systems/APIs
+- Building: Development/creation focus
+
+Relevant competitors: n8n, Pipedream, Zapier, Make, NodeRed
+
+Analysis framework (7 dimensions):
+1. Visual Development Experience — UI usability, canvas, debugging, node search, code editor, custom nodes
+2. Technical Development Power — local dev, testing, language support, package mgmt, docs, version control
+3. Integration Capabilities — API breadth, auth, data transform, error handling, schema mgmt
+4. Workflow Engine — flow control, state mgmt, error recovery, triggers, reusability, scale
+5. Platform Operations — deployment, monitoring, logging, backup, rate limiting, HA
+6. Team & Enterprise — access control, environments, collaboration, audit, compliance
+7. Community & Education — learning resources, examples, templates, community, marketplace
+
+Landing page analysis:
+
+n8n: "Secure, AI-native workflow automation" / "Code when you need it, UI when you don't"
+- 51K GitHub stars, 55K community, 4.8 G2 rating
+- Focus: AI capabilities + technical freedom, enterprise features (Git-synced environments)
+
+Pipedream: "Connect APIs, AI, databases and more" / "From idea to production in minutes"
+- 1M+ developers, 10B events, 2400+ APIs
+- Focus: Speed + developer control, code-first messaging
+
+Node-RED: "Low-code programming for event-driven applications"
+- OpenJS Foundation, 225K Node modules
+- Focus: Event-driven + IoT, hardware integration, open-source community
+
+Patterns across competitors:
+- Clear technical headline + specific audience focus + trust signals
+- Technical depth building (broad → specific → evidence)
+- Developer-focused terminology throughout
+- Quantifiable community metrics

@@ -1,0 +1,36 @@
+NodeScript Content Strategy document. Source: Google Doc.
+
+Purpose: Brief technical writer + create content roadmap for activation.
+
+Core problem: "Users often cite that they don't understand, don't know, or can't find the right content to get started."
+
+Content pillars:
+1. Onboarding & Activation — tutorials for first-time users, templates for quick wins, improved docs
+2. Retention & Education — advanced guides, modular workflows, creative applications
+3. SEO & Marketing — blog posts targeting automation keywords, developer thought leadership
+
+Content types: tutorials (beginner→advanced), templates, blog posts, documentation, video content
+
+Distribution: website hub, Reddit ads, Twitter/LinkedIn, Instagram demos, future community platforms (Dev.to, HN, Stack Overflow)
+
+Tone: developer-focused, approachable, nimble/startup-like, light humor
+
+Phasing:
+- Immediate (1-3 months): Quick win tutorials, documentation cleanup, Reddit/Twitter
+- Medium (3-12 months): Advanced tutorials, SEO blog posts, template repository
+- Long-term (1+ years): Community-driven content pipeline
+
+Technical writer brief:
+- Primary goal: clear actionable content addressing onboarding gaps
+- Expect collaborative + autonomous work style
+- Success metrics: reduced time-to-first-success, increased credit usage
+- Benchmarks: Pipedream, n8n, Gumloop
+
+Research plan includes:
+- Internal API prioritization survey
+- Competitor analysis (Pipedream, n8n, Gumloop)
+- 3-5 user interviews (current or churned)
+- Content gap audit
+- SEO opportunity analysis
+
+Key insight for content: map to "aha moment" within crucial 7-day window, not just general technical knowledge.

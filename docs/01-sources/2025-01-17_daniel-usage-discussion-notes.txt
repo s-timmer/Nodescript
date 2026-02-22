@@ -1,0 +1,1 @@
+Gemini-generated notes from NodeScript usage discussion with Daniel Ferreira, Jan 17 2025. Source: Google Doc. Key topics: NodeScript usage at UBO, rapid prototyping strengths, debugging capabilities, visual programming tradeoffs, collaboration limitations (no version control), marketing suggestions (edgy social media personality).

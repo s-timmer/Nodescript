@@ -1,0 +1,15 @@
+UBO.AI strategy and positioning meeting, May 20 2025.
+Attendees: Adar, Boris, Jonny, Marcus, Norman, Sjors. Source: Google Doc.
+
+Strategic discussion about UBO.AI brand, website, and how to position AI/automation capabilities.
+
+Key topics:
+- Debate: separate ubo.ai domain vs integrating AI story into main website
+- NodeScript is part of UBO's "vertically integrated attack stack" (custom hardware, scripts, proxy networks, NodeScript, autopilot, QA tools)
+- Enterprise customers (Google, Travelocity, Skyscanner) need reliable, scalable automation
+- A3 (Agent-based automation) emerging as future product direction
+- Content-first strategy: publishing demos and use cases matters more than perfect website
+- Enterprise sales cycle: customers need multiple proofs of concept before expanding
+- UBO positioning: middle ground between AI startups (lack scale) and big tech (don't prioritize this)
+
+Note: Less directly about NodeScript product, more about the broader company context NodeScript sits within.

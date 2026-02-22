@@ -10,8 +10,8 @@ import {
 
 export function MonitoringContent() {
   const [isLocal, setIsLocal] = useState(true);
-  const [currentDate, setCurrentDate] = useState("2025-10-22");
-  const [currentTime, setCurrentTime] = useState("15:00");
+  const currentDate = "2025-10-22";
+  const currentTime = "15:00";
 
   // Generate time markers for the timeline (15 minute intervals)
   const startHour = 15;
@@ -29,16 +29,16 @@ export function MonitoringContent() {
   }
 
   return (
-    <div className="flex flex-col min-h-full" style={{ backgroundColor: 'var(--header)' }}>
+    <div className="flex flex-col min-h-full">
       {/* Header */}
-      <div className="border-b border-border px-6 py-[11px] bg-background">
+      <div className="border-b border-border px-6 py-[11px]">
         <div className="flex items-center justify-between gap-4 min-h-[40px]">
-          <h2 className="text-[20px] font-normal m-0">Monitoring</h2>
+          <h2 className="text-[20px] font-medium m-0">Monitoring</h2>
         </div>
       </div>
 
       {/* Content */}
-      <div className="flex-1 bg-background">
+      <div className="flex-1">
         {/* Controls Bar */}
         <div className="flex items-center gap-3 px-6 py-4 border-b border-border">
           <Button size="sm">
@@ -198,7 +198,7 @@ export function MonitoringContent() {
         </TooltipProvider>
       </div>
 
-      <div className="border-t border-border px-6 flex items-center justify-start gap-6 bg-background" style={{ paddingTop: 'calc(1rem + 1.5px)', paddingBottom: 'calc(1rem + 1.5px)' }}>
+      <div className="border-t border-border px-6 py-4 flex items-center justify-start gap-6">
         <Button variant="link" className="h-auto p-0 text-foreground text-[14px]" asChild>
           <a href="#docs">Docs</a>
         </Button>

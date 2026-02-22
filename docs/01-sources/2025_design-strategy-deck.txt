@@ -1,0 +1,42 @@
+NodeScript Design Strategy 2025 — slide deck (25 pages). Source: PDF upload.
+
+Overall approach: Hybrid strategy combining three pillars.
+
+Research Foundation:
+- 436 total signups analyzed
+- 5 detailed user interviews (onboarding research)
+- Competitive analysis of n8n, Pipedream, Node-RED, GumLoop
+- Internal team workshops and interviews
+
+Three Strategic Pillars:
+1. Visual Development Power (core differentiator)
+   - Instant deployment, live debugging, visual composition
+   - "Things that would never get built" value proposition
+2. AI Orchestration (natural extension)
+   - Agent building, LLM experimentation, AI content platforms
+   - NodeScript well-suited as orchestration layer
+3. Enterprise Scalability (supporting pillar)
+   - 600+ req/sec throughput
+   - Breaks competitor per-transaction pricing models
+
+User Progression Framework:
+- Newcomer: needs guided onboarding, templates, quick wins
+- Explorer: needs documentation, examples, learning paths
+- Builder: needs production features, error handling, monitoring
+- Expert: needs module creation, community contribution, advanced patterns
+
+Brand Evolution Framework:
+- Current state: "powerful but confusing"
+- Target state: "powerful and approachable"
+- Maintain technical depth while improving first impressions
+
+Key Design Priorities:
+- Quick Win tutorials as #1 activation priority
+- Multiple learning paths for different user types
+- Example gallery organized by use case category
+- Progressive disclosure of advanced features
+
+Competitive Positioning:
+- Not competing head-to-head with workflow automation tools
+- Fill the gap between no-code tools and full development
+- Lead with specific examples, not abstract platform description

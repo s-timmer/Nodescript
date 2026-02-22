@@ -1,0 +1,3027 @@
+Microphone: 
+00:00-00:29
+Thank you.
+
+System Audio: 
+00:00-00:07
+with uh christine i shared a plan on how to kind of do it so that in the end you sort of like don't
+
+System Audio: 
+00:07-00:14
+need the cascad publishing you know it should just work basically publish a module and then
+
+System Audio: 
+00:14-00:20
+all the dependents they essentially need to recompile with this change uh so that that's
+
+System Audio: 
+00:20-00:28
+something that we're working on but it has two parts basically um one would be sort of what we
+
+System Audio: 
+00:28-00:38
+have by default which is uh un-pinned dependencies implicitly always uses the latest version essentially
+
+Microphone: 
+00:29-00:59
+Thank you.
+
+System Audio: 
+00:38-00:43
+and this is what we want to recompile but there is another functionality which is which allows you to
+
+System Audio: 
+00:43-00:48
+set the specific version for the endpoint for that we need to do the opposite we need to kind of to
+
+System Audio: 
+00:48-00:54
+compile the versions where every dependency is pinned basically to the exact version so that it
+
+System Audio: 
+00:54-01:06
+kind of maintains uh the exact point in time kind of version of the code and uh i guess right now
+
+Microphone: 
+00:59-01:29
+Thank you.
+
+System Audio: 
+01:06-01:12
+none of this works as as advertised so this is something that i'm working on fixing uh all the
+
+System Audio: 
+01:12-01:18
+kind of user facing changes will be kind of the next step probably next uh print actually
+
+System Audio: 
+01:19-01:27
+well next week we will hear the update on the on that part anyway so yeah um yeah anything else any
+
+System Audio: 
+01:27-01:36
+questions or comments on it it's a bigger task than it that reads so kind of half done through this first
+
+Microphone: 
+01:29-01:59
+Thank you.
+
+System Audio: 
+01:36-01:45
+part anyway so yeah um it won't drag for too long um but yeah it's interesting it's like you know you don't
+
+System Audio: 
+01:45-01:57
+do what users ask kind of thing um but yeah yeah so in other in other engineering news service accounts
+
+System Audio: 
+01:57-02:03
+are on ongoing and continue to support the third party stuff we were just talking about uh the official
+
+Microphone: 
+01:59-02:29
+Thank you.
+
+System Audio: 
+02:03-02:09
+slack integration specifically um i'm not gonna go through the whole list here but a lot of stuff has been
+
+System Audio: 
+02:09-02:18
+done with notebooks we're still not user facing notebooks but they are yeah um i want to um again on the
+
+System Audio: 
+02:18-02:26
+notebooks i made them more or less stable i still want us to only treat them internally uh if it's at all
+
+System Audio: 
+02:26-02:36
+possible because uh i mean committing to maintaining something like this is like a big claim for me in particular
+
+Microphone: 
+02:29-02:59
+Thank you.
+
+System Audio: 
+02:36-02:43
+because you know uh there are some things that i know we will struggle to fix essentially and the whole
+
+System Audio: 
+02:43-02:50
+thing might become irrelevant for example if we add something like custom uis in future in and graphs so
+
+System Audio: 
+02:50-02:58
+yeah let's keep it internal just to save time i think uh that would be a pragmatic approach at least for
+
+System Audio: 
+02:58-03:04
+now yeah yeah yeah yeah and customizable or with apps is there anything worth sharing on this now i know
+
+Microphone: 
+02:59-03:29
+Thank you.
+
+System Audio: 
+03:04-03:15
+christelle just finished it last week um so yeah we're essentially trying to cover more uh uh basically
+
+System Audio: 
+03:15-03:24
+third-party api so as we kind of integrate more of them we see what things we need to change um and
+
+System Audio: 
+03:24-03:32
+we have basically added another type of authorization for uh us integrating the oaf apps as well as other
+
+Microphone: 
+03:29-03:59
+Thank you.
+
+System Audio: 
+03:32-03:37
+people if they want to do a custom one uh and yet just a note on the third party uh as we think now
+
+System Audio: 
+03:37-03:43
+notion is already available for the one click uh authorized button and slack and hub spots are on the
+
+System Audio: 
+03:43-03:52
+way at the moment with like verification processes with slack just to reconfirm so we are creating an
+
+System Audio: 
+03:52-03:59
+app in uvr workspace which is enterprise because if you move it to a different workspace you know you will have to
+
+System Audio: 
+03:59-04:06
+pay for it i think which is yeah or if you don't pay for it that you have limited uh functionality with
+
+Microphone: 
+03:59-04:29
+Thank you.
+
+System Audio: 
+04:06-04:14
+that app yeah not not not ideal so i don't know if it's possible to move it to a different workspace in
+
+System Audio: 
+04:14-04:21
+future if we decide to do so so this might be something to check and the other thing is um it's still not
+
+System Audio: 
+04:21-04:27
+one click button you would still need to install the um slack app into the workspace in the first place
+
+System Audio: 
+04:27-04:34
+right and it's incorrect the slack might be more complex yeah i meant like notion itself it's just a
+
+Microphone: 
+04:29-04:59
+Thank you.
+
+System Audio: 
+04:34-04:40
+one click off you choose which pages you want to people to see in your notion especially required a
+
+System Audio: 
+04:40-04:46
+different authentication scheme and a custom header um so two features uh but slack is a little bit
+
+System Audio: 
+04:47-04:56
+a beast with regards to how they organize the stuff so um yeah the rest of the things on engineering here
+
+System Audio: 
+04:56-05:04
+mostly fixes we did some stuff in sub graphs sub graphs um just again uh we delivered it this sprint
+
+Microphone: 
+04:59-05:29
+Thank you.
+
+System Audio: 
+05:04-05:12
+so it is now possible to use graph inputs everywhere and sub graphs uh we did leave backwards compatibility
+
+System Audio: 
+05:12-05:20
+things but this update is only relevant to developers essentially uh we now slightly encourage people
+
+System Audio: 
+05:20-05:26
+to not use inputs inside sub graphs even though it works it works in compatibility mode and we set to
+
+System Audio: 
+05:26-05:33
+remove it in somewhere in july essentially so there is a warning sign i mean everywhere you fix that you see
+
+Microphone: 
+05:29-05:59
+Thank you.
+
+System Audio: 
+05:33-05:41
+the warning sign please don't ignore it just you know swap it to scope uh should work as is
+
+System Audio: 
+05:42-05:47
+i'll add that to the to the notes that we put in the official channel yeah yeah yeah because i mean
+
+System Audio: 
+05:47-05:52
+a couple of people already uh reached out when we announced this change and uh like asked for the
+
+System Audio: 
+05:52-05:58
+details i answered on spot but it might be useful to just reiterate for the rest of the uh team yeah
+
+System Audio: 
+05:58-06:04
+internally and okay so yeah lots going on right now lots of fixes and i'm going to update in the official
+
+Microphone: 
+05:59-06:29
+Thank you.
+
+System Audio: 
+06:04-06:10
+channel probably later today with everything that's happened just to inform the wider internal team and
+
+System Audio: 
+06:11-06:14
+next point, it's you, the work you've been doing recently.
+
+System Audio: 
+06:14-06:44
+Thank you.
+
+Microphone: 
+06:29-06:59
+Thank you.
+
+System Audio: 
+06:44-07:14
+Thank you.
+
+Microphone: 
+06:59-07:29
+Thank you.
+
+System Audio: 
+07:14-07:44
+Thank you.
+
+Microphone: 
+07:29-07:59
+Thank you.
+
+System Audio: 
+07:44-08:14
+Thank you.
+
+Microphone: 
+07:59-08:29
+Thank you.
+
+System Audio: 
+08:14-08:44
+Thank you.
+
+Microphone: 
+08:29-08:59
+Thank you.
+
+System Audio: 
+08:44-08:46
+Thank you.
+
+System Audio: 
+08:46-08:46
+Thank you.
+
+System Audio: 
+08:46-08:50
+Thank you.
+
+System Audio: 
+08:50-08:52
+Thank you.
+
+System Audio: 
+08:52-08:54
+Thank you.
+
+System Audio: 
+08:54-08:58
+Thank you.
+
+System Audio: 
+08:58-09:04
+Thank you.
+
+Microphone: 
+08:59-09:29
+Thank you.
+
+System Audio: 
+09:04-09:10
+Thank you.
+
+System Audio: 
+09:10-09:16
+Thank you.
+
+System Audio: 
+09:16-09:18
+Thank you.
+
+System Audio: 
+09:18-09:19
+Thank you.
+
+System Audio: 
+09:19-09:20
+Thank you.
+
+System Audio: 
+09:20-09:20
+Thank you.
+
+System Audio: 
+09:20-09:21
+Thank you.
+
+System Audio: 
+09:21-09:22
+Thank you.
+
+System Audio: 
+09:22-09:23
+Thank you.
+
+System Audio: 
+09:23-09:25
+This is a huge part of the project.
+
+System Audio: 
+09:25-09:26
+This is a huge part of the project.
+
+System Audio: 
+09:26-09:28
+It's a huge part of the project.
+
+System Audio: 
+09:28-09:34
+The charts, graphs, this theme, whereby here we talk about inspectable JSON.
+
+Microphone: 
+09:29-09:59
+Yeah.
+
+System Audio: 
+09:34-09:38
+So it might be something to consider.
+
+System Audio: 
+09:38-09:48
+I mean, maybe we should add it.
+
+System Audio: 
+09:48-09:50
+That's another thing.
+
+System Audio: 
+09:50-09:54
+Mhm.
+
+System Audio: 
+09:54-10:06
+Yeah, yeah.
+
+Microphone: 
+09:59-10:29
+Thank you.
+
+System Audio: 
+10:06-10:08
+Yeah.
+
+System Audio: 
+10:08-10:10
+Yeah.
+
+System Audio: 
+10:10-10:12
+Yeah.
+
+System Audio: 
+10:12-10:14
+Yeah.
+
+System Audio: 
+10:14-10:16
+Yeah.
+
+System Audio: 
+10:16-10:17
+Yeah.
+
+System Audio: 
+10:17-10:19
+Yeah.
+
+System Audio: 
+10:19-10:21
+Yeah.
+
+System Audio: 
+10:21-10:23
+Yeah.
+
+System Audio: 
+10:23-10:25
+Yeah.
+
+System Audio: 
+10:25-10:27
+Yeah.
+
+System Audio: 
+10:27-10:29
+Yeah.
+
+Microphone: 
+10:29-10:59
+Thank you.
+
+System Audio: 
+10:29-10:31
+Yeah.
+
+System Audio: 
+10:31-10:33
+Yeah.
+
+System Audio: 
+10:33-10:35
+Yeah.
+
+System Audio: 
+10:35-10:37
+Yeah.
+
+System Audio: 
+10:37-10:39
+Yeah.
+
+System Audio: 
+10:39-10:41
+Yeah.
+
+System Audio: 
+10:41-10:43
+Yeah.
+
+System Audio: 
+10:43-10:45
+Yeah.
+
+System Audio: 
+10:45-10:47
+Yeah.
+
+System Audio: 
+10:47-10:49
+Yeah.
+
+System Audio: 
+10:49-10:51
+Yeah.
+
+System Audio: 
+10:51-10:53
+Yeah.
+
+System Audio: 
+10:53-10:55
+Yeah.
+
+System Audio: 
+10:55-10:57
+Yeah.
+
+System Audio: 
+10:57-10:59
+Yeah.
+
+Microphone: 
+10:59-11:29
+Thank you.
+
+System Audio: 
+10:59-11:01
+Yeah.
+
+System Audio: 
+11:01-11:03
+Yeah.
+
+System Audio: 
+11:03-11:05
+Yeah.
+
+System Audio: 
+11:05-11:07
+Yeah.
+
+System Audio: 
+11:07-11:09
+Yeah.
+
+System Audio: 
+11:09-11:11
+Yeah.
+
+System Audio: 
+11:11-11:11
+Yeah.
+
+System Audio: 
+11:11-11:13
+Yeah.
+
+System Audio: 
+11:13-11:15
+Yeah.
+
+System Audio: 
+11:15-11:17
+Yeah.
+
+System Audio: 
+11:17-11:19
+Yeah.
+
+System Audio: 
+11:19-11:21
+Yeah.
+
+System Audio: 
+11:21-11:23
+Yeah.
+
+System Audio: 
+11:23-11:25
+Yeah.
+
+System Audio: 
+11:25-11:55
+Thank you.
+
+Microphone: 
+11:29-11:59
+Thank you.
+
+System Audio: 
+11:55-11:57
+Yeah.
+
+System Audio: 
+11:57-12:23
+I can confirm it's a little bit like a design challenge when you plan for the project because it becomes like all new on how to coordinate different endpoints and stuff.
+And it doesn't replace the need for things like documentation, for example, and other bits. So, yeah.
+
+Microphone: 
+11:59-12:29
+Thank you.
+
+System Audio: 
+12:23-12:53
+Thank you.
+
+Microphone: 
+12:29-12:59
+Thank you.
+
+System Audio: 
+12:53-12:55
+Thank you.
+
+System Audio: 
+12:55-12:55
+Thank you.
+
+System Audio: 
+12:55-12:57
+Thank you.
+
+System Audio: 
+12:57-12:57
+Thank you.
+
+System Audio: 
+12:57-12:59
+Thank you.
+
+System Audio: 
+12:59-13:29
+Thank you.
+
+Microphone: 
+12:59-13:29
+Thank you.
+
+System Audio: 
+13:29-13:59
+Thank you.
+
+Microphone: 
+13:29-13:59
+Thank you.
+
+System Audio: 
+13:59-14:29
+Thank you.
+
+Microphone: 
+13:59-14:29
+Thank you.
+
+System Audio: 
+14:29-14:59
+Thank you.
+
+Microphone: 
+14:29-14:59
+Thank you.
+
+System Audio: 
+14:59-15:29
+Thank you.
+
+Microphone: 
+14:59-15:29
+Thank you.
+
+System Audio: 
+15:29-15:59
+Thank you.
+
+Microphone: 
+15:29-15:59
+Thank you.
+
+System Audio: 
+15:59-16:29
+Thank you.
+
+Microphone: 
+15:59-16:29
+Thank you.
+
+System Audio: 
+16:29-16:59
+Thank you.
+
+Microphone: 
+16:29-16:59
+Thank you.
+
+System Audio: 
+16:59-17:28
+Thank you.
+
+Microphone: 
+16:59-17:29
+Thank you.
+
+System Audio: 
+17:28-17:58
+Thank you.
+
+Microphone: 
+17:29-17:59
+And the third one.
+
+System Audio: 
+17:58-18:28
+Thank you.
+
+Microphone: 
+17:59-18:29
+And this is the
+
+System Audio: 
+18:28-18:58
+Thank you.
+
+Microphone: 
+18:29-18:59
+Thank you.
+
+System Audio: 
+18:58-19:28
+Thank you.
+
+Microphone: 
+18:59-19:29
+Thank you.
+
+System Audio: 
+19:28-19:58
+Thank you.
+
+Microphone: 
+19:29-19:59
+We need to do,
+
+System Audio: 
+19:58-20:28
+Thank you.
+
+Microphone: 
+19:59-20:29
+Thank you.
+
+System Audio: 
+20:28-20:58
+Thank you.
+
+Microphone: 
+20:29-20:59
+Thank you.
+
+System Audio: 
+20:58-21:28
+Thank you.
+
+Microphone: 
+20:59-21:29
+Thank you.
+
+System Audio: 
+21:28-21:58
+Thank you.
+
+Microphone: 
+21:29-21:59
+Thank you.
+
+System Audio: 
+21:58-22:28
+Thank you.
+
+Microphone: 
+21:59-22:29
+Thank you.
+
+System Audio: 
+22:28-22:58
+Thank you.
+
+Microphone: 
+22:29-22:59
+Thank you.
+
+System Audio: 
+22:58-23:28
+Thank you.
+
+Microphone: 
+22:59-23:29
+All right.
+
+System Audio: 
+23:28-23:58
+Thank you.
+
+Microphone: 
+23:29-23:59
+Thank you.
+
+System Audio: 
+23:58-24:28
+Thank you.
+
+Microphone: 
+23:59-24:29
+Thank you.
+
+System Audio: 
+24:28-24:58
+Thank you.
+
+Microphone: 
+24:29-24:59
+Thank you.
+
+System Audio: 
+24:58-25:28
+Thank you.
+
+Microphone: 
+24:59-25:28
+Thank you.
+
+System Audio: 
+25:28-25:58
+Thank you.
+
+Microphone: 
+25:28-25:58
+Thank you.
+
+System Audio: 
+25:58-26:28
+Thank you.
+
+Microphone: 
+25:58-26:28
+Thank you.
+
+System Audio: 
+26:28-26:58
+Thank you.
+
+Microphone: 
+26:28-26:58
+Thank you.
+
+System Audio: 
+26:58-27:28
+Thank you.
+
+Microphone: 
+26:58-27:28
+Thank you.
+
+System Audio: 
+27:28-27:58
+Thank you.
+
+Microphone: 
+27:28-27:58
+Thank you.
+
+System Audio: 
+27:58-28:28
+Thank you.
+
+Microphone: 
+27:58-28:28
+Thank you.
+
+System Audio: 
+28:28-28:58
+Thank you.
+
+Microphone: 
+28:28-28:58
+Thank you.
+
+System Audio: 
+28:58-29:28
+Thank you.
+
+Microphone: 
+28:58-29:28
+Thank you.
+
+System Audio: 
+29:28-29:58
+Thank you.
+
+Microphone: 
+29:28-29:58
+Thank you.
+
+System Audio: 
+29:58-30:28
+Thank you.
+
+Microphone: 
+29:58-30:28
+Thank you.
+
+System Audio: 
+30:28-30:58
+Thank you.
+
+Microphone: 
+30:28-30:58
+Thank you.
+
+System Audio: 
+30:58-31:28
+Thank you.
+
+Microphone: 
+30:58-31:28
+Thank you.
+
+System Audio: 
+31:28-31:58
+Thank you.
+
+Microphone: 
+31:28-31:58
+Thank you.
+
+System Audio: 
+31:58-32:28
+Thank you.
+
+Microphone: 
+31:58-32:28
+Thank you.
+
+System Audio: 
+32:28-32:58
+Thank you.
+
+Microphone: 
+32:28-32:58
+Thank you.
+
+System Audio: 
+32:58-33:28
+Thank you.
+
+Microphone: 
+32:58-33:28
+Thank you.
+
+System Audio: 
+33:28-33:33
+use no script to connect two services together even though you can't do it
+
+Microphone: 
+33:28-33:58
+Thank you.
+
+System Audio: 
+33:33-33:40
+tend to know something you need to actually build something yeah and the
+
+System Audio: 
+33:40-33:46
+alternative is then what I find that with this mindset people never consider
+
+System Audio: 
+33:46-33:51
+things like that here because they need backhand working and with that here you
+
+System Audio: 
+33:51-33:57
+pretty much pay per transaction to an extent and I already said that like you
+
+System Audio: 
+33:57-34:02
+know this is a weak point of all the iPaaS platforms because when you are
+
+Microphone: 
+33:58-34:28
+Thank you.
+
+System Audio: 
+34:02-34:07
+building yeah something one-off then sure you're comfortable paying for
+
+System Audio: 
+34:07-34:13
+transaction if you're building a web service for your front end then you just
+
+System Audio: 
+34:13-34:18
+don't know what the scale will look like and you need to pay kind of like monthly
+
+System Audio: 
+34:18-34:26
+for almost like for where profile so that it kind of you know scales with your
+
+System Audio: 
+34:26-34:32
+demands and but the pricing should be reasonable of course so you want to pay
+
+Microphone: 
+34:28-34:58
+Thank you.
+
+System Audio: 
+34:32-34:41
+like you know thousands of dollars for not a type after it gets hit by by your
+
+System Audio: 
+34:41-34:47
+target audience right so so yeah the way I experience it that people never think
+
+System Audio: 
+34:47-34:56
+zapier when they need to build stock they think Python or cloud functions this is
+
+System Audio: 
+34:56-35:02
+where yeah but we use it internally anyway yeah I mean so to give them where the
+
+Microphone: 
+34:58-35:28
+Thank you.
+
+System Audio: 
+35:02-35:07
+shores is done here a bit more context so phase one at the beginning of the year was do internal
+
+System Audio: 
+35:07-35:13
+interviews first find out kind of where the needle is and now we're already going to size it today or tomorrow
+
+System Audio: 
+35:13-35:19
+we start on external and so yeah external interviews too and then we have a benchmark now
+
+System Audio: 
+35:19-35:27
+how we'll see it and use it to answer your question about that is a prototyping a lucrative use case I mean a good question because
+
+System Audio: 
+35:27-35:33
+our prototyping itself isn't lucrative people test things then go build it somewhere else in that in that silo
+
+Microphone: 
+35:28-35:58
+Thank you.
+
+System Audio: 
+35:33-35:38
+and I think that probably came if you're asked if sure is asking us all what
+
+System Audio: 
+35:38-35:42
+the thing that you can immediately do in those but you can't do somewhere else is
+
+System Audio: 
+35:42-35:47
+it's see if something works as you build it you know and it will be interesting to
+
+System Audio: 
+35:47-35:51
+see how that presentation looks after we've done a couple of weeks of external
+
+System Audio: 
+35:51-35:52
+interviews. Yeah.
+
+System Audio: 
+35:52-36:22
+Thank you.
+
+Microphone: 
+35:58-36:28
+Thank you.
+
+System Audio: 
+36:22-36:33
+I mean it's a great barometer reading now how we all kind of see it and hopefully it helped
+
+Microphone: 
+36:28-36:58
+Thank you.
+
+System Audio: 
+36:33-36:42
+a lot for Joe and Norman's point of view to see like how we're all maybe not that articulating
+
+System Audio: 
+36:42-36:47
+it in that form is much easier than trying to do it in a forum like this you know to explain.
+
+System Audio: 
+36:47-36:50
+Yeah I think it's been a really good piece of work George I think that you know it will
+
+System Audio: 
+36:50-36:56
+help us refine the ICP it will help us understand what the focus is if it is prototyping you know
+
+System Audio: 
+36:56-37:01
+what's the focus on use cases and but as you say I think we've got that data from our internal
+
+Microphone: 
+36:58-37:28
+Thank you.
+
+System Audio: 
+37:01-37:06
+users and I think validating those assumptions with our kind of like external users will help
+
+System Audio: 
+37:06-37:12
+us understand if that is if it is right if this is what they need and I think we do need to understand
+
+System Audio: 
+37:12-37:18
+you know if this is what they need and and also why us why why would we use UBO and not
+
+System Audio: 
+37:18-37:25
+elsewhere you know like what's our differentiation and how many how many external users have we got
+
+System Audio: 
+37:25-37:28
+lined up for just now
+
+Microphone: 
+37:28-37:58
+Thank you.
+
+System Audio: 
+37:28-37:33
+have you have you got those people actually lined up
+
+System Audio: 
+37:33-37:39
+mm-hmm
+
+System Audio: 
+37:39-37:53
+okay and those are we going to the people that came back to us for the the subway are they
+
+System Audio: 
+37:53-37:56
+in the list of people to try and get into a call
+
+System Audio: 
+37:56-38:05
+nobody come back to share okay the planning meeting for between shows and I for all of this is tomorrow
+
+Microphone: 
+37:58-38:28
+Thank you.
+
+System Audio: 
+38:05-38:13
+Norman like oh right okay okay yeah and we'll come on I think there's a gender point later but there's more stuff to go to get more feedback
+
+System Audio: 
+38:13-38:20
+and shortly as well so we can cover that when it comes up but okay yeah okay so in terms of what we're actually doing to bring all these people
+
+System Audio: 
+38:20-38:24
+yeah okay so in terms of what we're actually doing to bring all these people
+
+System Audio: 
+38:24-38:28
+yeah okay so in terms of what we're actually doing to bring all these people
+
+System Audio: 
+38:28-38:34
+yeah okay so in terms of what we're actually doing to bring all these people
+
+Microphone: 
+38:28-38:58
+Thank you.
+
+System Audio: 
+38:34-38:38
+all these users all these things like this beginning half of the year we'll do
+
+System Audio: 
+38:38-38:41
+these interviews we'll get this data and it has to translate
+
+System Audio: 
+38:41-38:45
+big picture in the year to an outreach in sales actually
+
+System Audio: 
+38:45-38:48
+you don't have these people barometer and what's coming back in
+
+System Audio: 
+38:48-38:52
+um and we are moving on those things I think at the minute
+
+System Audio: 
+38:52-38:55
+feels it feels a little bit hazy because it's beginning the year and we're doing the
+
+System Audio: 
+38:55-39:00
+internal stuff first but it's a step it's a step in the road to
+
+Microphone: 
+38:58-39:28
+Thank you.
+
+System Audio: 
+39:00-39:04
+this execution um let's just go straight to you now
+
+System Audio: 
+39:04-39:09
+Norman and we'll keep moving through uh activation activation yeah I suppose it's
+
+System Audio: 
+39:09-39:15
+really I suppose I kind of question conversation for the room but um
+
+System Audio: 
+39:15-39:17
+suppose the question is do we all agree that
+
+System Audio: 
+39:17-39:21
+activation is an obstacle that we're trying to overcome and that they should get a
+
+System Audio: 
+39:21-39:29
+bit of our focus and then if we all agree that what what can we do about it so I know if
+
+Microphone: 
+39:28-39:58
+Thank you.
+
+System Audio: 
+39:29-39:34
+if we spoke to every single person that signed up one to one and had an hour with them we would have a
+
+System Audio: 
+39:34-39:39
+huge amount of active users I'm convinced because they would get it it's about that hand holding but
+
+System Audio: 
+39:39-39:45
+we can't we can't can't do that for everybody and so i suppose the question is what what it's open
+
+System Audio: 
+39:45-39:52
+to open for discussion really what can we do what should we do to improve our our activation is it
+
+System Audio: 
+39:52-39:59
+about um and adding the templates and removing that the the blank canvas at the sea i know we're
+
+Microphone: 
+39:58-40:28
+Thank you.
+
+System Audio: 
+39:59-40:05
+talked about that is it about doing a huge amount of work on onboarding content and onboarding videos
+
+System Audio: 
+40:05-40:10
+two hand told them as much as possible what what first of all do we all agree that activation is
+
+System Audio: 
+40:10-40:16
+a thing we should focus your attention on and secondly if we agree which i'm sure we will
+
+System Audio: 
+40:16-40:24
+what is it we should do to give us the best chance of of um getting that conversion rate up i think it
+
+System Audio: 
+40:24-40:32
+is look just quickly looking at the data is it maybe eight percent and looking at the 52 activated
+
+Microphone: 
+40:28-40:58
+Thank you.
+
+System Audio: 
+40:32-40:39
+if that number's if that number's right against the 650 odd signups um but yeah so it's positive
+
+System Audio: 
+40:39-40:43
+other and what do we what do we think about that do we agree it's an issue and what what do we think
+
+System Audio: 
+40:43-40:50
+of the way how can we overcome it i remember the conversation last year was the biggest problem is
+
+System Audio: 
+40:50-40:55
+that we aren't able to see all these who all these people are so we can't talk to them so yeah all missed
+
+System Audio: 
+40:55-41:01
+opportunities um i know we reached out we sent that questionnaire and got a little bit less
+
+Microphone: 
+40:58-41:28
+Thank you.
+
+System Audio: 
+41:01-41:06
+there was obviously this is a question not a statement here we can't push the boundary of
+
+System Audio: 
+41:06-41:11
+contacting them against their will we've seen that but like you just said if we could speak to everyone
+
+System Audio: 
+41:11-41:18
+and now we have the data for the list to actually speak to them it is just like a year incentive a good
+
+System Audio: 
+41:18-41:24
+enough way to actually get people to speak to us is there some outreach we can do where we just state
+
+System Audio: 
+41:24-41:30
+frankly we want feedback on the platform not you know if you give us time you know is there a more
+
+Microphone: 
+41:28-41:58
+Thank you.
+
+System Audio: 
+41:30-41:36
+direct way we can speak to all of these activated people who are who are lost um because we have the
+
+System Audio: 
+41:36-41:42
+their contacts we have it stored we know who they are now that's there um but we've remedied that
+
+System Audio: 
+41:42-42:02
+solution maybe that's something we need to actually get data on um somehow you know why not here
+
+Microphone: 
+41:58-42:28
+Thank you.
+
+System Audio: 
+42:02-42:32
+Thank you.
+
+Microphone: 
+42:28-42:58
+Thank you.
+
+System Audio: 
+42:32-43:02
+Thank you.
+
+Microphone: 
+42:58-43:28
+Thank you.
+
+System Audio: 
+43:02-43:04
+Thank you.
+
+System Audio: 
+43:04-43:09
+Yeah.
+
+System Audio: 
+43:12-43:18
+Yeah, it's probably 1% improvements across a whole host of things gives you that major leap.
+
+System Audio: 
+43:18-43:24
+I think that there's probably two reasons I can think of why we've got the huge drop-off.
+
+System Audio: 
+43:24-43:35
+We either have the wrong users are setting up, they are not for Node Scripts, or the right users are setting up, but they just can't immediately see the value.
+
+Microphone: 
+43:28-43:58
+Thank you.
+
+System Audio: 
+43:35-43:36
+People are busy.
+
+System Audio: 
+43:36-43:39
+This is not the most important thing in the world to them.
+
+System Audio: 
+43:39-43:43
+They need to be grabbed if they're going to stick around.
+
+System Audio: 
+43:43-43:54
+But, yeah, I think the refinement of ICP and getting on board with the right use cases, all the stuff you're doing, George, I think that's going to help us find the right
+people.
+
+System Audio: 
+43:54-43:56
+I think that's really important.
+
+System Audio: 
+43:56-44:00
+And then the next step from that is, so we've got the right people who are there.
+
+Microphone: 
+43:58-44:28
+Thank you.
+
+System Audio: 
+44:00-44:07
+How do we just make sure we've got a good conversion from signing up to going through?
+
+System Audio: 
+44:07-44:08
+We're never going to get 100%.
+
+System Audio: 
+44:08-44:12
+I mean, 50% is probably a really lofty aim, probably too high.
+
+System Audio: 
+44:13-44:17
+But the number we've got is obviously lower than it should be.
+
+System Audio: 
+44:17-44:30
+Yeah, the question is, it's really about how much focus to be put in overcoming this, and what do we actually do to – we're not going to do it tomorrow, we're not going to do
+it right away, but do we agree it's a thing we should focus upon?
+
+Microphone: 
+44:28-44:58
+Thank you.
+
+System Audio: 
+44:30-44:36
+And how do we kind of create some plan of action to –
+
+System Audio: 
+44:36-44:37
+Well, we are.
+
+System Audio: 
+44:37-44:39
+That's the – I will just – so we are.
+
+System Audio: 
+44:39-44:40
+There's like three parts of it, right?
+
+System Audio: 
+44:40-44:44
+There's the actual fixing of the platform on the next slide, which we're doing.
+
+System Audio: 
+44:44-44:49
+We're improving the platform and getting rid of a lot of the noise right now, fixing all these things.
+
+System Audio: 
+44:49-44:52
+Second part is trying to attach these users.
+
+System Audio: 
+44:52-44:53
+That's part of this content, right?
+
+System Audio: 
+44:53-44:56
+Which will include the demo stuff, the documentation things.
+
+System Audio: 
+44:56-44:57
+It will bring them in.
+
+System Audio: 
+44:57-45:01
+And then understanding them better to help focus the content, stuff that Shure's doing.
+
+Microphone: 
+44:58-45:28
+Thank you.
+
+System Audio: 
+45:01-45:05
+We are moving in that direction.
+
+System Audio: 
+45:05-45:08
+And I think it all comes under the umbrella of this activation one.
+
+System Audio: 
+45:08-45:09
+Yeah, yeah.
+
+System Audio: 
+45:09-45:10
+Okay.
+
+System Audio: 
+45:10-45:18
+I would say that is the current whole world agenda is to the three different ways of targeting them,
+
+System Audio: 
+45:18-45:24
+actually speaking to them, and then making sure when they're there, that part of the funnel is attractive enough to keep them there, you know?
+
+System Audio: 
+45:24-45:25
+Yeah, yeah.
+
+System Audio: 
+45:25-45:27
+I think that, yep, makes sense.
+
+System Audio: 
+45:27-45:35
+Does anybody disagree that activation is a thing we all of us put our attention into?
+
+Microphone: 
+45:28-45:58
+Thank you.
+
+System Audio: 
+45:35-45:41
+Activation is the end goal of all the product efforts we're discussing, essentially.
+
+System Audio: 
+45:41-45:44
+We're talking about fixing.
+
+System Audio: 
+45:44-45:56
+That's something that directly affects the vaccination because if they kind of struggle with the platform that doesn't work as expected, they'll probably drop off
+and things like this.
+
+System Audio: 
+45:56-45:57
+Like, you know, yeah.
+
+System Audio: 
+45:57-46:03
+So, of course, going in the right direction is important as well.
+
+Microphone: 
+45:58-46:28
+Thank you.
+
+System Audio: 
+46:03-46:10
+This is probably the kind of more important high-level focus.
+
+System Audio: 
+46:10-46:11
+Yeah.
+
+System Audio: 
+46:11-46:15
+Bugs are just a regular process, but here we need to kind of to understand.
+
+System Audio: 
+46:17-46:26
+I guess the entire effort of figuring out the ICP is around that, going in the right direction.
+
+System Audio: 
+46:26-46:34
+And the other thing is there is no right way, one single right way of doing it.
+
+Microphone: 
+46:28-46:58
+Thank you.
+
+System Audio: 
+46:35-46:54
+Because the platform is kind of flexible, we are trying to, let's say, to decide how to go somewhere, but still, let's say, maintain our ability to refocus if we find
+that this doesn't work.
+
+System Audio: 
+46:54-47:24
+I think it's also important, by the way, because, well, I don't think for the competitors, let's say, it is possible for them to just, you know, realize that, well, it
+would be super cool to get some mind share of, you know, developers running serverless applications and then offer something to them because they're much more
+invested into kind of, you know, supporting first class integrations with all the different service providers.
+
+Microphone: 
+46:58-47:28
+Thank you.
+
+System Audio: 
+47:24-47:34
+providers and they maybe don't focus too much on the kind of architecture of things, of, you know, capable applications and things like this.
+
+Microphone: 
+47:28-47:58
+Thank you.
+
+System Audio: 
+47:34-47:45
+So, it is also an advantage because it allows us to, not be less, but, you know, adapt a little.
+
+System Audio: 
+47:45-47:53
+But we are not, like, you know, arbitrarily flexible either.
+
+System Audio: 
+47:53-47:58
+So, we can't, you know, it can't be something that it's not.
+
+Microphone: 
+47:58-48:28
+Thank you.
+
+System Audio: 
+47:58-48:02
+Yeah.
+
+System Audio: 
+48:02-48:03
+So.
+
+System Audio: 
+48:03-48:03
+Yeah.
+
+System Audio: 
+48:03-48:11
+One thing I was just going to quickly add from the interviews that George has done, Dan's done really, really good.
+
+System Audio: 
+48:11-48:14
+It's given me, and I think Joe as well, kind of a lot of insight we didn't have before.
+
+System Audio: 
+48:14-48:23
+What really came out for me is actually just in terms of ICP is that, I know we've only spoken to internal just now, but it's very much that we always were after developers.
+
+System Audio: 
+48:23-48:33
+We always went out for developers, but it really just cemented the fact that it is a tool for developers, people that have a development understanding.
+
+Microphone: 
+48:28-48:58
+Thank you.
+
+System Audio: 
+48:33-48:41
+They don't need to necessarily code when they're using NodeScript, but they have to know how to code to understand the concepts.
+
+System Audio: 
+48:41-48:43
+And it really brought that out more to me.
+
+System Audio: 
+48:43-48:49
+And then, because we look at Gumloop a lot of the time, and we think, well, they're similar, but Gumloop go after.
+
+System Audio: 
+48:49-48:54
+I mean, one of Gumloop's value statements is, you know, don't bother the engineering team.
+
+System Audio: 
+48:54-48:57
+Do it yourself with Gumloop, you know, just you don't need to be a dev.
+
+System Audio: 
+48:57-49:15
+You know, and I know a lot of devs, I'm sure, use it, but it did seem like a stark difference in at least one of the ICPs, two hours, that we need people with a real
+development understanding, which is a massive market.
+
+Microphone: 
+48:58-49:28
+Thank you.
+
+System Audio: 
+49:15-49:17
+You don't agree?
+
+System Audio: 
+49:17-49:21
+A sticking point for me.
+
+System Audio: 
+49:21-49:22
+I'm not sure I agree.
+
+System Audio: 
+49:22-49:24
+I'm not sure I agree.
+
+System Audio: 
+49:24-49:28
+I think that there's a kind of large number of people that sort of sit somewhere in between.
+
+Microphone: 
+49:28-49:58
+Thank you.
+
+System Audio: 
+49:28-49:31
+And I'm kind of almost one of them.
+
+System Audio: 
+49:31-49:41
+I mean, I do development, but I know how to code, but I don't do software development in the sort of conventional sense.
+
+System Audio: 
+49:41-49:51
+I think there are a lot of quite technical people that, you know, they don't necessarily have the sort of discipline of coders.
+
+System Audio: 
+49:51-49:57
+They don't really want to sort of go through the whole, you know, software process.
+
+System Audio: 
+49:57-50:10
+And I think they will quite readily use tools, you know, no code or low code tools in order to sort of achieve their goals.
+
+Microphone: 
+49:58-50:27
+Thank you.
+
+System Audio: 
+50:11-50:20
+I think that they need to have a certain understanding of some of the principles, but not...
+
+System Audio: 
+50:20-50:21
+You have programming experience.
+
+System Audio: 
+50:21-50:25
+This is what we are discussing here.
+
+System Audio: 
+50:25-50:32
+Because I also don't readily jump to, you know, program every time I need to solve a little tiny problem, right?
+
+Microphone: 
+50:27-50:57
+Thank you.
+
+System Audio: 
+50:32-50:39
+There is too much overhead in using the conventional development process.
+
+System Audio: 
+50:39-50:39
+Yeah.
+
+System Audio: 
+50:39-50:43
+So this is partially why Nostrid exists, really.
+
+System Audio: 
+50:43-50:51
+But it is important, Marcus, you have development experience and you understand how things work.
+
+System Audio: 
+50:51-51:00
+This is why you are comfortable using not only NodeScript, but other kind of similar platforms.
+
+Microphone: 
+50:57-51:27
+Thank you.
+
+System Audio: 
+51:00-51:03
+Because this is the discriminator.
+
+System Audio: 
+51:03-51:04
+Because...
+
+System Audio: 
+51:04-51:18
+And I mean, yeah, you can argue that you should do the same with Gunblock, but they probably aim at a different spectrum of that experience.
+
+System Audio: 
+51:18-51:26
+You know, but because of that, they don't compete with programming languages.
+
+System Audio: 
+51:26-51:26
+Yeah.
+
+System Audio: 
+51:26-51:36
+They, you know, they don't compete with Replit or, you know, these kind of more direct coding tools.
+
+Microphone: 
+51:27-51:57
+Thank you.
+
+System Audio: 
+51:36-51:40
+Whereas maybe we do.
+
+System Audio: 
+51:40-51:46
+You're going to say this.
+
+System Audio: 
+51:46-51:47
+Sorry, Niko, Marcus.
+
+System Audio: 
+51:47-51:52
+There's another interesting thing that's sort of, or sort of theme that's popping up these days.
+
+System Audio: 
+51:52-52:00
+And I don't know how much, how true it is or how much, how much it is sort of, I don't know, influence or sort of bullshit.
+
+Microphone: 
+51:57-52:27
+Thank you.
+
+System Audio: 
+52:00-52:08
+But there's all these people saying, I don't know how to code, but I'm using AI coding tools to build applications.
+
+System Audio: 
+52:08-52:13
+If it's true, it's kind of amazing.
+
+System Audio: 
+52:16-52:20
+And also, if it's true, I think it would be crazy not to go after that market.
+
+System Audio: 
+52:22-52:30
+Because surely a no-code tool shouldn't be more complex and require more technical understanding than an actual coding tool and will be an AI coding tool.
+
+Microphone: 
+52:27-52:57
+Thank you.
+
+System Audio: 
+52:30-52:35
+Yeah, I agree.
+
+System Audio: 
+52:35-52:45
+Because then are we building NodeScript to be used by devs to accelerate the development or prototype and all that stuff?
+
+System Audio: 
+52:45-52:53
+Or are we building it to educate, math, facilitate it for non-devs?
+
+System Audio: 
+52:54-53:02
+Because there would be some principles of development, they would have to educate them on that.
+
+Microphone: 
+52:57-53:27
+Thank you.
+
+System Audio: 
+53:05-53:09
+But that's the thing, they do understand the principles of development.
+
+System Audio: 
+53:09-53:13
+They just, I think the statement is, I don't have to code anymore.
+
+System Audio: 
+53:13-53:14
+Right?
+
+System Audio: 
+53:14-53:15
+Yeah.
+
+System Audio: 
+53:15-53:16
+Well, that's the thing.
+
+System Audio: 
+53:16-53:25
+It's not about, so you don't have to code, the way I see it anyway, you don't have to code to use NodeScript, but you have to understand the principles of coding.
+
+System Audio: 
+53:25-53:26
+Yeah.
+
+System Audio: 
+53:26-53:27
+That's the way I've seen it.
+
+System Audio: 
+53:27-53:34
+So, whereas Gumloop are saying you don't even need to understand the principles, if you don't bother engineering team, just go and build something.
+
+Microphone: 
+53:27-53:57
+Thank you.
+
+System Audio: 
+53:34-53:37
+Can someone explain the principles of coding to me?
+
+System Audio: 
+53:37-53:44
+The different data types, the way that you have to have what a variable is, how an output works, what the endpoint is.
+
+System Audio: 
+53:44-53:50
+I think you're quoting Lee Norman when I said, if you don't know what a Boolean is, you won't know what yes, no is.
+
+System Audio: 
+53:50-53:51
+I think that's kind of...
+
+System Audio: 
+53:51-53:52
+Yeah, you know it when you see it.
+
+System Audio: 
+53:52-53:54
+Yeah.
+
+System Audio: 
+53:54-54:02
+I mean, but for example, this morning I was showing Shores how to use Cursor, and it wasn't a case of like, oh, you just put a prompt in.
+
+Microphone: 
+53:57-54:27
+Thank you.
+
+System Audio: 
+54:02-54:11
+I have to, there's a file tree, and they connect, and this is the IDE, and you have to use the console to give what we, I guess, describe as text commands.
+
+System Audio: 
+54:11-54:14
+Like, sort of like the housekeeping parts of it.
+
+System Audio: 
+54:14-54:18
+Because if you just put in, you know, make me a React app, you have no idea why.
+
+System Audio: 
+54:18-54:23
+I know that, but sorry, I'm not really talking about Cursor or Replit or these things.
+
+System Audio: 
+54:23-54:31
+I'm talking, I mean, I guess the question is why is NodeScript so much, or is NodeScript so much more complicated than Gumloop?
+
+Microphone: 
+54:27-54:57
+Thank you.
+
+System Audio: 
+54:31-54:34
+Yes, I think so.
+
+System Audio: 
+54:34-54:35
+Really?
+
+System Audio: 
+54:35-54:37
+Yeah.
+
+System Audio: 
+54:37-54:43
+Or is it just that we don't have such a good module library?
+
+System Audio: 
+54:43-54:46
+No, I don't think so.
+
+System Audio: 
+54:46-54:58
+You kind of, the concepts are pretty much kind of forced upon you, you know, for you to kind of to be able to build something with it.
+
+Microphone: 
+54:57-55:27
+Thank you.
+
+System Audio: 
+54:58-54:59
+And you can't ignore it.
+
+System Audio: 
+54:59-55:03
+And it's, yeah, I maintain it's not just the library.
+
+System Audio: 
+55:03-55:06
+It's like everything else.
+
+System Audio: 
+55:06-55:13
+Even though you can argue that in Gumloop, there is also kind of technical complexity sticking out of these things.
+
+System Audio: 
+55:13-55:21
+Like, you know, there's sort of a context or similar words that aren't as intuitive, let's say.
+
+System Audio: 
+55:24-55:32
+But I guess fundamentally, the NodeScript, I think, is, as you say, difficult.
+
+Microphone: 
+55:27-55:57
+Thank you.
+
+System Audio: 
+55:32-55:43
+And that's because it gives you flexibility on kind of much more granular levels, let's say.
+
+System Audio: 
+55:45-55:57
+So that can be a differentiation, you know, it's more complex, but it's more potentially more granular and more powerful.
+
+System Audio: 
+55:57-56:01
+I mean, developer people, they don't mind that at all.
+
+Microphone: 
+55:57-56:27
+Thank you.
+
+System Audio: 
+56:01-56:07
+They would actually look for something like this, like, you know, give me the Node that creates object.
+
+System Audio: 
+56:08-56:21
+Because I want to create an object, whereas the, you know, for high level audience, they don't understand what the object is, and they don't care, and they don't want to
+understand.
+
+System Audio: 
+56:21-56:24
+That's the difference, right?
+
+System Audio: 
+56:24-56:32
+Yeah, I think that's the articulation of what I was saying, like, what's an object, and it can't you have to understand at least that concept.
+
+Microphone: 
+56:27-56:57
+Thank you.
+
+System Audio: 
+56:32-56:32
+But yeah.
+
+System Audio: 
+56:32-56:33
+Yeah, yeah.
+
+System Audio: 
+56:33-56:36
+But they're like, I want to connect, you know, this service with this service.
+
+System Audio: 
+56:36-56:38
+Why do I have to bother with object?
+
+System Audio: 
+56:38-56:38
+Like,
+
+System Audio: 
+56:38-56:42
+That don't, don't, don't want to be bothered.
+
+System Audio: 
+56:42-56:48
+And the developers, they are kind of like, well, not the developers, no, no.
+
+System Audio: 
+56:48-56:58
+When you want to build stuff, and you have something kind of exact in mind, you would probably be very pissed if I don't give you the Node that constructs the object.
+
+Microphone: 
+56:57-57:27
+Thank you.
+
+System Audio: 
+56:58-57:08
+Or if, if, if I create a Node that aims to be a very high level thing, such a high level thing that you would never kind of even guess that, you know,
+
+System Audio: 
+57:08-57:10
+It's pretty creative, just some objects.
+
+System Audio: 
+57:10-57:14
+So I suppose I'm not, I'm not saying we shouldn't have that.
+
+System Audio: 
+57:14-57:15
+All that stuff makes sense.
+
+System Audio: 
+57:15-57:20
+But is there almost like a sort of simplified use of the platform where you don't really need to know that?
+
+System Audio: 
+57:20-57:23
+I know.
+
+System Audio: 
+57:23-57:25
+That's the template.
+
+System Audio: 
+57:25-57:25
+That's the template.
+
+System Audio: 
+57:25-57:29
+I mean, I suppose the whole context of the discussion is how do we get more users?
+
+Microphone: 
+57:27-57:57
+Thank you.
+
+System Audio: 
+57:29-57:31
+How do we get more activated users?
+
+System Audio: 
+57:31-57:37
+Ultimately, how do we get more people paying for this and selling a successful product?
+
+System Audio: 
+57:37-57:45
+I just think it's worth asking this question.
+
+System Audio: 
+57:45-57:49
+Are we sort of being a bit too restrictive on our target market here?
+
+System Audio: 
+57:49-57:54
+Well, let's remember our only real outreach is on Instagram, Reddit, and TikTok.
+
+System Audio: 
+57:54-57:56
+Remember that right now.
+
+System Audio: 
+57:56-57:57
+That's a really good part of it.
+
+System Audio: 
+57:57-58:01
+We're trying to advertise like a fruit shop in a, you know, in a sports center.
+
+Microphone: 
+57:57-58:27
+Thank you.
+
+System Audio: 
+58:01-58:03
+Someone might buy it, but we're not in the restaurant.
+
+System Audio: 
+58:03-58:06
+That's a weird analogy.
+
+System Audio: 
+58:06-58:06
+But you know what I mean?
+
+System Audio: 
+58:06-58:11
+Let's just like, it's not like we've got TV ads and billboards and people aren't using it.
+
+System Audio: 
+58:11-58:15
+I think maybe that's at least the puzzle, which is obviously is next on the agenda.
+
+System Audio: 
+58:15-58:16
+We're at the end of the time.
+
+System Audio: 
+58:16-58:17
+That's why I'm rushing it.
+
+System Audio: 
+58:17-58:19
+But it is a...
+
+System Audio: 
+58:19-58:26
+Sorry, but I mean, sorry, I was, I was been just listening this whole time, but I'm, and I know out of
+
+System Audio: 
+58:26-58:31
+time, that'll just leave us with, you know, on that, you know, you can move to the next thing.
+
+Microphone: 
+58:27-58:57
+Thank you.
+
+System Audio: 
+58:31-58:32
+Well, I'll just say one thing on this.
+
+System Audio: 
+58:32-58:38
+Are we kind of ignoring what we've talked about a long time before, which is, you know, making it
+
+System Audio: 
+58:38-58:43
+easier for people to get started like that, that bit, you know, the, the templates, the
+
+System Audio: 
+58:43-58:47
+templates, the integrations, all that kind of stuff.
+
+System Audio: 
+58:47-58:55
+Is that not the obvious answer to just get people to have a whole host of some, you know, partially or
+
+System Audio: 
+58:55-58:58
+ready-made stuff they can do right from day one.
+
+Microphone: 
+58:57-59:27
+Thank you.
+
+System Audio: 
+58:58-59:01
+They go in, they don't think about anything.
+
+System Audio: 
+59:01-59:03
+They've got a whole menu of stuff they can get started with.
+
+System Audio: 
+59:03-59:06
+None of, none of this stuff is controversial, right?
+
+System Audio: 
+59:06-59:07
+That's all pretty.
+
+System Audio: 
+59:07-59:07
+Yeah.
+
+System Audio: 
+59:07-59:08
+Yeah.
+
+System Audio: 
+59:08-59:11
+Standard, regardless of who the exact target is.
+
+System Audio: 
+59:11-59:13
+Right.
+
+System Audio: 
+59:13-59:19
+But if it, but, but that wasn't mentioned just now, like almost like this is, is that not the
+
+System Audio: 
+59:19-59:22
+obvious thing to just put all our efforts into just building a.
+
+System Audio: 
+59:22-59:24
+For me, no, honestly, no.
+
+System Audio: 
+59:24-59:25
+Okay.
+
+System Audio: 
+59:25-59:28
+For me in particular, I never use templates.
+
+Microphone: 
+59:27-59:57
+Thank you.
+
+System Audio: 
+59:29-59:35
+even like what I prefer is like reading about how to do stuff.
+
+System Audio: 
+59:35-59:45
+Uh, because templates as, as is never kind of work completely unless again, you have a very non-flexible
+
+System Audio: 
+59:45-59:46
+use case to cover.
+
+System Audio: 
+59:46-59:57
+Uh, second, uh, it really depends on kind of the, the level of involvement.
+
+Microphone: 
+59:57-01:00:27
+Thank you.
+
+System Audio: 
+59:57-01:00:15
+So basically the ideal template has to, uh, combine the context of who came to you with what they kind of expect from the platform with the level of knowledge that we just
+discussed, you know, so that the debate itself kind of makes sense.
+
+System Audio: 
+01:00:15-01:00:17
+Yeah.
+
+System Audio: 
+01:00:17-01:00:17
+Yeah.
+
+System Audio: 
+01:00:17-01:00:18
+Yeah.
+
+System Audio: 
+01:00:18-01:00:28
+I mean, it's not the most trivial thing that we can do the lowest hanging fruit that will immediately give us a more audience.
+
+Microphone: 
+01:00:27-01:00:57
+Thank you.
+
+System Audio: 
+01:00:28-01:00:36
+I am convinced that this is not how, how things work in general, in practice, it's much more kind of intricate and kind of complicated.
+
+System Audio: 
+01:00:36-01:00:38
+Um, let's say so.
+
+System Audio: 
+01:00:38-01:00:41
+I, I mean, I, I, templates is the wrong word.
+
+System Audio: 
+01:00:41-01:00:43
+I guess my idea was apps.
+
+System Audio: 
+01:00:43-01:00:44
+Yeah.
+
+System Audio: 
+01:00:44-01:00:45
+Which are, which are working.
+
+System Audio: 
+01:00:47-01:00:48
+Small working products.
+
+System Audio: 
+01:00:48-01:00:55
+And the point is to both provide some utility, right?
+
+System Audio: 
+01:00:55-01:01:09
+You can have a useful thing that you can get started with, but probably the real reason is to educate people because the, you, you learn through example, you can't learn
+a programming language without any examples.
+
+Microphone: 
+01:00:57-01:01:27
+Thank you.
+
+System Audio: 
+01:01:09-01:01:11
+Yeah.
+
+System Audio: 
+01:01:11-01:01:11
+Almost impossible.
+
+System Audio: 
+01:01:11-01:01:15
+But equally, there are kind of, you know, um,
+
+System Audio: 
+01:01:15-01:01:20
+interactive documentations, for example, that kind of teach you how to do stuff.
+
+System Audio: 
+01:01:20-01:01:25
+Uh, you don't learn programming language by forking someone else's repository and trying to kind of,
+
+System Audio: 
+01:01:25-01:01:29
+you know, figure out the things that you don't yet understand.
+
+Microphone: 
+01:01:27-01:01:57
+Thank you.
+
+System Audio: 
+01:01:29-01:01:34
+Um, well, I, I mean, when you're past a certain point, you do.
+
+System Audio: 
+01:01:34-01:01:37
+Like in my case, I'm not learning.
+
+System Audio: 
+01:01:37-01:01:43
+I'm not learning the programming language, but I'm learning about new techniques and things like that.
+
+System Audio: 
+01:01:43-01:01:53
+And, and, and then also in some cases, I just want to clone some GitHub repo to use it, which is fine.
+
+System Audio: 
+01:01:53-01:01:53
+And then change it.
+
+System Audio: 
+01:01:53-01:02:00
+Maybe just in my head, that's a further down the line after you already have experience.
+
+Microphone: 
+01:01:57-01:02:27
+Thank you.
+
+System Audio: 
+01:02:00-01:02:02
+You know, you need ideas then.
+
+System Audio: 
+01:02:02-01:02:03
+Yeah.
+
+System Audio: 
+01:02:03-01:02:06
+But that's not a kind of starter thing that will.
+
+System Audio: 
+01:02:06-01:02:08
+Yeah.
+
+System Audio: 
+01:02:08-01:02:13
+But yeah, even, even when you're starting out, you still need to see what some people have done with it.
+
+System Audio: 
+01:02:13-01:02:13
+Yep.
+
+System Audio: 
+01:02:13-01:02:13
+Yep.
+
+System Audio: 
+01:02:13-01:02:15
+100%.
+
+System Audio: 
+01:02:16-01:02:20
+But I don't think it'll ever be the, the absolute go-to way to learn the platform.
+
+System Audio: 
+01:02:20-01:02:23
+That would certainly be like a, a thing of how people can understand.
+
+System Audio: 
+01:02:23-01:02:27
+Cause they already will understand the concept of what they want to do.
+
+System Audio: 
+01:02:27-01:02:31
+I want to make this vague flow and then they'll see how it works with notes.
+
+Microphone: 
+01:02:27-01:02:57
+Thank you.
+
+System Audio: 
+01:02:31-01:02:36
+But it's not like they're coming in with the completely zero space and then we'll give them a,
+
+System Audio: 
+01:02:36-01:02:38
+you know, just four hour app and it will do it all for you.
+
+System Audio: 
+01:02:38-01:02:42
+And if they already know they want to take a bunch of data from somewhere and manipulate it
+
+System Audio: 
+01:02:42-01:02:47
+and have another output and we give them a vague indication of how it's done in node script.
+
+System Audio: 
+01:02:47-01:02:48
+It's a bit of both.
+
+System Audio: 
+01:02:48-01:02:52
+I don't think this in any way gets rid of this documentation comment either.
+
+System Audio: 
+01:02:52-01:02:54
+We need interactive documentation as well.
+
+System Audio: 
+01:02:54-01:02:59
+I don't think apps should be like fully forkable, fully functioning,
+
+Microphone: 
+01:02:57-01:03:27
+Thank you.
+
+System Audio: 
+01:02:59-01:03:04
+end to end things that have absolutely no input from the user required.
+
+System Audio: 
+01:03:04-01:03:05
+Why not?
+
+System Audio: 
+01:03:05-01:03:09
+Well, because, because I think that maybe steps like into that realm of like,
+
+System Audio: 
+01:03:09-01:03:14
+here's six graphs that are all connected to just do a thing that steps into the realm of like,
+
+System Audio: 
+01:03:14-01:03:15
+well,
+
+System Audio: 
+01:03:15-01:03:17
+I think they should work out of the box.
+
+System Audio: 
+01:03:17-01:03:20
+But, and then obviously,
+
+System Audio: 
+01:03:20-01:03:23
+the power of the platform.
+
+System Audio: 
+01:03:23-01:03:28
+That's, that's, that's like, um, adding a teacher,
+
+Microphone: 
+01:03:27-01:03:57
+Thank you.
+
+System Audio: 
+01:03:28-01:03:34
+but honestly, like from, from user perspective, you don't even know what the node script is.
+
+System Audio: 
+01:03:34-01:03:39
+And then that's you with the wrong expectations that, well, I,
+
+System Audio: 
+01:03:39-01:03:43
+come here to just, just use off the shelf applications.
+
+System Audio: 
+01:03:43-01:03:45
+It's not what we're selling, right?
+
+System Audio: 
+01:03:45-01:03:50
+Because if it is, then let's just make off the shelf applications and sell them.
+
+System Audio: 
+01:03:50-01:03:53
+That's the whole point.
+
+System Audio: 
+01:03:53-01:03:56
+We, we, we need to not dilute the
+
+System Audio: 
+01:03:56-01:04:02
+core value proposition and core value proposition is for people to, to build things
+
+Microphone: 
+01:03:57-01:04:27
+Thank you.
+
+System Audio: 
+01:04:03-01:04:03
+with it.
+
+System Audio: 
+01:04:03-01:04:07
+Uh, what, what I'm hearing here is that we really need.
+
+System Audio: 
+01:04:07-01:04:15
+A good one or two sessions on what are we, you know, what, what is the, what's the strategy here
+
+System Audio: 
+01:04:15-01:04:16
+for activation?
+
+System Audio: 
+01:04:16-01:04:17
+We don't, I don't think we have one.
+
+System Audio: 
+01:04:17-01:04:18
+A good one.
+
+System Audio: 
+01:04:18-01:04:22
+And I think we have a lot of different opinions actually that are quite from each other.
+
+System Audio: 
+01:04:22-01:04:27
+Um, so we need to agree on something and we need to, then we need to do it because we're kind of stuck
+
+Microphone: 
+01:04:27-01:04:57
+Thank you.
+
+System Audio: 
+01:04:27-01:04:36
+from, you know, we, we get users going on, but we're not activating them to the, to the level that we want.
+
+System Audio: 
+01:04:36-01:04:40
+And then we don't want to burn money on just getting users.
+
+System Audio: 
+01:04:40-01:04:48
+But essentially there are users who reaching out and telling us what they are after.
+
+System Audio: 
+01:04:48-01:04:57
+Like that one who we really need to reply to and let, let, let me know if you need me to reply or, you know,
+
+Microphone: 
+01:04:57-01:05:27
+Thank you.
+
+System Audio: 
+01:04:57-01:05:04
+they're basically telling us, uh, I mean,
+
+System Audio: 
+01:05:04-01:05:10
+the Yamaha guy as well.
+
+System Audio: 
+01:05:10-01:05:16
+Like, what are they, what are you, were you going to say they're telling us something then?
+
+System Audio: 
+01:05:16-01:05:17
+Did you?
+
+System Audio: 
+01:05:17-01:05:17
+Yeah.
+
+System Audio: 
+01:05:17-01:05:17
+Yeah.
+
+System Audio: 
+01:05:17-01:05:18
+Yeah.
+
+System Audio: 
+01:05:18-01:05:22
+They, they, they basically, they're telling us we are, I don't think we're stuck.
+
+System Audio: 
+01:05:22-01:05:33
+Um, we just need to kind of almost like accept it and kind of do what others do to promote projects
+
+Microphone: 
+01:05:27-01:05:57
+Thank you.
+
+System Audio: 
+01:05:33-01:05:34
+like this.
+
+System Audio: 
+01:05:34-01:05:39
+Um, I'm thinking definitely not Instagram dev to articles.
+
+System Audio: 
+01:05:39-01:05:39
+Yes.
+
+System Audio: 
+01:05:39-01:05:40
+Uh, build.
+
+System Audio: 
+01:05:40-01:05:41
+Work.
+
+System Audio: 
+01:05:41-01:05:44
+Walk through them tutorials.
+
+System Audio: 
+01:05:44-01:05:44
+Yes.
+
+System Audio: 
+01:05:44-01:05:46
+Because you need to teach.
+
+System Audio: 
+01:05:46-01:05:47
+These things.
+
+System Audio: 
+01:05:47-01:05:49
+You always need to highlight.
+
+System Audio: 
+01:05:49-01:05:56
+Why is it more efficient than traditional coding, which is something that we don't talk a lot about,
+
+System Audio: 
+01:05:56-01:06:06
+but this instant feedback is what makes, uh, it kind of easy to build easier than the traditional software.
+
+Microphone: 
+01:05:57-01:06:27
+Thank you.
+
+System Audio: 
+01:06:06-01:06:07
+Yes.
+
+System Audio: 
+01:06:07-01:06:14
+We need, uh, kind of fully working, um, applications, but I'm rather thinking of them as like, you know,
+
+System Audio: 
+01:06:14-01:06:22
+this is, uh, here's the demo and this is how we build it so that it gives you the opportunities
+
+System Audio: 
+01:06:22-01:06:27
+to create more and more content around that rather than kind of taking off the shelf.
+
+Microphone: 
+01:06:27-01:06:57
+Thank you.
+
+System Audio: 
+01:06:28-01:06:29
+Uh, which is also possible.
+
+System Audio: 
+01:06:29-01:06:34
+I mean, but not without kind of everything else surrounding it.
+
+System Audio: 
+01:06:34-01:06:34
+Yeah.
+
+System Audio: 
+01:06:34-01:06:38
+Well, it's actually, it's all part of the plan.
+
+System Audio: 
+01:06:38-01:06:39
+First steps now.
+
+System Audio: 
+01:06:39-01:06:39
+Yeah.
+
+System Audio: 
+01:06:39-01:06:40
+Yeah.
+
+System Audio: 
+01:06:40-01:06:41
+This external content we are doing.
+
+System Audio: 
+01:06:41-01:06:42
+Yeah.
+
+System Audio: 
+01:06:42-01:06:48
+Get these, uh, walkthroughs to, um, put us on dev to put us on medium, give us these technical
+
+System Audio: 
+01:06:48-01:06:49
+walkthroughs.
+
+System Audio: 
+01:06:49-01:06:51
+That's part of the current plan down the line.
+
+System Audio: 
+01:06:51-01:06:55
+Things like these, when you have a discussion on what apps look like, what their scope is and
+
+System Audio: 
+01:06:55-01:06:58
+what their value is that comes after we've done this content.
+
+Microphone: 
+01:06:57-01:07:27
+Thank you.
+
+System Audio: 
+01:06:58-01:07:05
+It is a step-by-step process, but what we do need definitely is what I just said is, uh,
+
+System Audio: 
+01:07:05-01:07:08
+an alignment of what the end goal is and like a review of where we're at.
+
+System Audio: 
+01:07:08-01:07:13
+So these conversations have a bit more of a clearer and goal post.
+
+System Audio: 
+01:07:15-01:07:20
+Um, I mean, I, I disagree that we, if we go down one route, we're stuck down that thing.
+
+System Audio: 
+01:07:20-01:07:26
+I also agree that setting expectation from the beginning, there is a realm where they all exist
+
+System Audio: 
+01:07:26-01:07:27
+in a perfect harmony.
+
+Microphone: 
+01:07:27-01:07:57
+Thank you.
+
+System Audio: 
+01:07:27-01:07:30
+We just got to get to the nugget of that, what that is.
+
+System Audio: 
+01:07:30-01:07:38
+Um, to finish up on that content stuff, probably by the end of the week, I'm going to talk to Norman
+
+System Audio: 
+01:07:38-01:07:40
+right after this, and then we'll, we'll get some stuff on the go.
+
+System Audio: 
+01:07:40-01:07:43
+That would help with getting us in front of TO, getting us more written content.
+
+System Audio: 
+01:07:43-01:07:48
+And then we can start to make data on what we would argue is our ideal audience.
+
+System Audio: 
+01:07:48-01:07:49
+We're actually targeting them.
+
+System Audio: 
+01:07:49-01:07:54
+Um, and I'll talk to you about this marketing thing, Norman.
+
+System Audio: 
+01:07:54-01:07:55
+It was more a question to you anyway about this.
+
+System Audio: 
+01:07:55-01:07:55
+Yeah.
+
+System Audio: 
+01:07:55-01:07:56
+Okay.
+
+System Audio: 
+01:07:56-01:07:56
+That's cool.
+
+System Audio: 
+01:07:56-01:07:58
+Let's get out to the outreach.
+
+Microphone: 
+01:07:57-01:08:27
+Thank you.
+
+System Audio: 
+01:07:58-01:08:02
+And just for the room, we've got a short list of three people.
+
+System Audio: 
+01:08:02-01:08:05
+They're going to do some test and blog for us.
+
+System Audio: 
+01:08:05-01:08:10
+We're going to whittle them down and we'll get, we'll get that content right after that.
+
+System Audio: 
+01:08:10-01:08:12
+Yeah.
+
+System Audio: 
+01:08:12-01:08:17
+Let's keep a wider goal that we are, we're already sort of addressing these same things
+
+System Audio: 
+01:08:17-01:08:17
+from before.
+
+System Audio: 
+01:08:17-01:08:19
+Um, you know, what are these people?
+
+System Audio: 
+01:08:19-01:08:20
+Are we approaching them?
+
+System Audio: 
+01:08:20-01:08:22
+We are starting now to approach people.
+
+System Audio: 
+01:08:22-01:08:28
+Um, and in the coming weeks, coming months to have conversations of, okay, now we have
+
+Microphone: 
+01:08:27-01:08:57
+Thank you.
+
+System Audio: 
+01:08:28-01:08:35
+been talking to what we think is our ICP in long form content on blogs and this is new feedback
+
+System Audio: 
+01:08:35-01:08:36
+we're getting or we're still not seeing something.
+
+System Audio: 
+01:08:36-01:08:42
+Um, so that's kind of where we're at right now in the bigger picture growth kind of perspective.
+
+System Audio: 
+01:08:42-01:08:45
+All right.
+
+System Audio: 
+01:08:45-01:08:49
+I'm going to go to the toilet because it's a long conversation.
+
+System Audio: 
+01:08:49-01:08:51
+Okay.
+
+System Audio: 
+01:08:51-01:08:51
+There's nothing.
+
+System Audio: 
+01:08:51-01:08:52
+Okay.
+
+System Audio: 
+01:08:52-01:08:53
+Well, thanks everyone.
+
+System Audio: 
+01:08:53-01:08:56
+Thank you.
+
+System Audio: 
+01:08:56-01:08:57
+Thank you.
+
+Microphone: 
+01:08:57-01:08:58
+Bye.
+
+System Audio: 
+01:08:57-01:08:58
+Have a good day.
+
+Microphone: 
+01:08:58-01:09:28
+Thank you.
+
+System Audio: 
+01:08:58-01:08:59
+Bye.
+
+System Audio: 
+01:08:59-01:09:29
+Thank you.
+

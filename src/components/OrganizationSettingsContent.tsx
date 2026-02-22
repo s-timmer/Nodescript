@@ -12,13 +12,6 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "./ui/select";
-import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
@@ -67,7 +60,7 @@ export function OrganizationSettingsContent({
   const [memberFilter, setMemberFilter] = useState("all");
 
   return (
-    <div className="flex h-full" style={{ backgroundColor: 'var(--header)' }}>
+    <div className="flex h-full">
       {/* Left sidebar with menu */}
       <div className="w-[16rem] border-r border-border bg-background flex flex-col">
         {/* Menu items */}
@@ -96,18 +89,18 @@ export function OrganizationSettingsContent({
       </div>
 
       {/* Right content area */}
-      <div className="flex-1 overflow-auto bg-background">
+      <div className="flex-1 overflow-auto">
         {activeSection === "general" && (
-          <div className="flex flex-col h-full" style={{ backgroundColor: 'var(--header)' }}>
+          <div className="flex flex-col h-full">
             {/* Header with title */}
-            <div className="border-b border-border px-6 py-[11px] bg-background">
+            <div className="border-b border-border px-6 py-[11px]">
               <div className="flex items-center justify-between gap-4 min-h-[40px]">
-                <div className="text-[20px] m-0" style={{ fontWeight: 'var(--font-weight-normal)' }}>Organisation general settings</div>
+                <h2 className="text-[20px] font-medium m-0">Organisation general settings</h2>
               </div>
             </div>
 
             {/* Content */}
-            <div className="flex-1 bg-background p-6">
+            <div className="flex-1 p-6">
               <div className="max-w-[1000px]">
                 {/* General settings card */}
                 <div className="bg-card border border-border rounded-lg p-6 mb-6">
@@ -160,7 +153,7 @@ export function OrganizationSettingsContent({
 
             {/* Danger zone */}
             <div className="bg-card border border-border rounded-lg p-6">
-              <h3 className="text-[18px] mb-6">Danger zone</h3>
+              <h3 className="text-[16px] font-medium mb-6">Danger zone</h3>
               
               <div className="space-y-6">
                 {/* Transfer Ownership */}
@@ -180,8 +173,8 @@ export function OrganizationSettingsContent({
                       </Tooltip>
                     </div>
                     <Button 
-                      variant="outline" 
-                      className="text-red-600 border-red-600 hover:bg-red-50 hover:text-red-700"
+                      variant="destructive"
+                      className="text-red-600 border border-red-600 hover:bg-red-50"
                     >
                       Transfer
                     </Button>
@@ -205,8 +198,8 @@ export function OrganizationSettingsContent({
                       </Tooltip>
                     </div>
                     <Button 
-                      variant="outline" 
-                      className="text-red-600 border-red-600 hover:bg-red-50"
+                      variant="destructive"
+                      className="text-red-600 border border-red-600 hover:bg-red-50"
                       disabled
                     >
                       Leave
@@ -231,8 +224,8 @@ export function OrganizationSettingsContent({
                       </Tooltip>
                     </div>
                     <Button 
-                      variant="outline" 
-                      className="text-red-600 border-red-600 hover:bg-red-50"
+                      variant="destructive"
+                      className="text-red-600 border border-red-600 hover:bg-red-50"
                       disabled
                     >
                       Delete
@@ -245,7 +238,7 @@ export function OrganizationSettingsContent({
             </div>
 
             {/* Footer */}
-            <div className="border-t border-border px-6 flex items-center justify-start gap-6 bg-background" style={{ paddingTop: 'calc(1rem + 1.5px)', paddingBottom: 'calc(1rem + 1.5px)' }}>
+            <div className="border-t border-border px-6 py-4 flex items-center justify-start gap-6">
               <Button variant="link" className="h-auto p-0 text-foreground text-[14px]" asChild>
                 <a href="#docs">Docs</a>
               </Button>
@@ -257,16 +250,16 @@ export function OrganizationSettingsContent({
         )}
 
         {activeSection === "billing" && (
-          <div className="flex flex-col h-full" style={{ backgroundColor: 'var(--header)' }}>
+          <div className="flex flex-col h-full">
             {/* Header with title */}
-            <div className="border-b border-border px-6 py-[11px] bg-background">
+            <div className="border-b border-border px-6 py-[11px]">
               <div className="flex items-center justify-between gap-4 min-h-[40px]">
-                <div className="text-[20px] m-0" style={{ fontWeight: 'var(--font-weight-normal)' }}>Billing</div>
+                <h2 className="text-[20px] font-medium m-0">Billing</h2>
               </div>
             </div>
 
             {/* Content */}
-            <div className="flex-1 bg-background p-6">
+            <div className="flex-1 p-6">
               <div className="max-w-[1000px]">
                 {/* Billing info card */}
                 <div className="bg-card border border-border rounded-lg p-6 mb-6">
@@ -294,13 +287,13 @@ export function OrganizationSettingsContent({
 
             {/* Plans card */}
             <div className="bg-card border border-border rounded-lg p-6">
-              <h3 className="text-[18px] mb-6">Plans</h3>
+              <h3 className="text-[16px] font-medium mb-6">Plans</h3>
               
               {/* Plan cards grid */}
               <div className="grid grid-cols-3 gap-4 mb-6">
                 {/* Free plan */}
                 <div className="border border-border rounded-lg p-6 flex flex-col">
-                  <h4 className="text-[18px] mb-4 text-center">Free</h4>
+                  <h4 className="text-[16px] font-medium mb-4 text-center">Free</h4>
                   <div className="text-center mb-2">
                     <div className="text-[24px]">10,000</div>
                     <div className="text-[14px] text-muted-foreground">credits / month</div>
@@ -317,7 +310,7 @@ export function OrganizationSettingsContent({
 
                 {/* Starter plan */}
                 <div className="border border-border rounded-lg p-6 flex flex-col">
-                  <h4 className="text-[18px] mb-4 text-center">Starter</h4>
+                  <h4 className="text-[16px] font-medium mb-4 text-center">Starter</h4>
                   <div className="text-center mb-2">
                     <div className="text-[24px]">100,000</div>
                     <div className="text-[14px] text-muted-foreground">credits / month</div>
@@ -333,7 +326,7 @@ export function OrganizationSettingsContent({
 
                 {/* Pro plan */}
                 <div className="border border-border rounded-lg p-6 flex flex-col">
-                  <h4 className="text-[18px] mb-4 text-center">Pro</h4>
+                  <h4 className="text-[16px] font-medium mb-4 text-center">Pro</h4>
                   <div className="text-center mb-2">
                     <div className="text-[24px]">1,000,000</div>
                     <div className="text-[14px] text-muted-foreground">credits / month</div>
@@ -365,7 +358,7 @@ export function OrganizationSettingsContent({
             </div>
 
             {/* Footer */}
-            <div className="border-t border-border px-6 flex items-center justify-start gap-6 bg-background" style={{ paddingTop: 'calc(1rem + 1.5px)', paddingBottom: 'calc(1rem + 1.5px)' }}>
+            <div className="border-t border-border px-6 py-4 flex items-center justify-start gap-6">
               <Button variant="link" className="h-auto p-0 text-foreground text-[14px]" asChild>
                 <a href="#docs">Docs</a>
               </Button>
@@ -377,11 +370,11 @@ export function OrganizationSettingsContent({
         )}
 
         {activeSection === "workspaces" && (
-          <div className="flex flex-col h-full" style={{ backgroundColor: 'var(--header)' }}>
+          <div className="flex flex-col h-full">
             {/* Header with title, search, filter, and button */}
-            <div className="border-b border-border px-6 py-[11px] bg-background">
+            <div className="border-b border-border px-6 py-[11px]">
               <div className="flex items-center min-h-[40px] relative">
-                <div className="text-[20px] m-0 flex-1" style={{ fontWeight: 'var(--font-weight-normal)' }}>Workspaces</div>
+                <h2 className="text-[20px] font-medium m-0 flex-1">Workspaces</h2>
                 
                 <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-3 w-[600px]">
                   <div className="relative flex-1">
@@ -432,11 +425,11 @@ export function OrganizationSettingsContent({
             </div>
 
             {/* Content */}
-            <div className="flex-1 bg-background p-6">
+            <div className="flex-1 p-6">
               <div className="max-w-[1000px]">
               {/* Workspace list */}
               <div className="space-y-4">
-                <div className="bg-card border border-border rounded-lg p-4">
+                <div className="bg-card border border-border rounded-lg p-4 transition-all hover:-translate-y-px hover:shadow-[0_1px_2px_rgba(0,0,0,0.06),0_4px_12px_rgba(0,0,0,0.04)]">
                   <div className="flex items-center justify-between">
                     <div className="flex-1">
                       <h3 className="text-[16px] mb-2">Default workspace</h3>
@@ -468,7 +461,7 @@ export function OrganizationSettingsContent({
                   </div>
                 </div>
                 
-                <div className="bg-card border border-border rounded-lg p-4">
+                <div className="bg-card border border-border rounded-lg p-4 transition-all hover:-translate-y-px hover:shadow-[0_1px_2px_rgba(0,0,0,0.06),0_4px_12px_rgba(0,0,0,0.04)]">
                   <div className="flex items-center justify-between">
                     <div className="flex-1">
                       <h3 className="text-[16px] mb-2">Production</h3>
@@ -500,7 +493,7 @@ export function OrganizationSettingsContent({
                   </div>
                 </div>
                 
-                <div className="bg-card border border-border rounded-lg p-4">
+                <div className="bg-card border border-border rounded-lg p-4 transition-all hover:-translate-y-px hover:shadow-[0_1px_2px_rgba(0,0,0,0.06),0_4px_12px_rgba(0,0,0,0.04)]">
                   <div className="flex items-center justify-between">
                     <div className="flex-1">
                       <h3 className="text-[16px] mb-2">Development</h3>
@@ -536,7 +529,7 @@ export function OrganizationSettingsContent({
             </div>
 
             {/* Footer */}
-            <div className="border-t border-border px-6 flex items-center justify-start gap-6 bg-background" style={{ paddingTop: 'calc(1rem + 1.5px)', paddingBottom: 'calc(1rem + 1.5px)' }}>
+            <div className="border-t border-border px-6 py-4 flex items-center justify-start gap-6">
               <Button variant="link" className="h-auto p-0 text-foreground text-[14px]" asChild>
                 <a href="#docs">Docs</a>
               </Button>
@@ -548,11 +541,11 @@ export function OrganizationSettingsContent({
         )}
 
         {activeSection === "members" && (
-          <div className="flex flex-col h-full" style={{ backgroundColor: 'var(--header)' }}>
+          <div className="flex flex-col h-full">
             {/* Header with title, search, filter, and button */}
-            <div className="border-b border-border px-6 py-[11px] bg-background">
+            <div className="border-b border-border px-6 py-[11px]">
               <div className="flex items-center min-h-[40px] relative">
-                <div className="text-[20px] m-0 flex-1" style={{ fontWeight: 'var(--font-weight-normal)' }}>Members</div>
+                <h2 className="text-[20px] font-medium m-0 flex-1">Members</h2>
                 
                 <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-3 w-[600px]">
                   <div className="relative flex-1">
@@ -617,11 +610,11 @@ export function OrganizationSettingsContent({
             </div>
 
             {/* Content */}
-            <div className="flex-1 bg-background p-6">
+            <div className="flex-1 p-6">
               <div className="max-w-[1000px]">
               {/* Members list */}
               <div className="space-y-4">
-                <div className="bg-card border border-border rounded-lg p-4">
+                <div className="bg-card border border-border rounded-lg p-4 transition-all hover:-translate-y-px hover:shadow-[0_1px_2px_rgba(0,0,0,0.06),0_4px_12px_rgba(0,0,0,0.04)]">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
                       <Avatar className="h-10 w-10">
@@ -654,7 +647,7 @@ export function OrganizationSettingsContent({
             </div>
 
             {/* Footer */}
-            <div className="border-t border-border px-6 flex items-center justify-start gap-6 bg-background" style={{ paddingTop: 'calc(1rem + 1.5px)', paddingBottom: 'calc(1rem + 1.5px)' }}>
+            <div className="border-t border-border px-6 py-4 flex items-center justify-start gap-6">
               <Button variant="link" className="h-auto p-0 text-foreground text-[14px]" asChild>
                 <a href="#docs">Docs</a>
               </Button>

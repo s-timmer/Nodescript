@@ -1,0 +1,35 @@
+NodeScript Activation Tasks — prioritized backlog from onboarding research. Source: Google Doc.
+
+24 tasks organized by area. Strikethrough = completed/addressed.
+
+DASHBOARD EXPERIENCE (completed items):
+1. [DONE] Improve onboarding panel visibility
+2. [DONE] Add examples gallery to navigation
+3. Consolidate learning resources into single hub
+
+FIRST CANVAS EXPERIENCE:
+4. Add input creation to context menu (Boris confirmed feasible)
+5. Support standard design software keyboard shortcuts (space=pan, Cmd+G=group)
+6. [DONE] Node auto-resizing
+
+CANVAS CHALLENGES:
+7. [DONE] Improve node search results
+8. [DONE] Better explain visual vs code approach
+9. Improve loop documentation and examples (HIGH priority)
+10. Enhance error handling visualization (HIGH priority)
+11. Simplify AI integration patterns
+12. Create variable management in graph context
+
+DOCUMENTATION EXPERIENCE:
+13. [DONE] Create "quick win" tutorials
+14. Add node usage examples
+15. Create example gallery by use case (HIGH priority)
+16. Improve NodeScript vs JavaScript context
+17. Develop learning path progression
+18. Add video tutorials to multiple locations
+19. Implement documentation search
+20. Add example-driven node documentation
+21. Improve advanced features documentation (hooks)
+22. Implement AI-assisted graph building (MCP approach)
+23. Develop competitor analysis for onboarding
+24. Interview former power users (Daniel F.) on why they moved to conventional code

@@ -1,0 +1,24 @@
+NodeScript User Research Plan Presentation — slide deck (12 pages). Source: PDF upload.
+
+External-facing version of the research plan, presented to team/stakeholders.
+
+Key data points presented:
+- 436 total signups
+- 11.7% activation rate
+- Developer-first strategy confirmed as direction
+
+Positioning for the research:
+- Focus on understanding developer workflows and pain points
+- Validate whether visual programming resonates with target audience
+- Test specific value propositions (speed, deployment, visual debugging)
+
+Research questions emphasized:
+- Where do developers currently struggle with automation/integration?
+- What tools do they use and where do those tools fall short?
+- Does NodeScript's approach solve real problems they have?
+- Which value propositions resonate most strongly?
+
+Stakeholder alignment:
+- Research results would inform product roadmap priorities
+- Landing page messaging would be refined based on findings
+- ICP definition would be sharpened or revised

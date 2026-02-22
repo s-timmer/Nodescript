@@ -3047,6 +3047,7 @@
 
 
 :root {
+  letter-spacing: -0.15px;
   --font-size: 16px;
   --text-h1: 48px;
   --text-h2: 20px;
@@ -3072,7 +3073,7 @@
   --muted-foreground: #94a3b8;
   --accent: #0f172a;
   --accent-foreground: #fff;
-  --destructive: #0000;
+  --destructive: #ef4444;
   --destructive-foreground: #fff;
   --border: #cbd5e1;
   --border-light: #cbd5e166;
@@ -3093,7 +3094,6 @@
   --radius-checkbox: 2px;
   --sidebar: #f8fafc;
   --sidebar-foreground: #0f172a;
-  --header: #fafcfe;
   --sidebar-primary: #0f172a;
   --sidebar-primary-foreground: #fff;
   --sidebar-accent: #0f172a;

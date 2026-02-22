@@ -1,0 +1,29 @@
+Original NodeScript design brief. Source: Google Doc (Nodescript design brief).
+
+Company mission: "Make the web programmable by anyone."
+
+Experience goals:
+1. It just works — web-based, shareable via link, runs immediately
+2. In it together — easy to share/collaborate with non-technical stakeholders
+3. Extendible forever — modular architecture, every graph can become a reusable module
+4. Exploration encouraged — immediate results let you learn while coding
+
+Target audiences:
+- Developers: should see clear benefits and be tempted to use on a side project
+- Power users: "string stuff together until it works" / "plays with lego" — can alter existing graphs
+
+Original goals:
+- Get 5 developers outside Ubio to build something useful
+- Get average 8/10 ease of use rating
+- Get positive recommendation rate
+- Have one critical piece of Ubio code running on it
+
+Key stakeholders: Boris (lead dev), Marcus (domain expert), Emma (product manager), Sjors (designer)
+
+Competitors identified at the time:
+- Workflow automation: Pipedream, Zapier, UIpath
+- Node UI: Tray.io, Natto, Parabola, n8n
+- Site builders: Bubble.io, Thunkable, Adalo, Webflow
+- Spreadsheets: Airtable, Coda
+- Pipeline: Apple Automator, Automation Cloud
+- Inspiration: Figma, Adobe XD, Framer, Miro, Muse, Notion

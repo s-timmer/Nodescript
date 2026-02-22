@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { SidebarProvider, SidebarInset } from "./components/ui/sidebar";
 import { AppSidebar } from "./components/AppSidebar";
 import { SettingsContent } from "./components/SettingsContent";
@@ -9,19 +9,13 @@ import { SchedulesContent } from "./components/SchedulesContent";
 import { VariablesContent } from "./components/VariablesContent";
 import { MonitoringContent } from "./components/MonitoringContent";
 import { StyleGuideContent } from "./components/StyleGuideContent";
-import { QuickStart } from "./components/QuickStart";
 import { GraphDetailsPanel } from "./components/GraphDetailsPanel";
-import { LandingPage } from "./components/LandingPage";
-import { SignUpPage } from "./components/SignUpPage";
-import { Button } from "./components/ui/button";
-import { Sparkles, X } from "lucide-react";
-import { motion } from "motion/react";
+import { GraphEditor } from "./components/graph-editor/GraphEditor";
 
 export default function App() {
-  const [isSignedIn, setIsSignedIn] = useState(false);
-  const [showSignUp, setShowSignUp] = useState(false);
-  const [showQuickStart, setShowQuickStart] = useState(true);
+  const [showWelcome, setShowWelcome] = useState(true);
   const [selectedGraph, setSelectedGraph] = useState<string | null>(null);
+  const [openGraph, setOpenGraph] = useState<string | null>(null);
   const [showSettings, setShowSettings] = useState(false);
   const [showOrgSettings, setShowOrgSettings] = useState(false);
   const [activeOrgSettingsSection, setActiveOrgSettingsSection] = useState("general");
@@ -29,6 +23,22 @@ export default function App() {
   const [activeSettingsSection, setActiveSettingsSection] = useState("general");
   const [activeMenuItem, setActiveMenuItem] = useState("Graphs");
   const [searchQuery, setSearchQuery] = useState("");
+  const searchInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+        e.preventDefault();
+        setShowSettings(false);
+        setShowOrgSettings(false);
+        setActiveMenuItem("Graphs");
+        setOpenGraph(null);
+        setTimeout(() => searchInputRef.current?.focus(), 0);
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   const organizations = [
     { id: "sjors", name: "Sjors Timmer" },
@@ -36,25 +46,10 @@ export default function App() {
     { id: "tech", name: "Tech Team" },
   ];
 
-  // Show landing page if not signed in and not on sign up
-  if (!isSignedIn && !showSignUp) {
-    return <LandingPage onGetStarted={() => setShowSignUp(true)} />;
-  }
-
-  // Show sign up page
-  if (!isSignedIn && showSignUp) {
-    return (
-      <SignUpPage 
-        onSignUpComplete={() => setIsSignedIn(true)}
-        onBackToLanding={() => setShowSignUp(false)}
-      />
-    );
-  }
-
   return (
     <SidebarProvider>
       <div className="flex h-screen w-full relative">
-        <AppSidebar 
+        <AppSidebar
           onOpenSettings={() => {
             setShowSettings(true);
             setShowOrgSettings(false);
@@ -78,22 +73,27 @@ export default function App() {
             setShowOrgSettings(true);
             setShowSettings(false);
             setActiveOrgSettingsSection("general");
-            setActiveMenuItem("Graphs"); // Reset active menu item
+            setActiveMenuItem("Graphs");
           }}
           onNavigateToBilling={() => {
-            setSelectedOrgId("sjors"); // Default to the current organization
+            setSelectedOrgId("sjors");
             setShowOrgSettings(true);
             setShowSettings(false);
             setActiveOrgSettingsSection("billing");
-            setActiveMenuItem("Graphs"); // Reset active menu item
+            setActiveMenuItem("Graphs");
           }}
         />
-        <SidebarInset className="flex flex-col flex-1 h-full">
-          {/* Level 3: Content area with graph list, details panel, and quick start */}
+        <SidebarInset className="flex flex-col flex-1 h-full bg-sidebar">
+          {openGraph ? (
+            <GraphEditor
+              graphName={openGraph}
+              onBack={() => setOpenGraph(null)}
+            />
+          ) : (
           <div className="flex flex-row flex-1 overflow-hidden relative">
             {showOrgSettings ? (
               <div className="flex-1 overflow-auto">
-                <OrganizationSettingsContent 
+                <OrganizationSettingsContent
                   activeSection={activeOrgSettingsSection}
                   organizationName={organizations.find(org => org.id === selectedOrgId)?.name || ""}
                   onSectionChange={setActiveOrgSettingsSection}
@@ -125,73 +125,30 @@ export default function App() {
               </div>
             ) : (
               <div className="flex-1 overflow-auto">
-                <GraphsContent 
-                  onSelectGraph={setSelectedGraph} 
+                <GraphsContent
+                  onSelectGraph={setSelectedGraph}
                   selectedGraph={selectedGraph}
                   searchQuery={searchQuery}
                   onSearchChange={setSearchQuery}
                   onNavigateToStyleGuide={() => setActiveMenuItem("Style guide")}
+                  onOpenGraph={(name) => setOpenGraph(name)}
+                  showWelcome={showWelcome}
+                  onDismissWelcome={() => setShowWelcome(false)}
+                  searchInputRef={searchInputRef}
                 />
               </div>
             )}
             {!showSettings && !showOrgSettings && activeMenuItem === "Graphs" && (
-              <>
-                {/* Right panel */}
-                <div className="relative h-full" style={{ width: selectedGraph ? '400px' : '0px', transition: 'width 0.3s ease' }}>
-                  <GraphDetailsPanel 
-                    isOpen={!!selectedGraph} 
-                    onClose={() => setSelectedGraph(null)}
-                    graphName={selectedGraph || ""}
-                  />
-                </div>
-                
-                {/* Quick Start Panel */}
-                <QuickStart isOpen={showQuickStart} onClose={() => setShowQuickStart(false)} />
-                
-                {/* Floating Quick Start button / Close button */}
-                <div className="absolute bottom-6 right-6 z-[60]">
-              {!showQuickStart ? (
-                <motion.div
-                  key="open-button"
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.8 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  <Button 
-                    className="gap-2 shadow-lg"
-                    size="lg"
-                    onClick={() => setShowQuickStart(true)}
-                  >
-                    <Sparkles className="h-4 w-4" />
-                    Quick Start
-                  </Button>
-                </motion.div>
-              ) : (
-                <motion.div
-                  key="close-button"
-                  initial={{ width: "auto", borderRadius: "var(--radius-button)" }}
-                  animate={{ 
-                    width: "48px",
-                    borderRadius: "50%"
-                  }}
-                  transition={{ 
-                    width: { duration: 0.2, ease: "easeInOut" },
-                    borderRadius: { duration: 0.2, delay: 0.15, ease: "easeInOut" }
-                  }}
-                >
-                  <Button 
-                    className="h-12 w-12 rounded-full shadow-lg bg-black hover:bg-black/90 text-white p-0"
-                    onClick={() => setShowQuickStart(false)}
-                  >
-                    <X className="h-5 w-5" />
-                  </Button>
-                </motion.div>
-              )}
-                </div>
-              </>
+              <div className="relative h-full" style={{ width: selectedGraph ? '400px' : '0px', transition: 'width 0.3s ease' }}>
+                <GraphDetailsPanel
+                  isOpen={!!selectedGraph}
+                  onClose={() => setSelectedGraph(null)}
+                  graphName={selectedGraph || ""}
+                />
+              </div>
             )}
           </div>
+          )}
         </SidebarInset>
       </div>
     </SidebarProvider>

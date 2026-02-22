@@ -1,0 +1,13 @@
+Strategic planning meeting for external developer recruitment and interviews, Jan 27 2025.
+Attendees: Boris, Dan, Jo, Norman, Sjors. Source: Google Doc.
+
+Key topics: Refining ICP, research goals, screening criteria, payment models, recruitment channels. Significant debate about whether to focus on professional developers vs non-programmer technical users vs hobbyists.
+
+Key insights:
+- Core value prop tension: NodeScript allows entering complexity (reusable nodes/modules) while remaining simpler than traditional coding
+- ICP debate: Boris advocates "ideal" customers who dive deep and experiment; Dan prioritizes technical developers; consensus: developers who can freely build without hand-holding
+- Free tier strategy: developers use NodeScript for routine tasks (HTTP, base64, random strings) without paying, creating path to paid production use
+- Market validation signal: if external devs don't mention AI features independently, the AI market may not exist for this product
+- Broader personas: should interview "creative developers" and non-programmer technical hobbyists
+- Screening: filter for people willing to experiment/tweak rather than wanting pre-built templates
+- Enterprise gaps: monitoring, logging, error handling, metrics collection are weak spots for production workloads

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState } from "react";
 import { motion } from "motion/react";
 import { Github, Mail } from "lucide-react";

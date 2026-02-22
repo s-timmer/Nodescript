@@ -1,0 +1,3050 @@
+System Audio: 
+00:00-00:02
+Alright.
+
+System Audio: 
+00:02-00:07
+It's super stressful.
+
+System Audio: 
+00:07-00:12
+It doesn't matter how brutal I am with throwing things away.
+
+System Audio: 
+00:12-00:16
+I see more stuff than I did in the audio.
+
+System Audio: 
+00:16-00:18
+Hey all.
+
+System Audio: 
+00:18-00:20
+Hey folks, it looks.
+
+System Audio: 
+00:20-00:26
+Okay.
+
+System Audio: 
+00:26-00:30
+I just did that.
+
+System Audio: 
+00:30-00:32
+Yep.
+
+System Audio: 
+00:32-00:34
+Okay.
+
+System Audio: 
+00:34-00:36
+Sorry.
+
+System Audio: 
+00:36-00:46
+I was just laughing at the absolute state of our internet banking for our company.
+
+System Audio: 
+00:46-00:50
+It's just like.
+
+System Audio: 
+00:50-00:54
+It's so shit.
+
+System Audio: 
+00:54-01:00
+Brad wants me to authorize a payment, a transfer from one of our accounts to the other.
+
+System Audio: 
+01:00-01:08
+And so I get the notification I need to authorize a payment and then I log in and it says there's no payments to authorize.
+
+System Audio: 
+01:14-01:16
+Why?
+
+System Audio: 
+01:16-01:18
+Why is it so shit?
+
+System Audio: 
+01:18-01:22
+I mean we seem to be doing fine with the bad banking system I guess.
+
+System Audio: 
+01:22-01:26
+I mean our bank account hasn't been closed so that's good.
+
+System Audio: 
+01:26-01:28
+But I mean that's about as good as it gets.
+
+System Audio: 
+01:28-01:29
+Yeah.
+
+System Audio: 
+01:29-01:31
+With HSBC innovation banking.
+
+System Audio: 
+01:31-01:32
+The biggest bank in the world.
+
+System Audio: 
+01:32-01:33
+HSBC.
+
+System Audio: 
+01:33-01:34
+I mean.
+
+System Audio: 
+01:34-01:41
+Well actually interestingly enough in the process of making the portal I was talking about okay we can put invoicing in there.
+
+System Audio: 
+01:41-01:45
+And Daniel's like I don't even know how we invoice the people right now.
+
+System Audio: 
+01:45-01:49
+So I do need to chase Brad up and figure out what's going on with that side of the system.
+
+System Audio: 
+01:49-01:50
+And all right.
+
+System Audio: 
+01:50-01:51
+So.
+
+System Audio: 
+01:51-01:55
+Emily is probably the person you want to talk to about invoicing by the way.
+
+System Audio: 
+01:55-01:56
+She'll be.
+
+System Audio: 
+01:56-01:57
+She'll be.
+
+System Audio: 
+01:57-01:59
+She's the hands on person on that.
+
+System Audio: 
+01:59-02:00
+Good to know.
+
+System Audio: 
+02:00-02:01
+Yeah.
+
+System Audio: 
+02:01-02:03
+I just wonder how we actually invoice our recruitment people and what that system is.
+
+System Audio: 
+02:03-02:04
+Just email.
+
+System Audio: 
+02:04-02:05
+Yeah.
+
+System Audio: 
+02:05-02:07
+Post-it notes on inbox.
+
+System Audio: 
+02:07-02:08
+You know.
+
+System Audio: 
+02:08-02:10
+She knows what she's doing.
+
+System Audio: 
+02:10-02:11
+She's the source anyway.
+
+System Audio: 
+02:11-02:12
+Yeah.
+
+System Audio: 
+02:12-02:13
+Less good to know.
+
+System Audio: 
+02:13-02:14
+Save me some time.
+
+System Audio: 
+02:14-02:15
+All right.
+
+System Audio: 
+02:15-02:19
+So today we just need really an alignment because we have like we have a roadmap.
+
+System Audio: 
+02:19-02:22
+We also have like an engineering kind of plan.
+
+System Audio: 
+02:22-02:27
+And we have like weekly meetings which seem to steer us in different directions.
+
+System Audio: 
+02:27-02:34
+And what we need to do is decide what we want most of it to be in say six months and a year.
+
+System Audio: 
+02:34-02:38
+And then have like a solid outlook of what it is.
+
+System Audio: 
+02:38-02:45
+So we've been having a conversation for a long time in a big circle about who are we aiming
+
+System Audio: 
+02:45-02:46
+at?
+
+System Audio: 
+02:46-02:47
+What's the ICP?
+
+System Audio: 
+02:47-02:48
+We don't know how we're going to message it.
+
+System Audio: 
+02:48-02:53
+And I feel like we've been having that conversation for longer than we should have if we knew what
+
+System Audio: 
+02:53-02:55
+we were what we were aligning to.
+
+System Audio: 
+02:55-03:02
+So all these real strategic things are more a case of what's the smartest product decision
+
+System Audio: 
+03:02-03:09
+based on the information we have as opposed to what are all the possible things we could do with this platform.
+
+System Audio: 
+03:09-03:15
+We often get pulled into well we could do this or technically this is also fine.
+
+System Audio: 
+03:15-03:21
+But I think there probably is an objective truth as to what's this.
+
+System Audio: 
+03:21-03:29
+What do we all think is the most profitable or revenue generating stream forward regardless of whether or not the other one valid.
+
+System Audio: 
+03:30-03:31
+So we're going to have to do this.
+
+System Audio: 
+03:31-03:32
+And if that makes sense.
+
+System Audio: 
+03:32-03:47
+With that being kind of said at the minute the current product roadmap and strategy and thing that we're doing on the engineering side is all of this stuff that we've
+almost left for a little while things.
+
+System Audio: 
+03:47-03:51
+I mean Boris has been very aware of things that needed to change but just hasn't been able to get to.
+
+System Audio: 
+03:51-03:53
+So that's what Q1 of this year is.
+
+System Audio: 
+03:53-04:01
+Q2 will heavily or probably before that quite heavily move us into this AI realm.
+
+System Audio: 
+04:01-04:08
+But there was a very interesting piece of something came up yesterday in the standard that I was talking about.
+
+System Audio: 
+04:08-04:13
+So for example Christelle was looking into Gumloop just as part of one of the things she was doing.
+
+System Audio: 
+04:13-04:17
+She just brought up this point and it's unrelated it just got me thinking.
+
+System Audio: 
+04:17-04:21
+She was saying it's kind of great what they do because you know they do all this.
+
+System Audio: 
+04:21-04:25
+There's all of these separated categorized nodes for what you want to do.
+
+System Audio: 
+04:25-04:26
+Do you want to know this video?
+
+System Audio: 
+04:26-04:29
+Do you want to know that's interesting?
+
+System Audio: 
+04:29-04:40
+What got me thinking of was as interesting as that is we could follow that route where we try and copy all these people who are 10 years ahead of us or whatever
+
+System Audio: 
+04:40-04:48
+and end up never catching them and end up even if we did catch them doing what they already doing now in a slightly different way.
+
+System Audio: 
+04:48-04:57
+Equally, walling that off and completely ignoring it and going down this other route which is focusing entirely on the things that we are good at.
+
+System Audio: 
+04:57-05:04
+These deployment and feedback things would also be an almost insane decision.
+
+System Audio: 
+05:04-05:09
+Let's just never input any of these things just because someone else has already done it.
+
+System Audio: 
+05:09-05:22
+That's the current state of the crossroads and that's why I'm calling this council to try and focus us on one way or the other.
+
+System Audio: 
+05:22-05:33
+So, just there's something about what Gumloop is doing that if you look if you don't think specifically about nodes that they're creating or what they're calling them.
+
+System Audio: 
+05:33-05:41
+What is clear about them is that it's very customer centric about it like they use a base, they use a center.
+
+System Audio: 
+05:41-05:53
+They're giving people stuff that they're looking for and that's the essence to take from it not necessarily the thing itself.
+
+System Audio: 
+05:53-06:07
+I have been quite sold in more recent months on Boris's vision of this like pure developer tool that pulls people in by virtue of just how much it becomes part of the
+developer day to day life.
+
+System Audio: 
+06:07-06:18
+For example, I think the first time you articulated it so well was in that earlier this week Boris, you said okay what if it's just the thing people go to when they want to
+do base64 encoding something.
+
+System Audio: 
+06:18-06:32
+Or it's just they just jump on those script just to get an API up and then over time, you know, those things are free features but that's how we get we become like ingrained
+in the in the realm of it.
+
+System Audio: 
+06:32-06:47
+I'm more sold now on that than this hand-holded like user Zapier approach, you know, and no one is I don't think any of us have ever said let's copy Zapier make.
+
+System Audio: 
+06:47-06:48
+We've used comparisons.
+
+System Audio: 
+06:48-06:54
+But I think we need to at this point now to a really hard turn into one of the two directions.
+
+System Audio: 
+06:54-06:55
+Can I share my illustration then?
+
+System Audio: 
+06:55-06:56
+Oh yeah.
+
+System Audio: 
+06:56-06:57
+Yeah.
+
+System Audio: 
+06:57-06:58
+It's half joke.
+
+System Audio: 
+06:58-06:59
+I have to warn you.
+
+System Audio: 
+06:59-07:04
+But I sort of what is in my head, which is this.
+
+System Audio: 
+07:04-07:13
+Let's say non programmer and programmer.
+
+System Audio: 
+07:13-07:16
+These are specifics, right?
+
+System Audio: 
+07:16-07:23
+So there seems to be like a sweet spot somewhere for the audience.
+
+System Audio: 
+07:23-07:31
+We are aiming for but all this kind of different discussions of what the programmer is and it's just not productive.
+
+System Audio: 
+07:31-07:33
+So I decided to do this.
+
+System Audio: 
+07:33-07:34
+Can you read it?
+
+System Audio: 
+07:34-07:35
+Mm hmm.
+
+System Audio: 
+07:35-07:37
+Of course, you can elaborate.
+
+System Audio: 
+07:37-07:41
+It's not the point of being like super scientific about it.
+
+System Audio: 
+07:41-07:42
+Right.
+
+System Audio: 
+07:42-07:52
+But there are some kind of well, let's say facts really few are beyond this line somewhere somewhere here.
+
+System Audio: 
+07:52-07:59
+Then chances that you will be using no script is in fact like zero.
+
+System Audio: 
+07:59-08:04
+So maybe sort of like this, but you get the point, right?
+
+System Audio: 
+08:04-08:10
+It's the purpose is not like illustrate the exact graph here.
+
+System Audio: 
+08:10-08:20
+The purpose is to understand what we are aiming at from high level point of view because equally, I think it's abundant on the right side as well.
+
+System Audio: 
+08:20-08:31
+Because once you start with, you deal with things too much, given that you can already kind of understand complex systems and stuff like that, then there will be this.
+
+System Audio: 
+08:31-08:44
+So, which means the focus should be on around kind of features that no script does best and that users can love it for honestly.
+
+System Audio: 
+08:44-08:49
+And just to reflect a little bit of my personal experience with things like Insomnia.
+
+System Audio: 
+08:49-09:02
+Marcus, you probably remember it used to be a tool just since it should be request by a lead curl, which is which is nice because it gives you all this kind of stupid
+browser restrictions.
+
+System Audio: 
+09:02-09:03
+Right.
+
+System Audio: 
+09:03-09:17
+And then at some point they just put almost like a money wall behind it because it was acquired by column and then they started to kind of to add more things that I don't
+need necessarily.
+
+System Audio: 
+09:17-09:27
+And then, you know, only a matter of time, they start you to kind of to have an account and then offer you to kind of to upgrade to use environments or something like that.
+
+System Audio: 
+09:27-09:30
+No, they're using it.
+
+System Audio: 
+09:30-09:33
+And that's the thing.
+
+System Audio: 
+09:33-09:36
+Basically, we need to identify what no script is great for.
+
+System Audio: 
+09:36-09:37
+And then for that.
+
+System Audio: 
+09:37-09:46
+I didn't quite get to it just yet, but it would be perfect to kind of summarize what it can do.
+
+System Audio: 
+09:46-09:57
+Best, you know, much better than kind of everything else and just focus on that and just sell this vision to this.
+
+System Audio: 
+09:57-10:04
+These people can identify very kind of pragmatically by by kind of their characteristics.
+
+System Audio: 
+10:04-10:05
+So that's my idea.
+
+System Audio: 
+10:05-10:10
+Just to understand the graph there.
+
+System Audio: 
+10:10-10:25
+What you're saying is that the very experienced, at least that's why I read it, the very experienced developers are less likely to need no script because it's kind of
+flattens out a little bit there again.
+
+System Audio: 
+10:25-10:33
+Again, here I mean XYZ code evangelist.
+
+System Audio: 
+10:33-10:35
+Let me just elaborate a little.
+
+System Audio: 
+10:35-10:50
+So there are things like infrastructure as code, get all this and other stuff, which is for developers who like have a specific mindset.
+
+System Audio: 
+10:50-11:01
+mindset plus plus plus it's kind of popularized by some of the enterprises like, you know, the approach and then offerings that they kind of provide.
+
+System Audio: 
+11:01-11:04
+And then, you know, it's commonly referred to as a mind share.
+
+System Audio: 
+11:04-11:10
+But basically these people, their mantra is to do everything in code commit to get, for example, you know, do that.
+
+System Audio: 
+11:10-11:19
+And it will be massively difficult for us to argue that, you know, no script is any better.
+
+System Audio: 
+11:19-11:25
+Because first they are they already know how to do stuff, very convinced that this is the way to go.
+
+System Audio: 
+11:25-11:45
+And then, you know, it's just at some point, some point it becomes very inefficient energy wise to argue that, you know, the product is better because actually it
+focuses kind of, you know, somewhere to the left.
+
+System Audio: 
+11:45-11:46
+You keep the graph up.
+
+System Audio: 
+11:46-11:48
+It's actually quite useful.
+
+System Audio: 
+11:48-11:49
+Yeah.
+
+System Audio: 
+11:49-11:50
+Yeah.
+
+System Audio: 
+11:50-11:58
+So because I can maybe misread the graph, it felt like I thought it was what I said, but I think what you're saying is it's not.
+
+System Audio: 
+11:58-12:03
+It's not that it's a specific type of developer that we wouldn't target with no script.
+
+System Audio: 
+12:03-12:10
+It's not that it isn't for experienced devs or or or can use it.
+
+System Audio: 
+12:10-12:12
+I don't I don't think it's the type.
+
+System Audio: 
+12:12-12:15
+I think it's I would say it's more the use case.
+
+System Audio: 
+12:15-12:16
+Mm hmm.
+
+System Audio: 
+12:16-12:25
+I mean, there is a kind of certain level of complexity that is not appropriate for and we approach it quite often.
+
+System Audio: 
+12:25-12:31
+And I would say because we're sort of forcing ourselves to use a little bit, we're probably going a little bit beyond that, which is fine.
+
+System Audio: 
+12:31-12:32
+Right.
+
+System Audio: 
+12:32-12:33
+Yeah.
+
+System Audio: 
+12:33-12:35
+That's not really approach.
+
+System Audio: 
+12:35-12:41
+That's not really a useful measure for a kind of third party user.
+
+System Audio: 
+12:41-12:42
+Yeah.
+
+System Audio: 
+12:42-12:50
+But so that's what I think there's a sort of an appropriate use case and then lay it over that sort of appropriate use case.
+
+System Audio: 
+12:50-12:57
+You need to put this, which is who is able to who is able to use it.
+
+System Audio: 
+12:57-13:01
+Do you think we sell to the person or to the use case?
+
+System Audio: 
+13:01-13:05
+I think to the to the person.
+
+System Audio: 
+13:05-13:09
+Well, we should try to anyway.
+
+System Audio: 
+13:09-13:15
+So my idea is to that platforms like this, they need to be learned a little.
+
+System Audio: 
+13:15-13:33
+But how you learn it is, yeah, reading one step at a time, which is the way I wanted to actually approach the next round of interviews is to just ask what is your go to tool to
+send HTTP requests.
+
+System Audio: 
+13:33-13:40
+If you need to do base 64 encoding decoding, which is a random example, but I still need something specific.
+
+System Audio: 
+13:40-13:41
+What do you use exactly?
+
+System Audio: 
+13:41-13:45
+Like what do you do you Google a 64 decode, please?
+
+System Audio: 
+13:45-13:54
+Do you do stuff in your favorite programming language, which is not something like, you know,
+
+System Audio: 
+13:54-13:55
+No, let's see.
+
+System Audio: 
+13:55-14:00
+You know what I mean.
+
+System Audio: 
+14:00-14:01
+Magic rune error.
+
+System Audio: 
+14:01-14:04
+Base 64.
+
+System Audio: 
+14:04-14:09
+Do you use this or do you use what essentially?
+
+System Audio: 
+14:09-14:23
+And then kind of from this random examples, you can kind of understand that people probably have to have to equip themselves with 12 different random things to
+
+System Audio: 
+14:23-14:27
+approach common, some of the common ad hoc tasks.
+
+System Audio: 
+14:27-14:43
+And I think this still can be one of the starting kind of vectors for us like an activation strategy, honestly, like, you know, start using it in your day to day life.
+
+System Audio: 
+14:43-14:52
+Just essentially one note at a time as a replacement for most of the postman flows for generating private public keys, whatever.
+
+System Audio: 
+14:52-15:04
+And then, you know, slowly it will integrate into your workflow so much so that you start recommending it to others, which is like really powerful strategy for kind of
+
+System Audio: 
+15:04-15:09
+There's one big statement that one sentence I pulled out from everything you said in this meeting.
+
+System Audio: 
+15:09-15:18
+And that is that identifying what it can do and then selling that vision to the people we think are most likely to use it.
+
+System Audio: 
+15:18-15:23
+I think at the minute there's some disalignment between there's many times I've written lists on what it can do.
+
+System Audio: 
+15:23-15:24
+Do that.
+
+System Audio: 
+15:24-15:29
+I would argue that then the content I'm making or the way we're pushing it isn't that open to those people.
+
+System Audio: 
+15:29-15:32
+Maybe that's the alignment we need to focus on.
+
+System Audio: 
+15:32-15:33
+Okay.
+
+System Audio: 
+15:33-15:38
+That's just one potential kind of strategy, let's say.
+
+System Audio: 
+15:38-15:40
+We need more potentials.
+
+System Audio: 
+15:40-15:42
+That's what we're here to get them, right?
+
+System Audio: 
+15:42-15:45
+I don't think that is compelling.
+
+System Audio: 
+15:45-15:46
+Yeah.
+
+System Audio: 
+15:46-15:51
+I mean, these are just random tools and I use them all the time, like Base64D code.
+
+System Audio: 
+15:51-16:00
+I don't know why I use Base64D code.org just because I kind of am used to it, but I feel no need to replace that tool.
+
+System Audio: 
+16:00-16:02
+I don't care enough about that.
+
+System Audio: 
+16:02-16:07
+It's well, it's not, it's just neither here nor there.
+
+System Audio: 
+16:07-16:12
+I know I get what you mean with insomnia.
+
+System Audio: 
+16:12-16:13
+I mean, I still use insomnia.
+
+System Audio: 
+16:13-16:14
+I hate it.
+
+System Audio: 
+16:14-16:18
+They totally fucked it.
+
+System Audio: 
+16:18-16:22
+Like you say, but it still doesn't make any difference.
+
+System Audio: 
+16:22-16:23
+I still open it.
+
+System Audio: 
+16:23-16:26
+I, the only good, there's a kind of good thing about it.
+
+System Audio: 
+16:26-16:30
+You can copy paste a curl command in it and it just creates the request for you.
+
+System Audio: 
+16:30-16:32
+Then you can just change the parameters.
+
+System Audio: 
+16:32-16:33
+I mean, it kind of works.
+
+System Audio: 
+16:33-16:34
+It's a total mess.
+
+System Audio: 
+16:34-16:39
+I've about a hundred untitled requests down the left hand side, which is totally stupid.
+
+System Audio: 
+16:39-16:43
+But again, I don't know.
+
+System Audio: 
+16:43-16:45
+That's one strategy I've adopted.
+
+System Audio: 
+16:45-16:46
+It's terrible to want to replace it.
+
+System Audio: 
+16:46-16:48
+It's so trivial.
+
+System Audio: 
+16:48-16:55
+But I guess, I guess you need to understand from this kind of random set of tools that you can assemble stuff.
+
+System Audio: 
+16:55-16:58
+That was sort of my plan.
+
+System Audio: 
+16:58-17:04
+Because equally, it gives you the canvas, right?
+
+System Audio: 
+17:04-17:08
+And it gives you all these kind of possibilities of connecting stuff.
+
+System Audio: 
+17:08-17:15
+You don't necessarily know what is on a person's mind when you talk to them.
+
+System Audio: 
+17:15-17:18
+That's, I think, the weakness of the use case approach.
+
+System Audio: 
+17:18-17:28
+Because if you talk about the use case that they don't understand, don't relate to at specific point in time, you like equally lost them as well.
+
+System Audio: 
+17:28-17:31
+But can we sell that approach?
+
+System Audio: 
+17:31-17:33
+Here's a bunch of stuff you might find useful one day.
+
+System Audio: 
+17:33-17:37
+That's the wall we're hitting, I think.
+
+System Audio: 
+17:37-17:45
+Like, so in this scenario now, if we do the use case approach, it's like, oh, I get that. I'll buy that.
+
+System Audio: 
+17:45-17:54
+And the other one is like, if we become so good at replacing all of these 20 things that people inherently have us, how do you market that?
+
+System Audio: 
+17:54-17:56
+And that's what I think we're struggling with.
+
+System Audio: 
+17:56-18:06
+Yeah, I can't, because I think, I'm trying to organise a lot of thoughts in my head, but I think where we need to get to is, you know, where is the edge that NoScript has?
+
+System Audio: 
+18:06-18:09
+You know, where is the compelling value it offers that others don't?
+
+System Audio: 
+18:09-18:11
+You know, whatever that is.
+
+System Audio: 
+18:11-18:15
+And I know we can go somewhere in the future with it when we pick where we're going to go.
+
+System Audio: 
+18:15-18:20
+But right now, you know, what does it do that others can't?
+
+System Audio: 
+18:20-18:27
+You know, what is a differentiator and that will help us understand where we're, where we're, what our target is.
+
+System Audio: 
+18:27-18:33
+What I'm trying to organise in my head is that it felt like there was two kind of camps on strategy.
+
+System Audio: 
+18:33-18:38
+One was the developer use, the developer, we're going after developers, that makes sense.
+
+System Audio: 
+18:38-18:44
+The other use case is the other target is the kind of techie non-developer.
+
+System Audio: 
+18:44-18:54
+You know, people that are, and Marcus, you said it well last week when we talked, as those, if you think of technical ability, one is a no coders, five is a developer.
+
+System Audio: 
+18:54-19:00
+We're kind of, the thought was, well, two, three and four is a really big market going after, going after that market.
+
+System Audio: 
+19:00-19:05
+And, and that's where kind of gum look probably are.
+
+System Audio: 
+19:05-19:10
+And, but obviously they help them with all of the, the kind of the apps that they've got and all that kind of stuff.
+
+System Audio: 
+19:10-19:12
+But that, I think that's what you said at the start.
+
+System Audio: 
+19:12-19:14
+And that's what we have to decide.
+
+System Audio: 
+19:14-19:17
+Are, what are we, what are we going after?
+
+System Audio: 
+19:17-19:19
+Where are we, what are we putting our bets on?
+
+System Audio: 
+19:19-19:20
+Are we trying to sell to devs?
+
+System Audio: 
+19:20-19:22
+Or are we trying to sell to low coders?
+
+System Audio: 
+19:22-19:25
+Yeah, these platforms also have this.
+
+System Audio: 
+19:25-19:28
+100%, they have.
+
+System Audio: 
+19:28-19:30
+It's just shifted to the left.
+
+System Audio: 
+19:30-19:37
+And then when they realized that it is like limited, not by the programmer's ability, this is limited by the platform ability.
+
+System Audio: 
+19:37-19:41
+Because platform equally, it can't be everything, can't be everything.
+
+System Audio: 
+19:41-19:50
+So they do drop off somewhere here, which is where their sweet spot is, like our competitors.
+
+System Audio: 
+19:50-19:57
+And then conveniently enough, we can cover that gap because Nostrid can do more.
+
+System Audio: 
+19:57-20:07
+It's just, I'm thinking how to actually let them know that they can do what they couldn't do here.
+
+System Audio: 
+20:07-20:08
+Right?
+
+System Audio: 
+20:08-20:13
+It's what I suggest not do is to move Nostrid here because Nostrid isn't that.
+
+System Audio: 
+20:13-20:16
+And basically you will, we will always struggle to.
+
+System Audio: 
+20:16-20:25
+Why don't we use our messaging, our website, our documentation, and our static content as what Nostrid does.
+
+System Audio: 
+20:25-20:27
+Because that's the development tool.
+
+System Audio: 
+20:27-20:39
+We use our content, our outreach as use cases, our blogs as like the other camp of like, here is this tool, which if you investigate in any way, you'll find out is this pure
+development tool.
+
+System Audio: 
+20:39-20:44
+This is a very exaggerated example of this use case, which you may or may not relate to at this moment.
+
+System Audio: 
+20:44-20:50
+Why don't we split our strategy into that almost logical way now.
+
+System Audio: 
+20:50-20:52
+We focus on the website in one way.
+
+System Audio: 
+20:52-21:02
+We still need this thing that we mentioned so many times, but it's so kind of difficult to come up with, which is compelling use cases, right?
+
+System Audio: 
+21:02-21:12
+It's like a massively complicated thing if you think about it because it has to fit into user's mind, preferably through one session.
+
+System Audio: 
+21:12-21:26
+So things like, I don't know, building and to do list with spreadsheet as a backend can do that.
+
+System Audio: 
+21:26-21:30
+Something a little bit more complicated, probably not.
+
+System Audio: 
+21:30-21:42
+And then on the other hand, the user, like imagine, they click, they see something, they click, they come to your platform and you're showing this use case.
+
+System Audio: 
+21:42-21:49
+It has to click, it has to fit with what user currently thinks, expects or whatever was doing, right?
+
+System Audio: 
+21:49-21:53
+So it is like a very difficult thing to do in general.
+
+System Audio: 
+21:53-21:54
+I'm not saying that we shouldn't do it.
+
+System Audio: 
+21:54-22:01
+We should definitely write the examples, but only for those who are kind of already at least on the hook.
+
+System Audio: 
+22:01-22:08
+That would fit though, because it would just be either blogged in our blog section.
+
+System Audio: 
+22:08-22:12
+Plus these are the external rights already making these things.
+
+System Audio: 
+22:12-22:21
+But our external approach would never be, we would never be saying to everyone like, oh, we're a, whatever, we're this thing, we're exactly like that.
+
+System Audio: 
+22:21-22:22
+We wouldn't do that.
+
+System Audio: 
+22:22-22:30
+We would internalize intent for like in, for the sake of our process hygiene and the fact that we're building in the right direction.
+
+System Audio: 
+22:30-22:34
+This is almost what you just said in that graph.
+
+System Audio: 
+22:34-22:37
+This is what we do, this is what we do and don't fit.
+
+System Audio: 
+22:37-22:51
+The only time we bridge that gap, the only time we consciously as a group are bridging this gap to compare ourselves in any way to someone else in the space, make or look,
+come, look, is through one of these external content writers we have making specific cases.
+
+System Audio: 
+22:51-23:00
+On things most of the time either they're bringing up or people are thinking of, and maybe that's just how we permeate the market through weight of content.
+
+System Audio: 
+23:00-23:06
+I think what you're saying is you have to rely on this one blog to hook someone.
+
+System Audio: 
+23:06-23:10
+We have over time 30, 40 blogs and someone comes.
+
+System Audio: 
+23:10-23:11
+Yeah, yeah, yeah.
+
+System Audio: 
+23:11-23:14
+I just, I just, I mean, we could get lucky.
+
+System Audio: 
+23:14-23:20
+We could, that could work and we could drive people and that they, they find, they, we get lucky and they find a hook and that helps us understand.
+
+System Audio: 
+23:20-23:35
+But I just feel as if, if we've, if the six of us in this room have not got a clear vision on what NodeScript is or should become, I think we'll, I think we'll be going around
+the houses trying, trying forever to find that fit.
+
+System Audio: 
+23:35-23:39
+If we do agree.
+
+System Audio: 
+23:39-23:47
+There's, if we think about one of the reasons that we're having this conversation is the, our current struggle and activating users.
+
+System Audio: 
+23:47-23:48
+Right.
+
+System Audio: 
+23:48-23:59
+So like the, where, where's any of these, how does, how do these direct different directions take us to activating users?
+
+System Audio: 
+23:59-24:15
+If we go with the more complex developer persona, for example, what do we need to do to, once they sign up that, to make sure that they activate and they adopt the tool.
+
+System Audio: 
+24:15-24:27
+If we go with the more gum loopy make type user, what do we, what is the gap right now between what we have and what then somebody activating and starting to use the tool.
+
+System Audio: 
+24:27-24:29
+That is the big, that's the thing.
+
+System Audio: 
+24:29-24:39
+So, and one thing on the, some of the suggestions you made Boris, if I understand them correctly, I'm not sure I'm entirely kind of fully understanding everything yet.
+
+System Audio: 
+24:39-24:55
+But that they, they are leaning more towards, they are basically saying the red, the red curve is, is kind of where the, the, the, the dark blue curve is kind of where we
+are.
+
+System Audio: 
+24:55-24:58
+We're the pinch of some, of course.
+
+System Audio: 
+24:58-25:03
+And then the light one, do you think we should be going, I guess is kind of what, what I'm understanding.
+
+System Audio: 
+25:03-25:10
+My question is like those, those more complex or more able developers I've seen many times.
+
+System Audio: 
+25:10-25:20
+And, but, but you know, a near, you know, enough sample to kind of draw a fine conclusion, like real conclusions out of, but what I do see still.
+
+System Audio: 
+25:20-25:32
+So worth mentioning is those are the more experienced that less seem to be less interested in some in, in using these tools because I, I just like my own code.
+
+System Audio: 
+25:32-25:33
+I'm just going to do it.
+
+System Audio: 
+25:33-25:34
+I know what I need to do.
+
+System Audio: 
+25:34-25:35
+Oh, this is good.
+
+System Audio: 
+25:35-25:40
+It'll take me a couple of days extra, but, but I, you know, but I trust it more.
+
+System Audio: 
+25:40-25:41
+Kind of thing.
+
+System Audio: 
+25:41-25:43
+So is that not too dangerous to going to go that much?
+
+System Audio: 
+25:43-25:50
+This is, this is what this reflects basically this part, this part.
+
+System Audio: 
+25:50-25:51
+Yeah.
+
+System Audio: 
+25:51-25:54
+Um, yes, that's right.
+
+System Audio: 
+25:54-25:58
+There is, there is also a limitation in the tool.
+
+System Audio: 
+25:58-25:59
+Mm-hmm.
+
+System Audio: 
+25:59-26:01
+Can not do.
+
+System Audio: 
+26:01-26:02
+Completing.
+
+System Audio: 
+26:02-26:03
+Everything.
+
+System Audio: 
+26:03-26:04
+Beyond a certain level, which is fine.
+
+System Audio: 
+26:04-26:05
+Right?
+
+System Audio: 
+26:05-26:06
+Yes.
+
+System Audio: 
+26:06-26:09
+So, so we have to draw those lines.
+
+System Audio: 
+26:09-26:12
+It's not appropriate for some projects.
+
+System Audio: 
+26:12-26:13
+Yeah.
+
+System Audio: 
+26:13-26:20
+I think, I think, again, I think this one is basically where we are and possibly a little bit truncated.
+
+System Audio: 
+26:20-26:22
+Like, you know, it's narrow.
+
+System Audio: 
+26:22-26:23
+It's narrow.
+
+System Audio: 
+26:23-26:24
+Okay.
+
+System Audio: 
+26:24-26:25
+Yeah.
+
+System Audio: 
+26:25-26:25
+Yeah.
+
+System Audio: 
+26:25-26:47
+You're right.
+
+System Audio: 
+26:47-26:48
+Yeah.
+
+System Audio: 
+26:48-27:16
+Mm-hmm.
+
+System Audio: 
+27:16-27:29
+Mm-hmm.
+
+System Audio: 
+27:29-27:37
+Mm-hmm.
+
+System Audio: 
+27:37-27:45
+Mm-hmm.
+
+System Audio: 
+27:45-27:57
+Mm-hmm.
+
+System Audio: 
+27:57-28:02
+Mm-hmm.
+
+System Audio: 
+28:02-28:14
+Mm-hmm.
+
+System Audio: 
+28:14-28:18
+so what's interesting about that charge is that there you've got a really interesting
+
+System Audio: 
+28:18-28:25
+kind of situation where people were pulled into natan for whatever reason but they they adopted
+
+System Audio: 
+28:25-28:29
+it to such a degree that they're willing to hack through it to do something that it's not even meant
+
+System Audio: 
+28:29-28:34
+to do that's the kind of devotion you want i mean that that's you know that's the kind of devotion
+
+System Audio: 
+28:34-28:40
+i'd like to see in uh in um yeah it's going to be quite the same yeah but that exact wording
+
+System Audio: 
+28:40-28:47
+there is what got me on to the boris argument of like right if they use it for these things all
+
+System Audio: 
+28:47-28:51
+the time then that adoption will become if then they'll figure these things out that almost exactly
+
+System Audio: 
+28:51-29:00
+what you just said yeah they'll yeah i kind of also kind of accept the critique from you mark is that
+
+System Audio: 
+29:00-29:08
+it's like random things but equally they they can work honestly like as part of as part of the whole
+
+System Audio: 
+29:08-29:16
+kind of strategy to focus on this kind of spectrum of users um but is it compelling that you can you
+
+System Audio: 
+29:16-29:22
+can do it still uh like you know as you mentioned you can have different landing pages where on one
+
+System Audio: 
+29:22-29:30
+page it just says you know equips you with the tools right tools for the job and then demonstrates how
+
+System Audio: 
+29:30-29:40
+you can kind of visibly do all this kind of random stuff uh use case based yes uh also because that
+
+System Audio: 
+29:40-29:47
+shows you a little bit more of a utility because well uh yeah equally if you only have base64 then
+
+System Audio: 
+29:47-29:53
+the question what do i do with it becomes impossible to answer right so yeah we have to balance this
+
+System Audio: 
+29:53-30:01
+approach it's just the circles that i was drawing here i'm thinking that these are different kind of
+
+System Audio: 
+30:01-30:11
+onboarding and activation strategies right um so so with these uh editors let's say who are more user
+
+System Audio: 
+30:11-30:20
+centric uh i would probably think that doing what i suggested with this platforms even if for some reason it is
+
+System Audio: 
+30:20-30:30
+possible to do base64 in uh gum loop uh they wouldn't do it because this is their strategy essentially to
+
+System Audio: 
+30:30-30:40
+activate the users because this is what where they want them to be right but your challenge there
+
+System Audio: 
+30:41-30:49
+is to is to pull them out of something they're really comfortable with and so where they will be like
+
+System Audio: 
+30:49-30:56
+we can hack through this we can tunnel through this and get what we need if they can yeah right or we need
+
+System Audio: 
+30:56-31:04
+to be convinced that this other thing will get us there but we need to also give away give up a week of
+
+System Audio: 
+31:04-31:10
+our lives to figure out how to do it if they can if they can at some point there is uh it is not shown here
+
+System Audio: 
+31:10-31:15
+but the technology itself becomes a limitation so for example if they end up using high throughput stuff
+
+System Audio: 
+31:15-31:21
+we can do that they can presumably or whatever or pricing becomes prohibitive and then their entire
+
+System Audio: 
+31:21-31:28
+project is like not feasible anymore on that platform okay we're talking around actionable points so i have
+
+System Audio: 
+31:28-31:35
+well let's let me please kind of finish this one uh i don't think you can use that as a activation
+
+System Audio: 
+31:35-31:41
+strategy you can say you can build high throughput applications it's like so what i still don't know
+
+System Audio: 
+31:41-31:50
+what what i'll be building you have to show utility first right is there is there a competitor that
+
+System Audio: 
+31:50-31:59
+basically is targeted at the same type of users right now i think so sorry i think red node is the closest
+
+System Audio: 
+31:59-32:09
+red node yes uh i would argue that we should also no sorry node red yeah they have absolutely cornered the
+
+System Audio: 
+32:09-32:17
+like um iot market but i think they're targeted at the same kind of people as like what was with dark dark
+
+System Audio: 
+32:18-32:26
+how do you think we're different dark land dan from node red just further but i don't know it's hard to
+
+System Audio: 
+32:26-32:33
+tell my um they are when i first saw node script i was like oh this looks like node red they have very
+
+System Audio: 
+32:33-32:41
+different use cases like i said they're quite widely adopted in the in the iot thing they're mostly for
+
+System Audio: 
+32:42-32:47
+people who want to like connect different services and it's just kind of workflow process but i've always
+
+System Audio: 
+32:47-32:54
+thought they're kind of like users who don't care about flashy fancy stuff they just want to build the
+
+System Audio: 
+32:54-33:01
+thing that's how i see that user base not just um visual programming language should be in this kind of
+
+System Audio: 
+33:01-33:08
+landscape because the actual mind share is absolutely huge i kind of you know
+
+System Audio: 
+33:08-33:16
+doesn't feel so on the diagram but you know it encompasses so many people and
+
+System Audio: 
+33:16-33:25
+so many different tools to exist to kind of to feel random different things that they can you know
+
+System Audio: 
+33:27-33:33
+come on so we what we need we absolutely need a north star we need a thing that we're going to
+
+System Audio: 
+33:33-33:37
+and there's two things that i want to go on the first one is what you said norman if we don't all
+
+System Audio: 
+33:37-33:43
+agree in this room on what we think it should be and the second thing is what you said is that whatever
+
+System Audio: 
+33:43-33:49
+the thing we pick is we'll have a different set of challenges to activate to keep them so i would like
+
+System Audio: 
+33:49-33:57
+to propose a task if you'll humor me that we all write down what we think nodes group will be in a year
+
+System Audio: 
+33:57-34:03
+and what it should be and then we meet again on monday and then we pick a direction based on the
+
+System Audio: 
+34:03-34:10
+prevailing argument because forever we will talk about what it should be but we'll never actually go
+
+System Audio: 
+34:10-34:19
+somewhere unless we put a framework in place so that's my proposal that we do it there's irritating
+
+System Audio: 
+34:19-34:25
+because we might draw exactly the same straws three for three but we need to break this deadlock
+
+System Audio: 
+34:26-34:32
+i think it's a good idea about you might need a bit more time uh download but you get the so
+
+System Audio: 
+34:32-34:41
+we'll do that i think we should probably send it to you so you can maybe uh you know digest it first
+
+System Audio: 
+34:41-34:48
+um so we can have them more um so we don't all just like read each other's stuff for the first time on
+
+System Audio: 
+34:48-34:56
+um send it to me separately either email or whatever and then each the prevailing use case will have a
+
+System Audio: 
+34:56-35:02
+preset determine amount of things we do to activate and keep users and then we can just then we have a
+
+System Audio: 
+35:02-35:18
+thing to say this is the plan that's the thing what's the thought on that does that work historically in the past i imagine not i mean i i'm a bit struggling to understand
+what happens if
+
+System Audio: 
+35:18-35:21
+uh you know all of us will want different things
+
+System Audio: 
+35:21-35:28
+well we don't want to possible like if everyone writes what they think it should be they'll come under
+
+System Audio: 
+35:28-35:36
+an umbrella of one of the two camps or the other way around like i i like to remember this thing where
+
+System Audio: 
+35:37-35:45
+mark russell put um in figma a chrome frame around autopilot and said let's do it in browser and i'm like
+
+System Audio: 
+35:45-35:52
+we can't right so those could come suddenly become something entirely different uh
+
+System Audio: 
+35:52-36:02
+yeah there might be kind of like practical implications behind that because again we're not
+
+System Audio: 
+36:02-36:08
+looking for changing it because internally we are kind of using it a lot and relying it a lot
+
+System Audio: 
+36:08-36:15
+not sure if that should be an argument in kind of the overall direction but it feels like no strip is
+
+System Audio: 
+36:15-36:22
+something already right not like we want it to be gone it is i suppose my my issue is
+
+System Audio: 
+36:24-36:32
+the inside and the outside are so far from each other different yes yes because we've obviously
+
+System Audio: 
+36:32-36:39
+gone through the you know put in the effort of sort of power users including myself to understand how it
+
+System Audio: 
+36:39-36:43
+works because it's our tool if it wasn't at all i don't know that i would have done that
+
+System Audio: 
+36:45-36:50
+and now are starting to get some value from it but i suppose the thing that i'm slightly frustrated by is
+
+System Audio: 
+36:50-36:56
+we've built some absolutely amazing stuff that does crazy things and you know we've kind of gone well
+
+System Audio: 
+36:56-37:00
+beyond what you should really be using no script for but that's all fine we still get tons of tons of
+
+System Audio: 
+37:00-37:06
+utility out of it and then then you've got the opposite which is from the outside there's not you can't
+
+System Audio: 
+37:06-37:14
+find any of this there is no it's it's difficult to get started because there are no compelling examples
+
+System Audio: 
+37:14-37:20
+and i suppose my my issue is i don't think base64 encoding or whatever or making an http post is
+
+System Audio: 
+37:20-37:28
+compelling enough to make someone take the leap into really understanding how it works and what can be
+
+System Audio: 
+37:28-37:33
+used for and hopefully actually using it for some of this stuff not all of this stuff but some of this
+
+System Audio: 
+37:33-37:44
+stuff and so my thing has always been we need a better way of being able to show more complexity
+
+System Audio: 
+37:44-37:50
+compelling use cases i mean i totally get that you need to work out sort of what are the right steps
+
+System Audio: 
+37:50-37:55
+yeah yeah in doing that because ultimately what we're trying to do is get people to learn it so that
+
+System Audio: 
+37:55-38:01
+they invest in it not get them to use our random apps but my my whole thing is and the reason why i was
+
+System Audio: 
+38:01-38:06
+pushing those script apps is just because i think if you can demonstrate it being used
+
+System Audio: 
+38:07-38:13
+for something that's actually useful more so than base64 encoding so i just keep going back to that
+
+System Audio: 
+38:13-38:18
+example has to be compelling than that then that can be the hook that gets people to think oh this is
+
+System Audio: 
+38:18-38:22
+actually quite cool i want to play around with it and i think there's a few interesting trends that are
+
+System Audio: 
+38:22-38:28
+coming up at the moment that we can jump on and which is why i keep going back to gumloop right
+
+System Audio: 
+38:29-38:35
+there's this thing ai um i think there's sort of two opposite extremes and there's a big middle that's
+
+System Audio: 
+38:35-38:41
+underserved so the basic the most basic is you can go to check gpt.com or any of any of the tools and
+
+System Audio: 
+38:41-38:46
+you can chat to them they've all got exactly the same and that's fine and that's quite useful and then
+
+System Audio: 
+38:46-38:52
+but it's people probably want to do more and then there's the complete opposite extreme which is if you're
+
+System Audio: 
+38:52-39:01
+if you're if you're quite a experienced developer you the apis and the sdks whatever you can and like
+
+System Audio: 
+39:01-39:08
+lang chain and all this hardcore shit and you can build really amazing tools and then there's the middle
+
+System Audio: 
+39:08-39:15
+which is both i would say less experienced programmers because only like i don't know probably
+
+System Audio: 
+39:15-39:22
+10 percent of programmers really can use ai well and and then i would also say sort of you know
+
+System Audio: 
+39:22-39:27
+technical enthusiasts no code users low code users and so on of which there's lots of people and
+
+System Audio: 
+39:27-39:33
+don't underestimate them and i just think that's underserved and on the topic of ai this is so hot
+
+System Audio: 
+39:33-39:40
+night now right now you should we should take advantage of it i think i think one of the most
+
+System Audio: 
+39:40-39:51
+compelling ways to demonstrate node script is as the tool that links ai to actual useful utility or to
+
+System Audio: 
+39:51-39:58
+to other apps and things like that i mean even saw that that email that we got the other day from the
+
+System Audio: 
+39:58-40:03
+guy he was basically trying to take support tickets and feed them through chat gpt that's a no-brainer
+
+System Audio: 
+40:03-40:11
+that's a really good use case it's pretty basic it's node script is is great for that and and so that's
+
+System Audio: 
+40:11-40:19
+that's anyway that's why i like gumloop because they've got quite a good positioning which is all based around ai
+
+System Audio: 
+40:19-40:27
+with their sort of node based programming language and then connecting to some other things they've got
+
+System Audio: 
+40:27-40:36
+web scraping they've got apis i mean but should it be the same i don't see a problem with being the same
+
+System Audio: 
+40:36-40:40
+as someone else i'm not saying we should be exactly the same as gumloop but there's no the market is
+
+System Audio: 
+40:40-40:47
+insanely huge one it's it's much easier to be the same as someone else who's already successful and yeah
+
+System Audio: 
+40:47-40:58
+but but but not not probably a good idea to try to copy it because again yeah we're struggling we will
+
+System Audio: 
+40:58-41:04
+be struggling because uh well these guys probably don't care how many how many um you know what's your
+
+System Audio: 
+41:04-41:16
+favorite car brand uh audi right and so how is audi different to bmw or how is audi different
+
+System Audio: 
+41:16-41:26
+that's the thing that's the thing um i think uh what you just said it almost like doesn't change where
+
+System Audio: 
+41:26-41:33
+no script naturally kind of fits uh based on how it works already of course we will be kind of polishing
+
+System Audio: 
+41:33-41:39
+the uh the libraries this is what we're doing and possibly you're looking at kind of expanding it to
+
+System Audio: 
+41:39-41:47
+the left you know making it broader potentially like you know to cover more of these things uh but i don't
+
+System Audio: 
+41:47-41:56
+think it changes kind of this bit because with no script you jump straight into uh let's see real world
+
+System Audio: 
+41:56-42:05
+example uh bullions and types and things like this and i don't think essentially model wise and product
+
+System Audio: 
+42:05-42:15
+wise we can or should nor should be doing something significantly different from what it currently does here
+
+System Audio: 
+42:15-42:23
+and in order to be able to understand this which is not a particularly difficult thing right uh you kind
+
+System Audio: 
+42:23-42:34
+of need to be further to the right of the spectrum because again this was like a never-ending argument
+
+System Audio: 
+42:34-42:41
+with regards to let's make it more user-friendly which means less complex but uh the thing is if we wanted to be
+
+System Audio: 
+42:43-42:51
+to be able to you know address all the kind of crazy use cases that you mentioned that we're doing
+
+System Audio: 
+42:51-42:58
+internally then it has to be powerful powerful means not necessarily kind of easy to use you still have
+
+System Audio: 
+42:58-43:05
+to instead of to be able to learn it yeah yeah and you still have to want to learn it i am i think that
+
+System Audio: 
+43:05-43:11
+i think we should make it more user-friendly but not not to say less powerful but there's just some some things
+
+System Audio: 
+43:11-43:16
+that we should we should improve that's fine just just we mark assume you oh i don't know if you're
+
+System Audio: 
+43:16-43:22
+joining the two but we need to uh at least i need to go in a minute um yeah i put you as optional by
+
+System Audio: 
+43:22-43:27
+the way for that call mark you know i don't need so you can you can shoot it okay i'll stay here i'll stay
+
+System Audio: 
+43:27-43:34
+here um all right well in that case i guess just let me know what the homework is uh at the end and i just
+
+System Audio: 
+43:34-43:39
+put this in again for next week as well we should keep it conversation going this is this is the most important
+
+System Audio: 
+43:39-43:43
+discussion that we're having on those right now we need to continue it and we need and also we don't
+
+System Audio: 
+43:43-43:49
+need to rush it right let's find the right conclusion it's not like it's going to massively dramatically
+
+System Audio: 
+43:49-43:56
+change our roadmap yeah that's six weeks yeah something i wanted to add is an interesting thing
+
+System Audio: 
+43:56-44:01
+about what you were showing them with those circles and stuff on the graph there for us is how much does it
+
+System Audio: 
+44:01-44:08
+tangibly would it tangibly change what we're developing and planning to develop anyway is it just depends on what we want
+
+System Audio: 
+44:08-44:19
+uh i kind of still think that uh gumloof is focusing on a different thing which is to make it uh considerably
+
+System Audio: 
+44:19-44:33
+less effort and kind of less learning required to achieve things um thanks a lot right which is not almost like we
+
+System Audio: 
+44:33-44:40
+can't do it we expose complexity to users like all the json's and other stuff like straight from the beginning
+
+System Audio: 
+44:40-44:49
+uh and changing this aspect of node script is like well first i think it's a mistake to an extent i don't
+
+System Audio: 
+44:49-44:56
+i don't think we should change that the one thing i i really think we should think about is left to right evaluation
+
+System Audio: 
+44:57-45:08
+yeah possibly i actually really don't like if it it it it it it's kind of when things get confusing even though i'm so experienced with it
+
+System Audio: 
+45:08-45:12
+maybe we can just support both and then you're gonna get best of both worlds but i don't think we should we shouldn't
+
+System Audio: 
+45:12-45:18
+we should certainly should not remove jason that's the power of the tool right it's yeah that's actually
+
+System Audio: 
+45:18-45:25
+not particularly difficult to understand and and really worth investing in and once you get past that
+
+System Audio: 
+45:25-45:31
+it is a more flexible and powerful tool than something like gumlu that actually hides that a little bit but
+
+System Audio: 
+45:31-45:38
+but on the other side i definitely think we should build more easy to use libraries i mean why not yeah
+
+System Audio: 
+45:38-45:44
+yeah yeah sure sure it's a no-brainer we will be doing this it doesn't my my point is it doesn't change
+
+System Audio: 
+45:44-45:51
+where the sweet spot is for nostrad and we probably shouldn't change it we should broader broaden the kind of
+
+System Audio: 
+45:51-45:59
+the curve so that it kind of accepts uh tangibly what are we changing who we're messaging to because
+
+System Audio: 
+45:59-46:04
+who are we not messaging to now that we will then you know what i mean like okay we internally have a
+
+System Audio: 
+46:04-46:09
+collective mindset of where we're going that's one thing what i'm looking for or at least from my
+
+System Audio: 
+46:09-46:16
+perspective is what are we changing because i would argue nothing we've done in the past has heavily
+
+System Audio: 
+46:16-46:21
+changed the development process um you know like okay we did a campaign where we pushed this blood
+
+System Audio: 
+46:21-46:26
+scraping thing but we didn't change the direction we were developing the system there's a few exceptions
+
+System Audio: 
+46:26-46:32
+i'd give you okay we changed notebooks to because we wanted to get rid of embedded graphs there are a
+
+System Audio: 
+46:32-46:38
+few things like that but even now like this this this thing we do now is the plan we currently have
+
+System Audio: 
+46:38-46:45
+just going to change marketing content it should it should i yeah i don't know if this is the thing
+
+System Audio: 
+46:45-46:53
+you meant marcus when you said like it looks so different internally versus externally externally do
+
+System Audio: 
+46:53-47:03
+you mean the website because yeah kind of the website is fine but it's it's missing the easy way in
+
+System Audio: 
+47:03-47:14
+yeah it's like actually the website looks i mean it's not amazing but it's better than what happens when you sign up
+
+System Audio: 
+47:15-47:20
+when you sign up you're given i don't know it's a bit like a box of lego with no instructions
+
+System Audio: 
+47:20-47:26
+i don't want the instructions or actually i just want some pre-built kits that i can take apart and
+
+System Audio: 
+47:26-47:37
+you know and and sort of remix well you need to do it yourself thing right because this is where to start
+
+System Audio: 
+47:37-47:43
+that's the that's the problem it gives you it gives you a pre-packaged use case which you can
+
+System Audio: 
+47:43-47:51
+go through and assemble yourself taking it off the shelf serves a different purpose uh like this was my
+
+System Audio: 
+47:51-47:56
+kind of argument about you know just middle ground though right where taking off the shelf that's one
+
+System Audio: 
+47:56-48:04
+one extreme either one is like a reusable example that's like a template that's the other extreme yeah that's a pre-built kit
+
+System Audio: 
+48:05-48:13
+sweet spot thing yes this is what we should be doing yes yes that is cool um christelle said the same
+
+System Audio: 
+48:13-48:18
+thing actually we shouldn't you know we definitely shouldn't be following the gum loop the thing but
+
+System Audio: 
+48:18-48:24
+some people will always want templates i think that's what we need to land on i would i would copy their
+
+System Audio: 
+48:24-48:32
+libraries they have ask ai extract data summarize or categorize our school we're already copying them yeah yeah i mean
+
+System Audio: 
+48:32-48:38
+this this this is just an absolute no-brainer so is it just a presentation of what we already have then
+
+System Audio: 
+48:38-48:46
+i don't think we should copy the ui i think ours is is maybe less pretty actually more powerful
+
+System Audio: 
+48:46-48:53
+and that's okay um we should definitely improve our ui though there's this but we shouldn't change the
+
+System Audio: 
+48:53-48:59
+direction on that yeah but um i would copy the i would definitely copy the library that's a good
+
+System Audio: 
+48:59-49:05
+good idea libraries yes yes we would agree and that our own library of course you know the apis the stuff
+
+System Audio: 
+49:05-49:10
+like that we can probably do more on the web scraping side because we've got loads of capabilities there
+
+System Audio: 
+49:10-49:19
+so we should add all that but the main thing i think we should do is make it easier so when you sign up
+
+System Audio: 
+49:19-49:26
+you don't just get a blank canvas you get where would you like to start and it can you know you need
+
+System Audio: 
+49:26-49:34
+material on learning but the thing i want to push for is node script apps which is apps that are built that
+
+System Audio: 
+49:34-49:43
+can do stuff and and so that you can immediately and they're kind of examples but they can kind of be useful as well
+
+System Audio: 
+49:43-49:51
+yeah i don't think they have are they fully are they fully made off the shelf end-to-end things or are
+
+System Audio: 
+49:51-49:58
+they just like you know this yes but then but they're basic enough to not be sort of too crazy but they
+
+System Audio: 
+49:58-50:04
+have to work that's that's the important yeah yeah they should work i'm thinking maybe we can
+
+System Audio: 
+50:05-50:13
+kind of because this this remains like a a little bit of a you know you can do templates you can do
+
+System Audio: 
+50:13-50:21
+examples you can do fully working workspaces right that work off the shelf and hoping that people would
+
+System Audio: 
+50:21-50:26
+actually go through the graphs and understand how they work i think we need to kind of choose
+
+System Audio: 
+50:28-50:35
+one of them honestly and and kind of understand what we're doing this for because yes you mentioned that
+
+System Audio: 
+50:35-50:44
+blank state which i understand as a design problem that needs to be solved right so
+
+System Audio: 
+50:44-50:55
+uh the requirement for the design problem is to get the users to learn the platform and understand how to
+
+System Audio: 
+50:55-51:08
+build similar things whilst kind of adding utility to it which is uh what we try to solve as uh propose
+
+System Audio: 
+51:08-51:17
+apps as a solution for right i am thinking something like maybe you need this well thought example but
+
+System Audio: 
+51:17-51:23
+actually create i don't know something like an interactive tutorial right inside the application so that they
+
+System Audio: 
+51:23-51:29
+can build it step by step themselves because that changes how they how how involved they are with
+
+System Audio: 
+51:29-51:37
+this application they don't just take it and and and you know work with it they they are kind of like
+
+System Audio: 
+51:37-51:43
+actively involved in building it so that could be a i would also have quite more faith that people who
+
+System Audio: 
+51:43-51:49
+came signed up took an off-the-shelf thing and then used it would then not just be like well it's bill i won't use it
+
+System Audio: 
+51:49-51:54
+i think most people would still then dissect it and learn the learn it back engineer it but still i'd be
+
+System Audio: 
+51:54-52:01
+surprised if anyone just was like copy pasted our example and then never touched it again yeah but it's
+
+System Audio: 
+52:01-52:08
+kind of cool because you can kind of like you know from from the proposal you kind of like go step back to
+
+System Audio: 
+52:08-52:14
+kind of finalizing problem a little bit deeper and kind of understanding what are other kind of similar
+
+System Audio: 
+52:14-52:25
+solutions because i think that by i aspect of t do it yourself aspect of lego is what makes it kind of
+
+System Audio: 
+52:25-52:34
+work better than you know um similar products um maybe but i've never just i i i've built loads of lego
+
+System Audio: 
+52:34-52:40
+kits but i haven't just since i was about eight you know i just had a pile of lego and then made some
+
+System Audio: 
+52:40-52:48
+useful just rubbish cars you know like it's like a billion things and and and so has my son now
+
+System Audio: 
+52:48-52:54
+i'm trying to fight your point here so i'm talking about the kits are useful and they are absolutely
+
+System Audio: 
+52:54-52:59
+useful because that's what you learned yeah like you could never learn but they don't sell them
+
+System Audio: 
+52:59-53:04
+preassembled they're the same they they sell them they don't sell them pretty that's what i'm saying
+
+System Audio: 
+53:04-53:07
+no i know but sometimes you do the same sometimes you need your parents to help you out
+
+System Audio: 
+53:07-53:18
+okay fine let's do that i mean specifically like you know let's pick this as a motivating example and do
+
+System Audio: 
+53:18-53:26
+something like you know you have apps right uh the app gives you something useful in the end and let's
+
+System Audio: 
+53:26-53:32
+build something like an interactive experience inside i don't know the graph editor that allows you to
+
+System Audio: 
+53:32-53:38
+build it yourself it would be really cool to have that sort of thing that almost forced forces you to
+
+System Audio: 
+53:38-53:42
+build it yourself that validates the output at each step or something like that
+
+System Audio: 
+53:44-53:49
+so you know so that you can't make a mistake and then and you can sort of skip you can say i give
+
+System Audio: 
+53:49-53:54
+up or something and it just adds it for you yeah something like a guided thing that is what all of
+
+System Audio: 
+53:54-54:00
+our competitors do though like this forced guided tutorial work does green click here next that is it
+
+System Audio: 
+54:00-54:04
+that makes sense we should there's a good reason why they do that no i'm not saying we shouldn't i'm
+
+System Audio: 
+54:04-54:09
+just saying that's a well-trodden path um and i stayed away from it because the argument was that we
+
+System Audio: 
+54:09-54:14
+don't want to force people to think only one thing i think that's becoming the thing
+
+System Audio: 
+54:14-54:27
+the unavoidable craft yeah
+
+System Audio: 
+54:43-54:57
+shame in copying their examples they came up with
+
+System Audio: 
+55:11-55:18
+i don't know yeah whatever we do come back to who who are we doing it for what is who is our
+
+System Audio: 
+55:18-55:21
+who is our user if you look at gum look i mean they're very clear i mean they're going after
+
+System Audio: 
+55:21-55:27
+marketers that want to you know for one of their use cases the seo they're going after people that
+
+System Audio: 
+55:27-55:32
+want to you know um improve their seo build content optimize our content with ai optimize our
+
+System Audio: 
+55:32-55:38
+keywords with ai the other one document processing i don't think they can begin after i mean there's
+
+System Audio: 
+55:40-55:45
+lots of different non-developers you know lawyers or whoever wants to read pdfs and
+
+System Audio: 
+55:45-55:52
+it's good to pick some well i think we need because we need because they can be very clear and go you
+
+System Audio: 
+55:52-55:58
+know what this use case it's you it should but as we're targeting marketers not because marketers want
+
+System Audio: 
+55:58-56:03
+to build something i don't want to build it i want to get the benefit i want to get the outcome i want to
+
+System Audio: 
+56:03-56:09
+get the benefit of being able to use a tool and i can tweak it but that tool is going to help me deliver my
+
+System Audio: 
+56:09-56:15
+objectives for my job which is i'll be better better ranked for whatever and that's not very
+
+System Audio: 
+56:15-56:22
+forward that allows them to be very focused on who they're going after and being able to you know
+
+System Audio: 
+56:22-56:28
+target them get them on board and activate them because it's very clear who they're going after
+
+System Audio: 
+56:28-56:32
+and the benefit they're going to get from the tool and i think that's i mean i think all this conversation
+
+System Audio: 
+56:32-56:38
+will help us get towards that point where who is the user that we are going to target what's the
+
+System Audio: 
+56:38-56:43
+benefit to them and then that will help us find them get them on board and activate them
+
+System Audio: 
+56:44-56:49
+um and i i'm not beholden to any particular this is what i have to do this or that or that i think
+
+System Audio: 
+56:49-56:54
+what i'm beholden to is that we all just need to agree on the vision of who of what what node script
+
+System Audio: 
+56:54-57:01
+has to become or should become and how do we hone in on that and and target these people
+
+System Audio: 
+57:02-57:08
+and activate them um i think that's what this exercise will do dan i'm hoping yeah well so we
+
+System Audio: 
+57:08-57:14
+were on to a pretty good uh idea then i think we're pretty much agreeing that there is a tutorial section
+
+System Audio: 
+57:14-57:20
+coming to node script which has these uh interactive tutorials through that's this end of the funnel
+
+System Audio: 
+57:20-57:25
+that's the actual part pro uh feature we build in the next part of the funnel layer is the content
+
+System Audio: 
+57:25-57:33
+itself like you just said that's no reason not to take pre-existing uh concepts use them in a
+
+System Audio: 
+57:33-57:38
+no script way that's the second part the third part of this whole conversation is then how is that used
+
+System Audio: 
+57:38-57:44
+to target people externally i think the website currently is pretty generic in terms of it tries not
+
+System Audio: 
+57:44-57:49
+to lean in any direction no they come in that's one side the two sides of that argument are the
+
+System Audio: 
+57:49-57:56
+marketing we do in future already becoming a lot more process driven dev focused i think the
+
+System Audio: 
+57:56-58:04
+actionable point from today is we should kick off officially a timeline or at least a decent scope for
+
+System Audio: 
+58:04-58:08
+whether it's called apps or it's called tutorials or whether whether those two things are separate
+
+System Audio: 
+58:08-58:18
+and then start building that thing yeah yeah also let's learn from the other the other companies um n has got a really
+
+System Audio: 
+58:18-58:27
+good website probably the probably the best gum loop you can see where they're going the node red website i think is awful
+
+System Audio: 
+58:27-58:39
+it is you know someone said someone wrote on our thing saying oh this is node red but ugly and i was like have you seen node red that's like that's quite it doesn't matter
+but um
+
+System Audio: 
+58:39-58:57
+um i know but i mean i would try to learn about
+
+System Audio: 
+58:57-59:08
+you know why people are using the loans why why they're successful if they're successful i have a pitch so i have a the template
+
+System Audio: 
+59:08-59:18
+the template we bought for ubo for this layout it's just if we already bought it it's already in the ubo
+
+System Audio: 
+59:18-59:24
+library and i was thinking this would be a nice new image for nodes but not purple please ignore the color
+
+System Audio: 
+59:24-59:30
+scheme but if there's no pushback i'll just start putting our content into it and at least then i mean with your help source and then we've got like this would be reworded
+from integrations to one of our things
+
+System Audio: 
+59:30-59:38
+this feels like a lot closer to what we're what is the what you would put with them and that's done
+
+System Audio: 
+59:38-59:46
+this is a template we already own we bought a whole bunch of stuff for ubo for recruitment
+
+System Audio: 
+59:46-59:52
+and me and daniel ferrera were just talking yesterday and this is just we have that all i've got to do is
+
+System Audio: 
+59:52-59:57
+change the content and remove things i don't i think the design of the website is the is the issue i think
+
+System Audio: 
+59:57-01:00:04
+that's a secondary concern it's it's it's the content it's the content that's on it and it can be improved
+
+System Audio: 
+01:00:04-01:00:13
+but the biggest thing for me is it's the it's the onboarding experience that's the product that matters
+
+System Audio: 
+01:00:13-01:00:20
+the most and when that has been you know when when we've got interactive tutorials or apps or the
+
+System Audio: 
+01:00:20-01:00:29
+ability to yeah or and better libraries better um integrations etc the other stuff can follow
+
+System Audio: 
+01:00:29-01:00:34
+they're separate aren't they i don't think that like changing the website is going to make as much
+
+System Audio: 
+01:00:34-01:00:40
+difference as that i think which will that's funny it was going to move to the next one point yeah that's
+
+System Audio: 
+01:00:40-01:00:46
+that's what we need to well i can do one thing in parallel but i just did for the sake of clarity
+
+System Audio: 
+01:00:46-01:00:50
+then they are different now we say them out loud aren't they apps aren't going to be these tutorials
+
+System Audio: 
+01:00:50-01:00:56
+they're separate like but they could be tutorials they can fold into it i mean a tutorial could be to
+
+System Audio: 
+01:00:56-01:01:02
+build an app yeah yeah yeah exactly this is what i'm thinking you you need a library of them so that you
+
+System Audio: 
+01:01:02-01:01:09
+can choose and kind of yeah i mean maybe from a sort of functionality perspective you need to be able to
+
+System Audio: 
+01:01:09-01:01:15
+i don't know somehow turn a graph into a tutorial by adding some metadata or something like that
+
+System Audio: 
+01:01:15-01:01:21
+but then once that's done you can have it so in your app some of the graphs are tutorials some of
+
+System Audio: 
+01:01:21-01:01:26
+them are not i mean some of them are not there's you need to sort of pick and choose but the ones where
+
+System Audio: 
+01:01:26-01:01:30
+you're teaching about the concepts or sort of having the most important things they could be tutorials
+
+System Audio: 
+01:01:30-01:01:38
+other ones you don't worry about it it's not worth it yeah they can they also kind of depend on the
+
+System Audio: 
+01:01:38-01:01:44
+libraries being in a good shape because you will showcase the use of the libraries inside this tutorial
+
+System Audio: 
+01:01:44-01:01:52
+so it's like first we need to address the libraries which is sort of what we're doing yeah yeah yeah we are
+
+System Audio: 
+01:01:52-01:01:59
+at this again yes so are you are you happy with this that new development approach for it or that new
+
+System Audio: 
+01:01:59-01:02:05
+feature on the roadmap that it becomes this tutorial side thing with the caveat we aren't being a web
+
+System Audio: 
+01:02:05-01:02:11
+scraping company we aren't being a yes company we're not we're not being a web scraping company i think
+
+System Audio: 
+01:02:11-01:02:17
+exactly you've just got to build your content around some compelling use cases yeah yeah because
+
+System Audio: 
+01:02:17-01:02:24
+gamelope's not web scraping company they're a ai integration with all of these other things i would
+
+System Audio: 
+01:02:24-01:02:31
+say i'm literally saying that we are not just i'm saying to you just with the caveat that we're not
+
+System Audio: 
+01:02:31-01:02:37
+doing this thing what this means is we're adding a mechanism for learning now we're not going down that
+
+System Audio: 
+01:02:37-01:02:43
+path um yeah yeah i just think that the kind of marketing side of thing i think that's kind of
+
+System Audio: 
+01:02:43-01:02:48
+the easy part marketing this kind of that's that's i think that the the hard part that i think we need
+
+System Audio: 
+01:02:48-01:02:54
+to and this is why we're doing this but to overcome is what is the vision you know what is node script
+
+System Audio: 
+01:02:54-01:03:00
+you know who is it for and why why should they use it as opposed to the other tools out there i mean i
+
+System Audio: 
+01:03:00-01:03:05
+think if we have the those things and we all agree in the vision and what we're trying to build and who
+
+System Audio: 
+01:03:05-01:03:09
+are building it for and what the benefit to them as opposed to not having our other tools i think
+
+System Audio: 
+01:03:09-01:03:15
+that's where we can start to and then the marketing stuff see it's easy but it's easy but how do we go
+
+System Audio: 
+01:03:15-01:03:20
+out and get find them and do all this stuff it's it's it's that vision i think we all need to kind of
+
+System Audio: 
+01:03:20-01:03:27
+um agree upon which i think this is what this is why we're doing this but i think that's that feels like
+
+System Audio: 
+01:03:27-01:03:36
+the like huddle to me do we still not have that i mean the vision of what no script will be of what
+
+System Audio: 
+01:03:36-01:03:45
+the end of the users are and and what no script is i i would i so i thought i think we do but we don't
+
+System Audio: 
+01:03:45-01:03:55
+have the process of actually onboarding them they're not sticky because that that's a feature and and by the way we kind of we were talking about content right content
+is like a
+
+System Audio: 
+01:03:55-01:04:07
+thing uh but this is almost exactly what i had in mind which is you need uh tutorials and tutorials need to be
+
+System Audio: 
+01:04:07-01:04:12
+you know either a standalone thing or better integrated in the app we just literally agreed on kind of the
+
+System Audio: 
+01:04:12-01:04:23
+second right uh so so we can at least kind of uh mark that as yeah that's done in terms of but but but i still think none of
+
+System Audio: 
+01:04:23-01:04:33
+what we discussed changes this picture really because because notestrip still uses the concepts of uh json and
+
+System Audio: 
+01:04:33-01:04:40
+they kind of you know if you build tutorials you will introduce things like this right logic equals you
+
+System Audio: 
+01:04:40-01:04:51
+know the programming concept uh and uh that means that logic equals alone its existence and the fact that it
+
+System Audio: 
+01:04:51-01:04:59
+shows true is true here even if you make it treaty or whatever it puts you somewhere on the spectrum
+
+System Audio: 
+01:04:59-01:05:04
+like you know it needs to know what the building is all that changes anything to the left of this
+
+System Audio: 
+01:05:04-01:05:16
+there is no kind of point of going to the left spectrum of uh of of of of of this kind of boundary and
+
+System Audio: 
+01:05:16-01:05:24
+trying to make it work what we need to do is to kind of like accept that this is the uh the sweet spot and
+
+System Audio: 
+01:05:24-01:05:30
+basically understand what the implications are and how to kind of target them and kind of you know what
+
+System Audio: 
+01:05:30-01:05:38
+what kind of contact will click with users like this maybe like you know literally write a comparison
+
+System Audio: 
+01:05:38-01:05:46
+articles about how it compares to gum loop and what are the signals that you need to migrate to
+
+System Audio: 
+01:05:46-01:05:55
+note script if you are struggling with whatever right but my point is can you reconfirm that you know
+
+System Audio: 
+01:05:55-01:06:04
+everything discussed so far pretty much doesn't change this because the fundamentals are kind of that this is
+
+System Audio: 
+01:06:04-01:06:12
+still visual programming might be useful yeah because your your diagram is not isn't isn't is a bit too vague and
+
+System Audio: 
+01:06:12-01:06:20
+it's actually us i would say you should probably put a few products on there so on the left you're going
+
+System Audio: 
+01:06:20-01:06:30
+to have zapier and then next you might have make gum loop nan node script and then on the right you'd you'd have
+
+System Audio: 
+01:06:30-01:06:36
+i don't know programming language coding javascript or maybe you'd have cursor or repli or something like that
+
+System Audio: 
+01:06:36-01:06:43
+i think i think i think that might be kind of useful i mean more useful than this because this is around
+
+System Audio: 
+01:06:43-01:06:46
+this is this is meaningless stuff um
+
+System Audio: 
+01:06:46-01:07:05
+yeah yeah but whatever you can have as many or as few as you like as much as you might you just have to
+
+System Audio: 
+01:07:05-01:07:12
+you just have to probably settle for like three or four um oh sure so you did something like similar
+
+System Audio: 
+01:07:12-01:07:20
+to this right i remember uh one of the figma boards you were kind of doing roughly like that
+
+System Audio: 
+01:07:20-01:07:26
+so i would almost put the almost the different levels of capability and then almost score from one
+
+System Audio: 
+01:07:26-01:07:32
+to five going up on how appropriate the platform is for these things yeah draw the same kind of curve
+
+System Audio: 
+01:07:32-01:07:41
+because we do need to we need to settle on where we are uh compared to these other tools yeah yeah
+
+System Audio: 
+01:07:41-01:07:49
+right this graph tried to do is to not compare the tools it gives you the rough idea of uh what the
+
+System Audio: 
+01:07:49-01:07:54
+the person is like expected to
+
+System Audio: 
+01:07:54-01:08:03
+to know let's say because when you build the tutorials it's like very easy to understand if you don't know
+
+System Audio: 
+01:08:03-01:08:12
+what the boolean is and and what this thing tells you are you're not just stuck you don't even understand what
+
+System Audio: 
+01:08:12-01:08:18
+these people are talking about and that's why i wanted to kind of to avoid putting kind of sapiers
+
+System Audio: 
+01:08:18-01:08:29
+and this line even appeared on our call uh this is this does exactly what norman asks essentially which is
+
+System Audio: 
+01:08:29-01:08:36
+who is our user and then kind of you know the only thing is you can elaborate probably these
+
+System Audio: 
+01:08:36-01:08:46
+tag cloud maybe to understand like whether or not this particular kind of state in i don't know
+
+System Audio: 
+01:08:46-01:08:57
+programmer i don't know like whether or not it fits with what nostril provides i mean but maybe we need maybe we
+
+System Audio: 
+01:08:57-01:09:02
+need both i mean this is this is also useful i'm just saying we should have the sort of product
+
+System Audio: 
+01:09:02-01:09:07
+comparison too yeah i think i think probably comparison sure if you can look through your
+
+System Audio: 
+01:09:07-01:09:12
+previous boards you can probably find some things right yeah it's not just that we're comparing the
+
+System Audio: 
+01:09:12-01:09:18
+products either it's that they're working it's that we're it's that we're we're putting there where the
+
+System Audio: 
+01:09:18-01:09:24
+user ability is for these platforms it's not necessarily what we're comparing the platforms in that chart
+
+System Audio: 
+01:09:24-01:09:30
+that's more you make is for this type of user i would say more how appropriate for the use case
+
+System Audio: 
+01:09:30-01:09:36
+yeah for the use case swell neither yeah different levels though right we're pulling different levels
+
+System Audio: 
+01:09:36-01:09:44
+here we should be as usable as possible for the use cases that we choose yeah of course right and we
+
+System Audio: 
+01:09:44-01:09:50
+shouldn't care about the others like on them probably the most simplistic and the most complex level
+
+System Audio: 
+01:09:50-01:09:57
+we're obviously somewhere in the middle um yeah and and so for the for the use cases we choose we
+
+System Audio: 
+01:09:57-01:10:03
+should do everything we can to make the best product i mean obviously right yeah and practices all these
+
+System Audio: 
+01:10:03-01:10:10
+kind of different smart ideas that will make it work honestly like downboarding and and all those libraries and
+
+System Audio: 
+01:10:10-01:10:16
+you know all the other things so i i don't see a point of making this kind of who is our person refining it uh
+
+System Audio: 
+01:10:16-01:10:23
+refining it uh too much you know instead what you're trying to say like what difference does it make of what we're
+
+System Audio: 
+01:10:23-01:10:28
+actually if we're going to build tutorials and we're going to yeah yeah the stories are going to come from well established things that most people need
+
+System Audio: 
+01:10:28-01:10:36
+um yes if we we're not marketing to to doctors we know that but like what we are what lever are we
+
+System Audio: 
+01:10:36-01:10:41
+pulling from the concept of being like this is where we sit on this job that's what because that's the
+
+System Audio: 
+01:10:41-01:10:46
+thing because i mean we're not marketing to doctors and gum but gum look could market to doctors right
+
+System Audio: 
+01:10:46-01:10:52
+because gum look just need to find a use case which is suitable to doctors they are they're on the left hand
+
+System Audio: 
+01:10:52-01:10:58
+side of the graph which is accessibility left is kind of very accessible um right is like less accessible
+
+System Audio: 
+01:10:58-01:11:04
+to the average person so they can market to doctors but we're kind of saying that because of the the
+
+System Audio: 
+01:11:04-01:11:08
+limited accessibility because we're sitting in the middle there because you need a certain amount of
+
+System Audio: 
+01:11:08-01:11:17
+knowledge that the use cases that we would market to are are probably more restricted and i don't think
+
+System Audio: 
+01:11:17-01:11:26
+but i suppose i don't think that they're totally limited to um you know highly experienced developers
+
+System Audio: 
+01:11:26-01:11:32
+for example we we are not limited to that no i don't yeah yeah i don't think that we should be um
+
+System Audio: 
+01:11:32-01:11:40
+but equally zapier is probably but completely non-technical people the vertical use cases are different to
+
+System Audio: 
+01:11:40-01:11:46
+the the sort of complexity of the use cases or the sophistication of the use cases
+
+System Audio: 
+01:11:46-01:12:11
+I see. It should be. Yeah, it should be.
+
+System Audio: 
+01:12:15-01:12:42
+That is my point. We shouldn't be limited to AI. It's not for everything. No, no, no. It's not for everything. Definitely not. So, and again, might be useful to better
+understand what NoseScript isn't quite suitable for. But just AI, it already happens. It's like...
+
+System Audio: 
+01:12:44-01:12:57
+The ability of kind of take stuff from the database, run through the AI and save to another database is very important. And NoseScript definitely should be able to do so.
+
+System Audio: 
+01:12:58-01:13:00
+If it doesn't, then...
+
+System Audio: 
+01:13:00-01:13:01
+Yeah, there's no...
+
+System Audio: 
+01:13:05-01:13:18
+Because that use case has to... So that use case, right? That works. That's something we can do. Who has that use case? What's that user look like? Who wants to do that?
+Because that's who we'd market to.
+
+System Audio: 
+01:13:18-01:13:18
+Developers have these use cases.
+
+System Audio: 
+01:13:18-01:13:19
+Developers have these use cases.
+
+System Audio: 
+01:13:19-01:13:23
+We need to go to the place that they hang out. Step two, that's phase two, right?
+
+System Audio: 
+01:13:23-01:13:31
+Yeah. Developers have these use cases. And honestly, we kind of have that.
+
+System Audio: 
+01:13:33-01:14:02
+My point is that going back and forth between non-developer and developer is not productive. We've been there for like a couple of years now. But again, the mere fact
+that it exposes things like Boolean object and stuff makes it almost impossible to work with developers, non-developers who don't understand the basic concepts.
+
+System Audio: 
+01:14:02-01:14:10
+And we shouldn't try to because you've mentioned accessibility. There is a different kind of accessibility when you know your stuff, right?
+
+System Audio: 
+01:14:10-01:14:30
+So take, I don't know, abstract blender, for example. If it tries to, you know, abstract things like vertices, edges, faces, whatever into something else, then it
+becomes some other product, which is no longer suitable for professionals who look for exactly like, you know, how do I extrude my face?
+
+System Audio: 
+01:14:31-01:14:45
+Yeah. You know, both products can coexist, but serves different purpose. And if you remove that and make blender more kind of user friendly, then it actually means
+reduced accessibility for its niche and target audience.
+
+System Audio: 
+01:14:45-01:14:58
+And the target audience for no scripts is still developers, not like extreme, sophisticated, experienced, whatever, but still developers, maybe the beginners or
+what?
+
+System Audio: 
+01:14:58-01:14:59
+Yeah.
+
+System Audio: 
+01:14:59-01:14:59
+I agree.
+
+System Audio: 
+01:14:59-01:15:00
+I agree. Yeah.
+
+System Audio: 
+01:15:00-01:15:12
+You blend a use case, you make it much more accessible. You might lose some of the, some functionality to deliver the use cases that the people that its main user base
+need, you know, that's a trade off.
+
+System Audio: 
+01:15:12-01:15:20
+But developers need accessibility as well, right? We are not like, it doesn't work like that. You don't make it ugly by design.
+
+System Audio: 
+01:15:20-01:15:39
+Yeah. My, my, when I was talking about accessibility, I was talking about basically the, it's, it's a bigger audience. It's more accessible to a bigger audience. If
+you, if you make it less like tech, you get less technical knowledge required, you make it much more accessible to a bigger audience. And that's, that's what I mean. But
+I totally agree with you, of course.
+
+System Audio: 
+01:15:39-01:15:41
+- Once. - Yep, yep.
+
+System Audio: 
+01:15:41-01:16:11
+- Thank you. - Thank you.
+
+System Audio: 
+01:16:11-01:16:20
+- This is what I tried actually with this tiny things like HTTP request thing. Everyone does that.
+
+System Audio: 
+01:16:20-01:16:38
+- There's a good point I think Marcus made last week, Marcus, that the use cases have to be compelling and the need to, if they already have a way of doing it, the fact that
+we can facilitate that use case, is it compelling enough to make them switch away from what they're doing to move to us?
+
+System Audio: 
+01:16:38-01:16:46
+And that's why the whole, like the no coders, it's almost like, I think you said this Marcus last week when we were chatting, it's almost like the gum loop use case.
+
+System Audio: 
+01:16:46-01:16:56
+They're giving people the ability to do something they wouldn't otherwise be able to do, whereas giving the developer a method of doing something which is different
+from the way they currently do it.
+
+System Audio: 
+01:16:56-01:17:04
+We're not breaking the mold and giving them something that they couldn't otherwise do. We're just giving them a maybe slightly easier way, a slightly better way of
+doing it.
+
+System Audio: 
+01:17:04-01:17:10
+And is that compelling enough to actually make them switch from the current way of doing it to this other way of doing it?
+
+System Audio: 
+01:17:10-01:17:19
+- The use cases and all this stuff we have to, has to be compelling to actually make them want to use a platform.
+
+System Audio: 
+01:17:19-01:17:32
+- Okay. So for now, I've taken a case in the inbox, a triage ticket for the, the framework functionality for NodeScript tutorials.
+
+System Audio: 
+01:17:32-01:17:35
+- Yeah, yeah, yeah. - What's this mechanism?
+
+System Audio: 
+01:17:35-01:17:38
+- We should come after we polish the libraries, yeah.
+
+System Audio: 
+01:17:38-01:17:46
+- Come along libraries first and then phase two of this endeavor is what we just discussed at the end there, this, what the content is and who it goes to.
+
+System Audio: 
+01:17:46-01:17:48
+But that's the next step after the beginning one.
+
+System Audio: 
+01:17:48-01:17:56
+- Yeah. - We should probably rearrange the onboarding now come to think because, you know, current one is just UI, UI, UI.
+
+System Audio: 
+01:17:56-01:17:59
+Presumably that's easier to understand, you know.
+
+System Audio: 
+01:17:59-01:18:11
+- I don't want to bring up another topic now, but I like the idea that you were throwing around of like giving them the canvas immediately on the website, even something
+to play with a different conversation.
+
+System Audio: 
+01:18:11-01:18:12
+- Yeah, yeah.
+
+System Audio: 
+01:18:12-01:18:16
+- But that's probably enough. - Didn't we do that at the beginning?
+
+System Audio: 
+01:18:16-01:18:23
+- No, it gave them like embedded graphs, but this would just be using it without sign in that you can't publish or anything without.
+
+System Audio: 
+01:18:23-01:18:26
+- Well, in conversation, yeah.
+
+System Audio: 
+01:18:26-01:18:31
+- We have another, I put it in for next Thursday too. In the meantime, I'll take it for the first steps.
+
+System Audio: 
+01:18:31-01:18:36
+I'm being productive, we're still not quite there, but we're definitely moving.
+
+System Audio: 
+01:18:36-01:18:37
+- Mm-hmm.
+
+System Audio: 
+01:18:37-01:18:42
+- What we should also do is try to avoid every Wednesday having these conversations and saving for the Friday.
+
+System Audio: 
+01:18:42-01:18:45
+- Yeah, yeah, I agree.
+
+System Audio: 
+01:18:45-01:18:52
+- That's the thing. Basically, I think we are aligned with regards to what Nostrid is and who is it for.
+
+System Audio: 
+01:18:52-01:19:07
+The features is like secondary detail. What is missing for us to kind of form the kind of the exact picture of, you know, what it is, who the audience is and stuff like that.
+
+System Audio: 
+01:19:07-01:19:16
+Because from all these conversations, we seem to be like, yeah, pretty much in line with each other.
+
+System Audio: 
+01:19:16-01:19:18
+The way I perceive it anyway.
+
+System Audio: 
+01:19:18-01:19:26
+- Currently, yes. I think we just need to add these few final features and then just keep the conversation.
+
+System Audio: 
+01:19:26-01:19:27
+- Yeah.
+
+System Audio: 
+01:19:27-01:19:30
+- Okay, let's call it today.
+
+System Audio: 
+01:19:30-01:19:31
+- Cool.
+
+System Audio: 
+01:19:31-01:19:34
+- Thank you, everyone, for the time.
+
+System Audio: 
+01:19:34-01:19:35
+- Yeah, thanks as well.
+
+System Audio: 
+01:19:35-01:19:36
+- Yeah, thanks, Dan.
+
+System Audio: 
+01:19:36-01:19:37
+- Very useful. Bye-bye.
+
+System Audio: 
+01:19:37-01:19:38
+- Bye-bye. - Bye-bye.
+
+System Audio: 
+01:19:38-01:19:39
+- Bye-bye.
+
+System Audio: 
+01:19:39-01:20:09
+Thank you.
+

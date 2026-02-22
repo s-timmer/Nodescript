@@ -1,6 +1,5 @@
-import { Pencil, ChevronDown, Circle, MoreVertical, RotateCcw, Layers, Copy } from "lucide-react";
+import { Pencil, ChevronDown, MoreVertical, RotateCcw, Layers, Copy } from "lucide-react";
 import { Button } from "./ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "./ui/collapsible";
 import {
@@ -109,7 +108,7 @@ const historyEntries = [
   },
 ];
 
-export function GraphDetailsPanel({ isOpen, onClose, graphName }: GraphDetailsPanelProps) {
+export function GraphDetailsPanel({ isOpen, graphName }: GraphDetailsPanelProps) {
   const [isDependenciesOpen, setIsDependenciesOpen] = useState(false);
   const [isDependentsOpen, setIsDependentsOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<"details" | "history">("details");
@@ -128,8 +127,8 @@ export function GraphDetailsPanel({ isOpen, onClose, graphName }: GraphDetailsPa
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
-            transition={{ type: "spring", damping: 30, stiffness: 300 }}
-            className="h-full border-l border-border bg-background flex flex-col"
+            transition={{ duration: 0.2, ease: "easeOut" }}
+            className="h-full border-l border-border bg-background flex flex-col shadow-sm"
           >
             <div className="flex flex-col h-full">
               <div className="px-6 pt-6 pb-0 border-b border-border">
@@ -137,8 +136,8 @@ export function GraphDetailsPanel({ isOpen, onClose, graphName }: GraphDetailsPa
                   <button 
                     onClick={() => setActiveTab("details")}
                     className={`pb-3 px-1 border-b-2 transition-colors ${
-                      activeTab === "details" 
-                        ? "border-foreground text-foreground" 
+                      activeTab === "details"
+                        ? "border-primary text-foreground"
                         : "border-transparent text-muted-foreground hover:text-foreground"
                     }`}
                   >
@@ -147,8 +146,8 @@ export function GraphDetailsPanel({ isOpen, onClose, graphName }: GraphDetailsPa
                   <button 
                     onClick={() => setActiveTab("history")}
                     className={`pb-3 px-1 border-b-2 transition-colors ${
-                      activeTab === "history" 
-                        ? "border-foreground text-foreground" 
+                      activeTab === "history"
+                        ? "border-primary text-foreground"
                         : "border-transparent text-muted-foreground hover:text-foreground"
                     }`}
                   >
@@ -174,12 +173,8 @@ export function GraphDetailsPanel({ isOpen, onClose, graphName }: GraphDetailsPa
                       <div>
                         <label className="block mb-3">Endpoint</label>
                         <div className="flex items-center gap-2">
-                          <span 
-                            className="px-2 py-1 text-[12px] uppercase"
-                            style={{ 
-                              color: '#22c55e',
-                              fontWeight: 'var(--font-weight-semi-bold)',
-                            }}
+                          <span
+                            className="px-2 py-1 text-[12px] uppercase text-green-500 font-semibold"
                           >
                             {details.endpointMethod}
                           </span>
@@ -204,14 +199,12 @@ export function GraphDetailsPanel({ isOpen, onClose, graphName }: GraphDetailsPa
                         <label className="block mb-3">Module Preview</label>
                         
                         {/* Module Path */}
-                        <div 
-                          className="border border-border bg-background relative"
-                          style={{ borderRadius: 'var(--radius-input)' }}
+                        <div
+                          className="border border-border bg-background relative rounded-md"
                         >
                           {/* Output connector at the top right */}
-                          <div 
-                            className="absolute -right-[6px] top-6 w-3 h-3 rounded-full border-2 border-background"
-                            style={{ backgroundColor: '#64748b' }}
+                          <div
+                            className="absolute -right-[6px] top-6 w-3 h-3 rounded-full border-2 border-background bg-slate-500"
                             title="Any"
                           />
 
@@ -220,8 +213,7 @@ export function GraphDetailsPanel({ isOpen, onClose, graphName }: GraphDetailsPa
                             {/* Input: Registry */}
                             <div className="flex items-center gap-2 py-1.5 px-3 relative">
                               <div 
-                                className="w-3 h-3 rounded-full border-2 border-background absolute -left-[6px]"
-                                style={{ backgroundColor: '#94a3b8' }}
+                                className="w-3 h-3 rounded-full border-2 border-background absolute -left-[6px] bg-muted-foreground"
                                 title="Any"
                               />
                               <span className="pl-3">Registry</span>
@@ -230,8 +222,7 @@ export function GraphDetailsPanel({ isOpen, onClose, graphName }: GraphDetailsPa
                             {/* Input: nodescript */}
                             <div className="flex items-center gap-2 py-1.5 px-3 relative">
                               <div 
-                                className="w-3 h-3 rounded-full border-2 border-background absolute -left-[6px]"
-                                style={{ backgroundColor: '#94a3b8' }}
+                                className="w-3 h-3 rounded-full border-2 border-background absolute -left-[6px] bg-muted-foreground"
                                 title="Any"
                               />
                               <span className="pl-3">nodescript</span>
@@ -240,8 +231,7 @@ export function GraphDetailsPanel({ isOpen, onClose, graphName }: GraphDetailsPa
                             {/* Input: Image */}
                             <div className="flex items-center gap-2 py-1.5 px-3 relative">
                               <div 
-                                className="w-3 h-3 rounded-full border-2 border-background absolute -left-[6px]"
-                                style={{ backgroundColor: '#94a3b8' }}
+                                className="w-3 h-3 rounded-full border-2 border-background absolute -left-[6px] bg-muted-foreground"
                                 title="Any"
                               />
                               <span className="pl-3">Image</span>
@@ -250,8 +240,7 @@ export function GraphDetailsPanel({ isOpen, onClose, graphName }: GraphDetailsPa
                             {/* Input: Tag */}
                             <div className="flex items-center gap-2 py-1.5 px-3 relative">
                               <div 
-                                className="w-3 h-3 rounded-full border-2 border-background absolute -left-[6px]"
-                                style={{ backgroundColor: '#94a3b8' }}
+                                className="w-3 h-3 rounded-full border-2 border-background absolute -left-[6px] bg-muted-foreground"
                                 title="Any"
                               />
                               <span className="pl-3">Tag</span>
@@ -260,8 +249,7 @@ export function GraphDetailsPanel({ isOpen, onClose, graphName }: GraphDetailsPa
                             {/* Input: Name */}
                             <div className="flex items-center gap-2 py-1.5 px-3 relative">
                               <div 
-                                className="w-3 h-3 rounded-full border-2 border-background absolute -left-[6px]"
-                                style={{ backgroundColor: '#94a3b8' }}
+                                className="w-3 h-3 rounded-full border-2 border-background absolute -left-[6px] bg-muted-foreground"
                                 title="Any"
                               />
                               <span className="pl-3">Name</span>
@@ -270,8 +258,7 @@ export function GraphDetailsPanel({ isOpen, onClose, graphName }: GraphDetailsPa
                             {/* Input: Repo */}
                             <div className="flex items-center gap-2 py-1.5 px-3 relative">
                               <div 
-                                className="w-3 h-3 rounded-full border-2 border-background absolute -left-[6px]"
-                                style={{ backgroundColor: '#94a3b8' }}
+                                className="w-3 h-3 rounded-full border-2 border-background absolute -left-[6px] bg-muted-foreground"
                                 title="Any"
                               />
                               <span className="pl-3">Repo</span>
@@ -280,8 +267,7 @@ export function GraphDetailsPanel({ isOpen, onClose, graphName }: GraphDetailsPa
                             {/* Input: Author */}
                             <div className="flex items-center gap-2 py-1.5 px-3 relative">
                               <div 
-                                className="w-3 h-3 rounded-full border-2 border-background absolute -left-[6px]"
-                                style={{ backgroundColor: '#94a3b8' }}
+                                className="w-3 h-3 rounded-full border-2 border-background absolute -left-[6px] bg-muted-foreground"
                                 title="Any"
                               />
                               <span className="pl-3">Author</span>
@@ -290,8 +276,7 @@ export function GraphDetailsPanel({ isOpen, onClose, graphName }: GraphDetailsPa
                             {/* Input: ARGOCD SLACK TOKEN (String type) */}
                             <div className="flex items-center gap-2 py-1.5 px-3 relative">
                               <div 
-                                className="w-3 h-3 rounded-full border-2 border-background absolute -left-[6px]"
-                                style={{ backgroundColor: '#22c55e' }}
+                                className="w-3 h-3 rounded-full border-2 border-background absolute -left-[6px] bg-green-500"
                                 title="String"
                               />
                               <span className="pl-3">ARGOCD SLACK TOKEN</span>

@@ -1,0 +1,37 @@
+NodeScript User Research Plan — slide deck (11 pages). Source: PDF upload.
+
+External user research methodology and plan.
+
+Context:
+- 436 signups, 11.7% activation rate at time of planning
+- Developer-first strategy confirmed
+- Need to validate assumptions with external developers
+
+Three Hypotheses to Validate:
+1. Technical users (developers/engineers) who work with APIs find NodeScript valuable for rapid prototyping and automation
+2. The visual programming paradigm reduces time-to-value compared to traditional coding for integration tasks
+3. Users who successfully complete their first workflow become regular users
+
+Target Group:
+- Developers and technical users who work with APIs/integrations
+- Have tried workflow automation tools but found them limiting
+- Comfortable with some coding but want faster execution
+- Age range: 25-45, various experience levels
+
+Recruitment Strategy:
+- LinkedIn outreach
+- Reddit communities (r/webdev, r/automation, r/node)
+- Existing survey respondents who showed interest
+- Paid interviews at €100/voucher
+
+Research Format:
+- Semi-structured interviews (60 min)
+- Show-and-tell: participants demo their current workflow tools
+- Landing page prototype testing: gauge first impressions
+- Two-part design: (1) understand workflows/pain points, (2) introduce NodeScript value prop
+
+Key Learning Goals:
+- Current pain points in API integration/automation workflow
+- How developers currently solve problems NodeScript could address
+- First impressions of NodeScript's visual approach
+- Whether AI features resonate independently (not prompted)

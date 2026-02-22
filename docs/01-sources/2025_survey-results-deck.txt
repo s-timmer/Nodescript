@@ -1,0 +1,30 @@
+NodeScript Survey Results 2025 — slide deck (12 pages). Source: PDF upload.
+
+Survey of NodeScript signups to understand activation patterns.
+
+Key metrics:
+- 436 total signups analyzed
+- ~30% activation rate among surveyed users (improved from earlier 8% figure)
+- Drop-off reasons quantified
+
+Top reasons for not activating:
+- "Didn't have time to explore" — 41%
+- "Didn't find what I needed" — 29%
+- "Too complicated to get started" — 18%
+- Other / unclear — 12%
+
+Recommendations from survey analysis:
+1. Quick Win tutorials — #1 priority recommendation
+2. Better first-run experience with guided paths
+3. Template library for common use cases
+4. Improved documentation discoverability
+
+User feedback themes:
+- Positive: power, flexibility, instant deployment
+- Negative: steep learning curve, unclear starting point, documentation gaps
+- Users who persisted found significant value
+
+Survey methodology:
+- Email outreach to registered users
+- Mix of activated and non-activated users
+- Qualitative + quantitative questions

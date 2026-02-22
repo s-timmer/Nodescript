@@ -1,0 +1,16 @@
+Onboarding research feedback workshop, Mar 28 2025.
+Attendees: Boris, Christelle, Dan, Marcus, Matt, Sjors. Source: Google Doc.
+
+Analyzed onboarding and activation feedback from 5 early NodeScript users (Jack, Liam, Phil, Matt).
+
+Key findings:
+- Onboarding bottleneck sits between "landing on dashboard" and achieving an "aha moment"
+- Documentation discoverability is poor: videos and examples exist but are hard to find
+- Learning styles vary significantly: some want videos, others reverse-engineer from examples, some trial-and-error
+- Production readiness gaps: error handling weak, no traditional logging/stack traces, monitoring painful
+- Paradigm shift required: users struggle going from JavaScript thinking to NodeScript thinking; some resort to code nodes
+- Advanced features underutilized: frames, loops, conditionals, variable creation in graphs — all hidden/poorly signposted
+- Positive: user Liam became highly active and paid, building sophisticated AI content platform
+- Search functionality critical: users need workspace-level search to find how nodes are used elsewhere
+- Off-shelf app trap: pre-built templates attract non-technical users but risk rapid abandonment
+- AI-generated nodes identified as solution for complex data transformation problems

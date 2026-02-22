@@ -31,7 +31,7 @@ export function CreateGraphDialog({ open, onOpenChange, onConfirm }: CreateGraph
       <DialogContent className="sm:max-w-[720px] p-0 gap-0" aria-describedby={undefined}>
         {/* Header */}
         <div className="px-6 pt-6 pb-5">
-          <DialogTitle className="text-[20px] font-normal m-0">Create graph</DialogTitle>
+          <DialogTitle className="text-[20px] font-medium m-0">Create graph</DialogTitle>
         </div>
 
         {/* Content */}

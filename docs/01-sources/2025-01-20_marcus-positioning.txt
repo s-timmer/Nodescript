@@ -1,0 +1,2106 @@
+Microphone: 
+00:00-00:08
+We went through a NodeScript spike in 30 days, but that was good.
+
+System Audio: 
+00:00-00:22
+Yeah, I think it's an interesting meeting. I mean, what I thought is, when it ended,
+
+Microphone: 
+00:08-00:13
+I'm still recovering from making the slide deck.
+
+Microphone: 
+00:13-00:37
+Yeah.
+
+System Audio: 
+00:22-00:31
+I was thinking, I mean, we clearly haven't reached any kind of conclusion, and I guess the meeting
+
+System Audio: 
+00:31-00:39
+ended because we had used up the allocated time, but I felt that it was quite an interesting
+
+Microphone: 
+00:37-00:37
+Yeah.
+
+Microphone: 
+00:37-00:42
+Yeah, no, true.
+
+System Audio: 
+00:39-00:50
+discussion and probably needed to come back.
+
+Microphone: 
+00:42-00:48
+I think when I was working on it, I also came to, okay, this is not going to fit in one meeting.
+
+Microphone: 
+00:48-00:59
+And maybe also, that's why I said, okay, instead of this being enough to say, okay, I'm now ready to design a landing page.
+
+System Audio: 
+00:50-00:57
+Yep.
+
+System Audio: 
+00:57-01:17
+Yep.
+
+Microphone: 
+00:59-01:00
+Okay.
+
+Microphone: 
+01:00-01:03
+Either we do another internal or maybe both.
+
+Microphone: 
+01:03-01:06
+We do some other internal meeting, but it would also be good.
+
+Microphone: 
+01:06-01:12
+I think Dan was keen of talking to people externally, but my question is, okay, what do we talk to them about?
+
+Microphone: 
+01:12-01:16
+And I think that was, this meeting was quite helpful for that.
+
+Microphone: 
+01:16-01:17
+But yeah.
+
+Microphone: 
+01:17-01:21
+Yeah.
+
+System Audio: 
+01:17-01:24
+Yep.
+
+Microphone: 
+01:21-01:31
+No, it was also like this three pathways was kind of, I think I came up with that Friday that says, okay.
+
+System Audio: 
+01:24-01:31
+Yep.
+
+System Audio: 
+01:31-01:38
+Yep.
+
+Microphone: 
+01:31-01:38
+After talking to you and Boris, because the first four people kind of quite helped us like, okay, this is smooth sailing.
+
+System Audio: 
+01:38-02:05
+Mm-hmm.
+
+Microphone: 
+01:38-01:43
+And then Boris had a very different, like, oh yeah, I've been building all those things and I find it amazing.
+
+Microphone: 
+01:43-01:47
+And it has replaced so many little helper tools for me.
+
+Microphone: 
+01:47-02:04
+And I think from what I understood from Daniel, some of the trade-offs in NodeScripts are that it's like, it looks a lot like integration, but you can do some things that
+you wouldn't really design into a pure integration platform.
+
+Microphone: 
+02:04-02:10
+And that comes from some of Boris more universal approach to computing development platform.
+
+System Audio: 
+02:05-02:12
+Yeah, yeah, yeah.
+
+Microphone: 
+02:10-02:21
+And I think the thought with you really highlight is like, yeah, but we also like selling this platform is also an important part of the platform.
+
+System Audio: 
+02:12-02:19
+Yeah.
+
+System Audio: 
+02:19-02:26
+Yeah, yeah, yeah.
+
+Microphone: 
+02:21-02:41
+And then you, I could not, I could not take that, that cannot be independent from what the platform is like to an extent, but integrating those two would make everyone's
+life a lot easier that whatever we do is aligned with however we want to sell it.
+
+System Audio: 
+02:26-02:47
+Yeah, yeah, yeah, yeah.
+
+Microphone: 
+02:41-02:44
+So that's kind of how the third route came in.
+
+Microphone: 
+02:44-02:57
+Yeah.
+
+System Audio: 
+02:47-02:55
+I get the impression that we're better at saying what it isn't than what it is.
+
+System Audio: 
+02:55-03:05
+Yeah, yeah.
+
+Microphone: 
+02:57-03:05
+And it was also like talking to like, so Christelle and Matt were kind of easy.
+
+System Audio: 
+03:05-03:07
+Yeah.
+
+Microphone: 
+03:05-03:08
+Like I was like, have you built any side projects?
+
+System Audio: 
+03:07-03:11
+Yeah.
+
+Microphone: 
+03:08-03:10
+And I was like, yeah, they show some lovely side projects.
+
+Microphone: 
+03:10-03:14
+I asked Daniel and I was like, eh, no, not really.
+
+System Audio: 
+03:11-03:34
+They definitely it definitely doesn't replace everything I think you do you do you have to do
+
+Microphone: 
+03:14-03:17
+And so that's why I got, okay.
+
+Microphone: 
+03:17-03:25
+It is, it is still, it's okay at some things, but it's not so great that people love to use it for all kinds of things.
+
+Microphone: 
+03:25-03:32
+And yeah, which is, which is fine.
+
+Microphone: 
+03:32-03:37
+Yeah.
+
+System Audio: 
+03:34-03:38
+one thing really well that's that that's the saying isn't it I mean it's not particularly
+
+Microphone: 
+03:37-03:38
+Yeah.
+
+Microphone: 
+03:38-03:39
+Yeah.
+
+System Audio: 
+03:38-03:40
+complicated you don't need to do everything
+
+Microphone: 
+03:39-03:52
+Well, and I think what, what I kind of also got this debt, maybe also from Matt to it, it's like, and what you also mentioned, like, it is a really nice service to, if you
+have an idea, you put a few things together, you get it up and running.
+
+System Audio: 
+03:40-04:10
+Thank you.
+
+Microphone: 
+03:52-03:57
+You start to learn, you start to learn, like what is in these APIs, how can I connect them.
+
+Microphone: 
+03:57-04:06
+And then maybe you decide, okay, what is the right platform structure to build things properly so that it's kind of, I can maintain it.
+
+Microphone: 
+04:06-04:08
+We can work on it with multiple people, et cetera.
+
+Microphone: 
+04:08-04:09
+Yeah.
+
+Microphone: 
+04:09-04:21
+But, and that seems, but yeah, so that's, that is one also another design research angle that's a, okay, let's see those things that people say it's very good at.
+
+System Audio: 
+04:10-04:40
+Thank you.
+
+Microphone: 
+04:21-04:35
+See if we can actually just make the UI of that even better, like the preview APIs or, or actually search for modules that at least these are what you say, prototype,
+publish, get it up and running.
+
+Microphone: 
+04:35-04:43
+If that flow is like super smooth, then maybe other things don't need to have to be so smooth and we can allocate the time a little bit better.
+
+System Audio: 
+04:40-04:45
+Yeah, yeah, yeah.
+
+Microphone: 
+04:43-04:45
+So, let's see if we can actually take a little bit more.
+
+Microphone: 
+04:45-04:47
+So, let's see if we can actually take a little bit more.
+
+System Audio: 
+04:45-05:00
+Yeah, I just think that there's some things that are like, I said it in the call, but some things are just sort of obvious that we should do.
+
+Microphone: 
+04:47-04:49
+So, let's see if we can actually take a little bit more.
+
+Microphone: 
+04:49-04:51
+So, let's see if we can actually take a little bit more.
+
+Microphone: 
+04:51-04:53
+So, let's see if we can actually take a little bit more.
+
+Microphone: 
+04:53-04:55
+So, let's see if we can actually take a little bit more.
+
+Microphone: 
+04:55-04:57
+So, let's see if we can actually take a little bit more.
+
+Microphone: 
+04:57-04:59
+So, let's see if we can actually take a little bit more.
+
+Microphone: 
+04:59-05:01
+So, let's see if we can actually take a little bit more.
+
+System Audio: 
+05:00-05:10
+And whichever direction you take it in, you're going to need to do these things like, you know, better integration of AI, better integration of third party libraries,
+blah, blah, blah, blah, blah.
+
+Microphone: 
+05:01-05:03
+So, let's see if we can actually take a little bit more.
+
+Microphone: 
+05:03-05:05
+So, let's see if we can actually take a little bit more.
+
+Microphone: 
+05:05-05:07
+So, let's see if we can actually take a little bit more.
+
+Microphone: 
+05:07-05:15
+Yeah.
+
+System Audio: 
+05:10-05:14
+This stuff will have to do it regardless.
+
+System Audio: 
+05:14-05:16
+So that's, well...
+
+Microphone: 
+05:15-05:17
+Yeah.
+
+System Audio: 
+05:16-05:46
+Thank you.
+
+Microphone: 
+05:17-05:18
+Yeah.
+
+Microphone: 
+05:18-05:29
+That was so this weekend I searched on YouTube for AI agents and I think within the top 10 hits there was a guy who built some kind of Telegram bot with N8N.
+
+Microphone: 
+05:29-05:35
+And you can kind of see like, wow, it is really a struggle like to fight with N8N.
+
+Microphone: 
+05:35-05:37
+Like it is doable.
+
+Microphone: 
+05:37-05:46
+It's visual, but it also feels a bit of a mix of 90s ideas put on top of 2000 ideas and 2010 ideas on top of that.
+
+Microphone: 
+05:46-05:51
+But he had about 125,000 views and then already said like, yeah, reach out to him.
+
+System Audio: 
+05:46-05:47
+Thank you.
+
+System Audio: 
+05:47-06:17
+Thank you.
+
+Microphone: 
+05:51-05:58
+But, but still like there is an audience for a visual design platform that allows you to make a really simple bot.
+
+Microphone: 
+05:58-06:00
+And I think the video is about an hour long.
+
+Microphone: 
+06:00-06:06
+So, in an hour, people love to know this kind of stuff and we can really show it to them.
+
+Microphone: 
+06:06-06:10
+So, that's, so that kind of strengthened your point.
+
+Microphone: 
+06:10-06:16
+Like, yeah, there is a natural market for this people search for a solution to this.
+
+Microphone: 
+06:16-06:28
+Like this.
+
+System Audio: 
+06:17-06:18
+Thank you.
+
+System Audio: 
+06:18-06:22
+Yeah.
+
+System Audio: 
+06:22-06:34
+But does it help you with the messaging on the website?
+
+Microphone: 
+06:28-06:29
+Okay.
+
+Microphone: 
+06:29-06:41
+Um, well, yeah, so I can, let me see.
+
+System Audio: 
+06:34-06:38
+Well, I mean, what do we continue these?
+
+System Audio: 
+06:38-07:08
+Thank you.
+
+Microphone: 
+06:41-06:42
+Yes.
+
+Microphone: 
+06:42-06:57
+Um, but in two steps, um, like now I already thought the, or I'm just some high level thoughts, but like the, the website messaging is, is kind of follows.
+
+Microphone: 
+06:57-07:02
+Maybe these three, three case studies are on top of each other.
+
+Microphone: 
+07:02-07:05
+Um, we say, uh, node script.
+
+Microphone: 
+07:05-07:08
+You like is a platform developers.
+
+Microphone: 
+07:08-07:10
+Like it's a visual programming for developers.
+
+System Audio: 
+07:08-07:38
+Thank you.
+
+Microphone: 
+07:10-07:12
+I think that's, that's fair enough to say.
+
+Microphone: 
+07:12-07:19
+And then we'll say something like, and, and you'll love it for its integration and workflow automation capabilities.
+
+Microphone: 
+07:19-07:21
+That might be the first thing.
+
+Microphone: 
+07:21-07:24
+The second is like, and it's super good to build AI.
+
+Microphone: 
+07:24-07:31
+Uh, well, you say AI orchestration, uh, um, AI agents is probably the buzzword.
+
+Microphone: 
+07:31-07:37
+And then we need to have some evidence that one already you built with slack, but few pieces of evidence.
+
+Microphone: 
+07:37-07:42
+And then the third one is like, and it scales much further than you could ever imagine.
+
+System Audio: 
+07:38-08:08
+Thank you.
+
+Microphone: 
+07:42-07:45
+And then we have something of the UBL power.
+
+Microphone: 
+07:45-07:48
+And I think that's like, then we have.
+
+Microphone: 
+07:48-07:55
+Amplified all, well, except for the AI thing, but the other two is the things where that we are naturally good at.
+
+Microphone: 
+07:55-08:02
+And this company is also quite unique that it's slightly more for developers and that it will just run on much larger scale.
+
+Microphone: 
+08:02-08:04
+And then we only have to make the middle part.
+
+Microphone: 
+08:04-08:10
+Um, but yeah, so I have, I was going to share some visual.
+
+System Audio: 
+08:08-08:38
+Thank you.
+
+Microphone: 
+08:10-08:17
+And I already shared it.
+
+Microphone: 
+08:17-08:26
+It is once, but since it, it has been reasonably helpful for me to, uh, think about my own thing, the screen a little bit smaller.
+
+Microphone: 
+08:26-08:31
+I, I, how to design a start, how to design a startup.
+
+Microphone: 
+08:31-08:37
+And I think we're now indeed on, in the, oh, this is actually more what I'm thinking in next steps, but.
+
+Microphone: 
+08:37-08:40
+So now we're at the incoming traffic bar part.
+
+System Audio: 
+08:38-09:08
+Thank you.
+
+Microphone: 
+08:40-08:44
+And I think there, uh, this USB is a, is a good thing to have.
+
+Microphone: 
+08:44-08:46
+And I think we're getting there.
+
+Microphone: 
+08:46-08:49
+Maybe given another week of wrestling with that.
+
+Microphone: 
+08:49-08:55
+And then I think now what we're already doing is around this activating and active users.
+
+Microphone: 
+08:55-08:58
+that's what, uh, the, the, the content writing part is around.
+
+Microphone: 
+08:58-09:03
+And I think there also needs to be a piece of UI design that we can capture that too.
+
+Microphone: 
+09:03-09:07
+And then I thought like active users and power users.
+
+Microphone: 
+09:07-09:13
+it is kind of what we may be already discussed is the first part, like what people already like about it.
+
+System Audio: 
+09:08-09:38
+Thank you.
+
+Microphone: 
+09:13-09:15
+Let's make that really good.
+
+Microphone: 
+09:15-09:17
+So that their core use cases.
+
+Microphone: 
+09:17-09:28
+That it becomes more and more obvious that no script is the place where you quickly, um, set up, um, some kind of integration API exploration, get it up and running.
+
+Microphone: 
+09:28-09:30
+Um, tweak it.
+
+Microphone: 
+09:30-09:33
+And then I guess the last phase is okay.
+
+Microphone: 
+09:33-09:42
+It is really nice for the things we say is really nice about, and then I don't know if it's going to be our credits, but how do we get people to.
+
+System Audio: 
+09:38-10:08
+Thank you.
+
+Microphone: 
+09:42-09:51
+Um, have things that run to such an extent that they start to burn through credits so that they will switch to paid users.
+
+Microphone: 
+09:51-10:07
+Maybe that's, that's the part that does not follow magically from, from this yet, but, um, yeah, now that I'm thinking about like if developers love it for small tasks,
+they will not necessarily love it for AI integrations, but.
+
+Microphone: 
+10:07-10:14
+I would actually assume so your slack bot that does use a decent amount of credits, I assume or not.
+
+System Audio: 
+10:08-10:38
+Thank you.
+
+Microphone: 
+10:14-10:25
+Oh, you would have, you would have to pay for it if it's working.
+
+Microphone: 
+10:25-10:36
+Yeah.
+
+Microphone: 
+10:36-10:37
+Okay.
+
+Microphone: 
+10:37-10:39
+Okay.
+
+System Audio: 
+10:38-10:40
+Thank you.
+
+Microphone: 
+10:39-10:40
+Yeah.
+
+Microphone: 
+10:40-10:50
+Yeah.
+
+System Audio: 
+10:40-10:40
+Thank you.
+
+System Audio: 
+10:40-10:42
+Thank you.
+
+System Audio: 
+10:42-10:42
+Thank you.
+
+System Audio: 
+10:42-10:42
+Thank you.
+
+System Audio: 
+10:42-10:51
+and we provide 10 000 seconds of free time per month which is three hours of sort of processing
+
+Microphone: 
+10:50-10:57
+Yeah.
+
+System Audio: 
+10:51-11:05
+time so it will eat them up but i mean the intention is not purposely to eat up all the credit
+
+Microphone: 
+10:57-10:57
+Yeah.
+
+Microphone: 
+10:57-10:58
+No, no, no.
+
+Microphone: 
+10:58-11:04
+It's more like if, if we extrapolate from this idea that people can make AI orchestrations super easy in here.
+
+Microphone: 
+11:04-11:08
+Will that burn enough credits that we get to paid users.
+
+System Audio: 
+11:05-11:19
+so
+
+Microphone: 
+11:08-11:10
+But I think like, uh, it's maybe a later problem.
+
+Microphone: 
+11:10-11:15
+If we have active users who build all kinds of stuff, monetizing them.
+
+Microphone: 
+11:15-11:19
+Um, well, like you, we can always say like, okay, you get 1,000 free credits.
+
+Microphone: 
+11:19-11:22
+Like it doesn't really matter too much.
+
+System Audio: 
+11:19-11:27
+i think that yeah that's the secondary thing i mean if people actually find it useful then
+
+Microphone: 
+11:22-11:23
+Um, yeah.
+
+Microphone: 
+11:23-11:24
+Um, yeah.
+
+Microphone: 
+11:24-11:25
+Yeah.
+
+Microphone: 
+11:25-11:26
+Yeah.
+
+Microphone: 
+11:26-11:30
+And I think like, cause my question in here was also like, sure.
+
+System Audio: 
+11:27-11:32
+they should pay for it and if it's still free then your pricing model is probably wrong
+
+Microphone: 
+11:30-11:45
+it's good to talk about, to talk to external devs, but then about what am I talking to them about?
+
+System Audio: 
+11:33-11:38
+um but let's worry about that later um
+
+System Audio: 
+11:38-11:43
+you
+
+System Audio: 
+11:43-11:43
+you
+
+System Audio: 
+11:43-11:43
+you
+
+System Audio: 
+11:43-11:43
+you
+
+System Audio: 
+11:43-11:43
+you
+
+System Audio: 
+11:43-11:43
+you
+
+System Audio: 
+11:43-11:48
+you
+
+Microphone: 
+11:45-12:00
+And now I think actually having them talk us through, um, how they now quickly prototype things and what things they found, how, and if they actually make their own AI
+things.
+
+System Audio: 
+11:48-11:48
+you
+
+System Audio: 
+11:48-11:48
+you
+
+System Audio: 
+11:48-11:50
+you
+
+System Audio: 
+11:50-11:52
+you
+
+System Audio: 
+11:52-12:02
+you
+
+Microphone: 
+12:00-12:05
+And probably around how they deal with like scaling software so that we hit the tree.
+
+System Audio: 
+12:02-12:05
+Mm-hmm.
+
+System Audio: 
+12:05-12:34
+Mm-hmm.
+
+Microphone: 
+12:05-12:06
+And no trip.
+
+Microphone: 
+12:06-12:20
+Um, would give me at least some background knowledge in, into what kind of landscape we try to integrate node script.
+
+Microphone: 
+12:20-12:25
+And that would also be then the counter part to the landing page.
+
+Microphone: 
+12:25-12:28
+Like, are you also constantly struggling with X?
+
+Microphone: 
+12:28-12:30
+Try node trip because you will love.
+
+Microphone: 
+12:30-12:46
+Um, that needs a little bit of more work, but I think that would be, uh, would make it possible to at least make, um, I don't know, a prototype, uh, or an MVP landing page
+that we can then test.
+
+System Audio: 
+12:34-13:04
+Mm-hmm.
+
+Microphone: 
+12:46-12:50
+If this isn't a message that really, um, aligns.
+
+Microphone: 
+12:50-12:55
+And I think there is also some work for Norman probably too.
+
+Microphone: 
+12:55-12:58
+I think that is what I also felt with this work.
+
+Microphone: 
+12:58-13:07
+I'm both stepping into the dense space of like product definition and I'm stepping into my Norman's space marketing.
+
+System Audio: 
+13:04-13:15
+Mm-hmm.
+
+Microphone: 
+13:07-13:11
+But then from what I understood from Norman, like he is about 10% of his time.
+
+Microphone: 
+13:11-13:14
+he's kind of as available for no trip and 90% not.
+
+Microphone: 
+13:14-13:20
+So I don't think he's too concerned with us doing too much marketing for him.
+
+System Audio: 
+13:15-13:20
+Mm-hmm.
+
+Microphone: 
+13:20-13:28
+And I, I don't think with Dan too, like from what I see is like dense nature is not making slide decks.
+
+System Audio: 
+13:20-13:22
+Yeah, yeah.
+
+System Audio: 
+13:22-13:38
+Yeah.
+
+Microphone: 
+13:28-13:33
+So I'm sure he's pretty happy with me picking up that part too.
+
+Microphone: 
+13:33-13:35
+So that's, uh, yeah.
+
+Microphone: 
+13:35-13:36
+Yeah.
+
+Microphone: 
+13:36-13:37
+Yeah.
+
+Microphone: 
+13:37-13:48
+And I guess for me, it's a bit of a, as a designer, like I was thinking also, how did I end up here?
+
+System Audio: 
+13:38-14:08
+Thank you.
+
+Microphone: 
+13:48-13:50
+But this is something I've done.
+
+Microphone: 
+13:50-13:54
+Uh, I guess this is a little bit, and I have to be careful with this.
+
+Microphone: 
+13:54-13:58
+Like, okay, this is kind of what designers do in a corporate setting.
+
+Microphone: 
+13:58-14:00
+You do research, you make slide decks.
+
+Microphone: 
+14:00-14:07
+And I think the next step will of course be again, and then you build UI and you make user flows easier.
+
+Microphone: 
+14:07-14:15
+But yeah, for me, at least it has been useful to start a little bit in like, okay, for what am I optimizing?
+
+System Audio: 
+14:08-14:38
+Thank you.
+
+Microphone: 
+14:15-14:19
+And I think this starts to help answering that question.
+
+Microphone: 
+14:19-14:24
+And I think personally, I just, I quite like slide decks.
+
+Microphone: 
+14:24-14:28
+If you design them well, then they are like a, it's almost like a building block.
+
+Microphone: 
+14:28-14:30
+You can just save them on Google drive.
+
+Microphone: 
+14:30-14:36
+And if you ever want to know something you open it, it's like, oh yeah, that was my opinion on this thing.
+
+Microphone: 
+14:36-14:55
+And, uh, yeah, for me, it's like, it's a, it's, it's, it's a more stable point or a unit of information that you, if you do it well, you can kind of click through, um, and get
+a bit of a, a gist of what people were thinking about a year ago or something.
+
+System Audio: 
+14:38-15:08
+Thank you.
+
+Microphone: 
+14:55-15:00
+Yeah.
+
+Microphone: 
+15:00-15:01
+Yeah.
+
+Microphone: 
+15:01-15:06
+And it was, it was at least.
+
+Microphone: 
+15:06-15:08
+I had, I had good fun building it.
+
+Microphone: 
+15:08-15:13
+Um, mm-hmm.
+
+System Audio: 
+15:08-15:38
+Thank you.
+
+Microphone: 
+15:13-15:18
+I was trying like, I used, uh, both, uh, Claude, uh, to summarize the interviews.
+
+Microphone: 
+15:18-15:29
+And then later on chat GPT to kind of build this deck, because Claude just has this half an hour or like 15 question limit that started to be really annoying.
+
+Microphone: 
+15:29-15:32
+And then the last, uh, insight I had that said, okay.
+
+Microphone: 
+15:32-15:39
+I asked chat GPT, like come up with as many emojis you can think about to kind of visualize the slide deck.
+
+System Audio: 
+15:38-15:58
+Thank you.
+
+Microphone: 
+15:39-15:41
+And so I got some of those.
+
+Microphone: 
+15:41-15:43
+Um, yeah.
+
+Microphone: 
+15:43-15:44
+Um, yeah.
+
+Microphone: 
+15:44-15:48
+So that was kind of, she says, where are my two weeks in January?
+
+Microphone: 
+15:48-15:53
+And I think the second, now my next thing in here is definitely around, okay.
+
+Microphone: 
+15:53-15:57
+Speed do around us talking to external users again.
+
+Microphone: 
+15:57-15:59
+And I think then, then we have a very stable.
+
+System Audio: 
+15:58-16:28
+Thank you.
+
+Microphone: 
+15:59-16:12
+a stable moment in time on which we can kind of base or partly also then base what we're doing for the next half a year in which direction.
+
+Microphone: 
+16:12-16:23
+Um, at least it's enough clarity for me to start working on or continue or, or it's not just really the landing page, but it's like, okay.
+
+Microphone: 
+16:23-16:32
+Um, I think that's a clear landing page then also allows me to, um, to kind of see where in the UI can I make biggest impact.
+
+System Audio: 
+16:28-16:58
+Thank you.
+
+Microphone: 
+16:32-16:36
+And I think that's ages ago, I came across this formula.
+
+Microphone: 
+16:36-16:40
+It's called the top task methodology, which is what it says.
+
+Microphone: 
+16:40-16:49
+Like there's about a thousand things you can do in node script, but you can kind of also prioritize those into the things that people do most often.
+
+Microphone: 
+16:49-16:53
+Um, which is probably like, but Boris has been working on a lot already.
+
+Microphone: 
+16:53-17:05
+Is this a quick ad for nodes, but also preview for, um, for what is in an API dose and publish like those three things probably just have to look really nice.
+
+System Audio: 
+16:58-17:28
+Thank you.
+
+Microphone: 
+17:05-17:18
+And me working on those, I will make the biggest impact in getting node script feel at least very fast and quick, um, for the time that I spend on it.
+
+Microphone: 
+17:18-17:23
+Um, cause that's actually, that's another challenge.
+
+Microphone: 
+17:23-17:28
+There's some challenge coming up on the amount of projects, but it is still okay.
+
+System Audio: 
+17:28-17:58
+Thank you.
+
+Microphone: 
+17:28-17:38
+Um, like now, I think Mihaela also asked me to be in some meeting for, um, what was it called?
+
+Microphone: 
+17:38-17:41
+Uh, matching and duplicates for hotels.
+
+Microphone: 
+17:41-17:43
+So that is one.
+
+Microphone: 
+17:43-17:46
+I think I now pause my involvement in the recruitment.
+
+Microphone: 
+17:46-17:54
+Uh, I'm still having one-to-ones with Alisa on like, I think she actually does a nice job on keeping the demo moving.
+
+Microphone: 
+17:54-17:57
+So that's, that is a, one more project.
+
+Microphone: 
+17:57-18:03
+Um, I think I also for no script, I'd like to do a little bit more around analytics that that is clear.
+
+System Audio: 
+17:58-18:28
+Thank you.
+
+Microphone: 
+18:03-18:17
+Um, but yeah, I think what we discussed maybe last time and the time before, I can kind of run for like, in a way I'm running four different projects parallel, but.
+
+Microphone: 
+18:17-18:22
+No, none of them take like days and days to work on.
+
+Microphone: 
+18:22-18:32
+So it's the, the, the challenge in being the individual contributor and head of design in one part.
+
+System Audio: 
+18:28-18:58
+Thank you.
+
+Microphone: 
+18:32-18:35
+It's like, uh, it's fun.
+
+Microphone: 
+18:35-18:36
+Yeah.
+
+Microphone: 
+18:36-18:44
+Uh, I think, yeah, we all have that problem in some way, but yeah, good.
+
+Microphone: 
+18:44-18:45
+I am.
+
+Microphone: 
+18:45-18:47
+Well, you probably already know it is.
+
+Microphone: 
+18:47-18:49
+I've been hearing some, a lot of rumors around that.
+
+Microphone: 
+18:49-18:54
+We might see some of us, uh, being in a function of head of product soon, but.
+
+Microphone: 
+18:54-18:55
+I don't know.
+
+Microphone: 
+18:55-18:56
+Okay.
+
+Microphone: 
+18:56-18:57
+Good.
+
+Microphone: 
+18:57-18:58
+Then I'll, I'll wait for it.
+
+System Audio: 
+18:58-19:28
+Thank you.
+
+Microphone: 
+18:58-19:12
+Um, but yeah, no, I'll, um, we'll see.
+
+Microphone: 
+19:12-19:14
+I think it's, it is.
+
+Microphone: 
+19:14-19:15
+I don't know.
+
+Microphone: 
+19:15-19:16
+It's next week.
+
+Microphone: 
+19:16-19:19
+Our, uh, town hall, but I don't know.
+
+Microphone: 
+19:19-19:23
+Talking with me, me around this about what.
+
+Microphone: 
+19:23-19:27
+Oh, okay.
+
+Microphone: 
+19:27-19:29
+That's why it was, uh, was fun.
+
+System Audio: 
+19:28-19:58
+Thank you.
+
+Microphone: 
+19:29-19:30
+I see.
+
+Microphone: 
+19:30-19:38
+Yeah.
+
+Microphone: 
+19:38-19:39
+Okay.
+
+Microphone: 
+19:39-19:43
+Yeah.
+
+Microphone: 
+19:43-20:06
+And data products is what delivers like X, uh, or insights.
+
+System Audio: 
+19:58-20:00
+Thank you.
+
+System Audio: 
+20:00-20:30
+Thank you.
+
+Microphone: 
+20:06-20:09
+I think Johnny once mentioned, but like, is that it?
+
+Microphone: 
+20:09-20:11
+Or what, what is the, what is.
+
+Microphone: 
+20:11-20:12
+Okay.
+
+Microphone: 
+20:12-20:37
+Yeah.
+
+System Audio: 
+20:30-20:32
+Thank you.
+
+System Audio: 
+20:32-20:32
+Thank you.
+
+System Audio: 
+20:32-20:34
+Thank you.
+
+System Audio: 
+20:34-20:34
+Thank you.
+
+System Audio: 
+20:34-20:34
+Thank you.
+
+System Audio: 
+20:34-20:34
+Thank you.
+
+System Audio: 
+20:34-20:51
+data all in one place yeah i mean we so we sold it to ota so that they can basically do comparison
+
+Microphone: 
+20:40-20:44
+And we put, we put some of our data in there and then have it straight.
+
+Microphone: 
+20:44-20:52
+Okay.
+
+System Audio: 
+20:51-21:00
+with other ota's which is kind of useful
+
+Microphone: 
+20:52-20:52
+Yeah.
+
+Microphone: 
+20:52-20:55
+Yeah.
+
+Microphone: 
+20:55-20:59
+And what were you thinking?
+
+Microphone: 
+20:59-21:06
+Cause that's what you are probably not in the business plan, but like all those other scraping services, like how no.
+
+System Audio: 
+21:00-21:26
+yeah well that's another question i always one thought i have from time to time is
+
+Microphone: 
+21:07-21:14
+Like, this is a hard question of where do you focus on like so many layers, you know, tech stack, we could white label and turn into a product.
+
+Microphone: 
+21:14-21:16
+Um, again,
+
+Microphone: 
+21:16-21:39
+oh yeah like the one you shared
+
+System Audio: 
+21:27-21:31
+whether we should just sort of white label the web automation capability itself
+
+System Audio: 
+21:31-21:36
+because there is a few of these services around and they sell access to web browsers
+
+System Audio: 
+21:36-21:45
+you got that that powers our um you know all of the automation that we do and a lot of it's just
+
+Microphone: 
+21:39-21:47
+yeah
+
+System Audio: 
+21:45-21:50
+sitting there doing nothing you know sell it and we could just sell it for half the price of everyone
+
+Microphone: 
+21:47-21:52
+yeah
+
+System Audio: 
+21:50-21:57
+else but i suppose this this is the thing right we need to have focus on what we spend our time
+
+Microphone: 
+21:52-21:56
+yeah
+
+Microphone: 
+21:56-22:00
+yeah
+
+System Audio: 
+21:57-22:00
+on otherwise we don't have too many unfinished projects
+
+System Audio: 
+22:00-22:07
+but yeah yeah
+
+Microphone: 
+22:00-22:02
+yeah this would be the
+
+Microphone: 
+22:02-22:04
+the amazon web services path
+
+Microphone: 
+22:04-22:06
+and how they brought that into life
+
+Microphone: 
+22:06-22:08
+like well it would work
+
+System Audio: 
+22:07-22:15
+yeah
+
+Microphone: 
+22:08-22:10
+works for us might as well
+
+Microphone: 
+22:10-22:11
+yeah
+
+Microphone: 
+22:11-22:13
+very cool
+
+Microphone: 
+22:13-22:15
+so i think
+
+System Audio: 
+22:15-22:15
+yeah
+
+System Audio: 
+22:15-22:31
+yeah yeah yeah exactly yeah and then i'm always tinkering with the ai powered automation
+
+Microphone: 
+22:15-22:18
+i assume that is also the one thing you've been
+
+Microphone: 
+22:18-22:20
+working on mainly on
+
+Microphone: 
+22:20-22:22
+the last week on the business plan
+
+System Audio: 
+22:32-22:40
+i just think this ai thing is incredibly important not to miss um because
+
+Microphone: 
+22:38-22:38
+yeah
+
+Microphone: 
+22:38-23:07
+yeah yeah that is yeah i've started to have now switch my audible books are also to books books on
+
+System Audio: 
+22:40-22:51
+there's probably room for a lot of new solutions in the market i mean that's why i i am kind of
+
+System Audio: 
+22:53-23:10
+obsessed with the positioning of gum glue for the moment because i think they're onto something you
+
+Microphone: 
+23:07-23:11
+now i'm listening to the the childhood of sam eltman
+
+System Audio: 
+23:10-23:10
+you
+
+System Audio: 
+23:10-23:10
+you
+
+System Audio: 
+23:10-23:10
+you
+
+System Audio: 
+23:10-23:32
+yeah yeah yeah exactly it's actually useful
+
+Microphone: 
+23:11-23:28
+but i i'm with you there that like ai is a piece of technology that is very different to crypto or nfts like this is a year from now this is not going to disappear if i just see
+how easily it fits into my life
+
+Microphone: 
+23:28-23:39
+yeah and that this is at least as big as like the switch to mobile and maybe even as big as
+
+System Audio: 
+23:32-24:02
+Thank you.
+
+Microphone: 
+23:39-23:49
+the switch to i don't know database or something that that this is yeah it's just kind of how
+
+Microphone: 
+23:49-23:58
+quickly is this um because i was talking to den about it's like you don't go to node script to do
+
+Microphone: 
+23:58-24:04
+a bit of ai like you you want to do something else and obviously you're going to put ai in there
+
+System Audio: 
+24:02-24:32
+Thank you.
+
+Microphone: 
+24:04-24:12
+and obviously you look for a platform where that is all i got first rate customer built in or
+
+Microphone: 
+24:12-24:20
+and i think what boris also says like yeah the initial of node script it was two years ago
+
+Microphone: 
+24:20-24:26
+completely different world then and in a way we kind of run the risk that we already disrupted
+
+Microphone: 
+24:26-24:32
+one and a half year in by people who have started on slightly different preconditions and that's
+
+System Audio: 
+24:32-24:34
+Well, exactly.
+
+Microphone: 
+24:32-24:38
+yeah
+
+System Audio: 
+24:34-24:35
+Exactly.
+
+System Audio: 
+24:35-24:45
+That's why it's almost always sort of important to do a lot of reflection.
+
+Microphone: 
+24:38-24:40
+yeah
+
+Microphone: 
+24:40-25:01
+and not get too sidetracked with whatever a team would love to love to have in this product
+
+System Audio: 
+24:48-24:53
+Not get, not get to not sort of fall in love with your own product too much.
+
+System Audio: 
+24:53-25:03
+Yeah, yeah, yeah, exactly.
+
+Microphone: 
+25:01-25:07
+um
+
+System Audio: 
+25:03-25:05
+You need to be looking forward, not sort of inward.
+
+System Audio: 
+25:05-25:26
+Yeah, yeah, yeah, exactly.
+
+Microphone: 
+25:07-25:07
+yeah
+
+Microphone: 
+25:07-25:07
+yeah
+
+Microphone: 
+25:07-25:13
+yeah no that's why i collect your your uh what you say gum loop on the one hand and i
+
+Microphone: 
+25:13-25:19
+saw that like i think one and a half two years ago i look at the trade.io too and i think they're
+
+Microphone: 
+25:19-25:25
+much more enterprise and then they rebranded themselves through to trade.ai which i thought
+
+Microphone: 
+25:25-25:31
+but but yeah
+
+System Audio: 
+25:26-25:26
+But it makes sense.
+
+System Audio: 
+25:26-25:32
+But although I, to me, it seems sort of...
+
+Microphone: 
+25:31-25:33
+yeah
+
+Microphone: 
+25:33-25:35
+yeah
+
+Microphone: 
+25:35-25:41
+and i feel like we fit somewhere in the middle like we are a nice tool for individual developers to build
+
+System Audio: 
+25:35-25:58
+The interesting thing about Trey is they're like, they're very much sort of enterprise focused.
+
+Microphone: 
+25:41-25:47
+all kinds of stuff on um but still with the power that you as developer want without the complexity of
+
+Microphone: 
+25:47-25:53
+complexity of maybe running an enterprise that the tray is aiming for then
+
+Microphone: 
+25:53-26:03
+yeah
+
+System Audio: 
+26:01-26:07
+You can kind of see just the way they talk about things on the website and their customers
+
+Microphone: 
+26:03-26:03
+yeah
+
+Microphone: 
+26:03-26:13
+yeah like you can't even sign up for free anymore i think or at least they they push you through the demo
+
+System Audio: 
+26:07-26:07
+and things like that.
+
+System Audio: 
+26:07-26:11
+Yeah.
+
+System Audio: 
+26:11-26:16
+What's the trial?
+
+Microphone: 
+26:13-26:21
+funnel really harshly
+
+System Audio: 
+26:16-26:18
+Yeah.
+
+System Audio: 
+26:18-26:21
+And then you give, you have to give them your phone number and stuff.
+
+System Audio: 
+26:21-26:23
+So someone's going to be rather upsetting.
+
+Microphone: 
+26:21-26:21
+yeah
+
+Microphone: 
+26:21-26:23
+yeah
+
+System Audio: 
+26:23-26:24
+Yeah.
+
+Microphone: 
+26:23-26:29
+so that's why i was all saying okay enterprise sales is not going to be the node script direction
+
+System Audio: 
+26:24-26:33
+Yeah.
+
+Microphone: 
+26:29-26:43
+going to be the the node script direction
+
+System Audio: 
+26:33-26:35
+Yeah.
+
+System Audio: 
+26:35-26:35
+Yeah.
+
+System Audio: 
+26:35-26:42
+But I think that they are a reasonably successful company.
+
+System Audio: 
+26:42-26:50
+And so we can learn and we need to sort of be humble enough to, you know, to sort of see the
+
+Microphone: 
+26:43-26:47
+yeah
+
+Microphone: 
+26:47-26:52
+yeah
+
+System Audio: 
+26:50-26:54
+other companies have, have done things better than us in some ways.
+
+Microphone: 
+26:52-26:53
+yeah
+
+Microphone: 
+26:53-26:55
+yeah
+
+System Audio: 
+26:54-26:54
+So.
+
+System Audio: 
+26:54-27:08
+Yeah.
+
+Microphone: 
+26:55-27:00
+yeah no i think your question is almost like okay let's see that node script stays roughly the same
+
+Microphone: 
+27:00-27:11
+ui wise but how would these ai what would it mean to make ai super easy to use like is that that you can
+
+System Audio: 
+27:08-27:08
+Yeah.
+
+System Audio: 
+27:08-27:31
+Do you remember this one?
+
+Microphone: 
+27:11-27:17
+just have what you already mentioned but like maybe you can run chat gpt for free for an amount of calls or
+
+Microphone: 
+27:18-27:25
+or you have these libraries that that are really great um to use that's probably more of the question
+
+Microphone: 
+27:25-27:38
+what do we do there in a node script
+
+System Audio: 
+27:31-27:47
+Click on that link. This is my kind of chatbot that I made powered by NodeScript.
+
+Microphone: 
+27:38-27:48
+what do we do there in a node script uh yeah
+
+System Audio: 
+27:47-27:53
+And you know, at some point we were going to build it into the platform
+
+Microphone: 
+27:48-27:48
+what do we do there in a node script uh yeah
+
+Microphone: 
+27:48-27:50
+what do we do there in a node script uh yeah
+
+Microphone: 
+27:50-27:50
+what do we do there in a node script uh yeah
+
+Microphone: 
+27:50-27:51
+what do we do there in a node script uh yeah
+
+Microphone: 
+27:51-27:52
+what do we do there in a node script uh yeah
+
+Microphone: 
+27:52-27:52
+what do we do there in a node script uh yeah
+
+Microphone: 
+27:52-27:52
+what do we do there in a node script uh yeah
+
+Microphone: 
+27:52-27:54
+what do we do there in a node script uh yeah
+
+System Audio: 
+27:53-27:59
+as a feature. So it would be just a tab called chat and then you just, you can just chat to your
+
+Microphone: 
+27:54-27:57
+what do we do there in a node script uh yeah
+
+Microphone: 
+27:57-27:58
+what do we do there in a node script uh yeah
+
+Microphone: 
+27:58-28:00
+what do we do there in a node script uh yeah
+
+System Audio: 
+27:59-28:07
+workspace. But then it kind of got forgotten about. But it's another one of those things. It could be
+
+Microphone: 
+28:00-28:00
+what do we do there in a node script uh yeah
+
+Microphone: 
+28:00-28:02
+what do we do there in a node script uh yeah
+
+Microphone: 
+28:02-28:04
+what do we do there in a node script uh yeah
+
+Microphone: 
+28:04-28:04
+what do we do there in a node script uh yeah
+
+Microphone: 
+28:04-28:20
+what do we do there in a node script uh yeah
+
+System Audio: 
+28:07-28:16
+an actual useful tool or a useful feature. We need to sort of find what it is.
+
+System Audio: 
+28:16-28:19
+We need to find something to sort of hook people in.
+
+Microphone: 
+28:20-28:20
+yeah
+
+Microphone: 
+28:20-28:29
+yeah
+
+System Audio: 
+28:24-28:31
+And I don't know what it might be, but we need to try a few things. I like this one. I mean,
+
+Microphone: 
+28:29-28:29
+yeah
+
+Microphone: 
+28:29-28:29
+yeah
+
+Microphone: 
+28:29-28:31
+yeah yeah
+
+System Audio: 
+28:31-28:36
+this is pretty similar to the Slack. AI stuff, to be honest, it's just a different content to the
+
+Microphone: 
+28:31-28:43
+yeah
+
+System Audio: 
+28:36-28:44
+same kind of thing. But it's an agent. I mean, it's truly an agent. You give it capabilities,
+
+Microphone: 
+28:43-28:43
+yeah
+
+Microphone: 
+28:43-28:56
+because what what kind of tools can i reach with this uh
+
+System Audio: 
+28:44-28:49
+it can then answer questions and use those tools to do stuff.
+
+System Audio: 
+28:49-29:03
+This one is fantasy football. So you can ask the team and it can look stuff up.
+
+Microphone: 
+28:56-29:00
+oh yeah yeah now i remember
+
+Microphone: 
+29:00-29:09
+yeah because i asked it to make pancakes and it also can give me a recipe for pancakes
+
+System Audio: 
+29:08-29:19
+You can see it's got the chat.gbt functionality built in. So, so there's that.
+
+Microphone: 
+29:09-29:12
+yeah
+
+Microphone: 
+29:12-29:20
+so it's like it's like why did this exist again but yeah fantasy football no i remember actually oh yeah
+
+Microphone: 
+29:20-29:26
+i remember i got completely to the end by it also uh proposing to me what kind of footballers even
+
+Microphone: 
+29:26-29:38
+exist on this planet and kind of which teams and yeah. But yeah, I think not just integrating
+
+System Audio: 
+29:33-29:44
+yeah
+
+Microphone: 
+29:38-29:43
+this in the platform, but also having this as a template or app that people can just
+
+Microphone: 
+29:43-29:52
+copy from us and start working with. Yeah, I think that's, I'm now just waiting for
+
+System Audio: 
+29:44-30:00
+yeah
+
+Microphone: 
+29:52-29:59
+Google Meet to give me the transcribes, which is about one and a half hour late or something.
+
+Microphone: 
+29:59-30:07
+And then I'll give it a bit of thought and like what are obvious next steps to do. But
+
+System Audio: 
+30:00-30:14
+yeah
+
+Microphone: 
+30:07-30:13
+I think your part is somewhere in the middle too, like how can NodeScript be really nice
+
+Microphone: 
+30:13-30:17
+for AI integrations that people say, oh yeah, you should just try NodeScript. It's really
+
+System Audio: 
+30:14-30:28
+yeah
+
+Microphone: 
+30:17-30:24
+not much work there to at least get something up and running. Just that, yeah. So I have
+
+Microphone: 
+30:24-30:31
+to talk to Norman about this. Like, how do you do this? How do you integrate this into conversations
+
+System Audio: 
+30:28-30:32
+yeah
+
+Microphone: 
+30:31-30:37
+and into people just giving it a try? Because that is probably how all small software gets
+
+System Audio: 
+30:32-30:34
+yeah
+
+System Audio: 
+30:34-30:40
+yeah
+
+Microphone: 
+30:37-30:44
+their, their, their, their, their shots at, um, and growth in having a few super nice use cases that people
+
+System Audio: 
+30:40-30:42
+yeah
+
+System Audio: 
+30:42-30:44
+yeah
+
+Microphone: 
+30:44-30:56
+love to try. Good. Yeah. Well, I think you'll, uh, we'll meet again then soon. I will. Yeah. What I will do
+
+System Audio: 
+30:44-30:46
+yeah
+
+System Audio: 
+30:46-30:48
+yeah
+
+System Audio: 
+30:48-30:50
+yeah
+
+System Audio: 
+30:50-30:52
+yeah
+
+System Audio: 
+30:52-30:54
+yeah
+
+System Audio: 
+30:54-30:56
+yeah
+
+Microphone: 
+30:56-31:03
+as I'll wrap my head around this. So my focus was really get this slide deck done. Now I'm a bit empty
+
+System Audio: 
+30:56-31:10
+yeah
+
+Microphone: 
+31:03-31:10
+headed, but I will, uh, get that all back. And, um, I'll probably also just share some stuff with you
+
+Microphone: 
+31:10-31:20
+before we are two weeks in. So, uh, cool. Well, have a nice afternoon. We'll talk soon. Yeah. Ciao, ciao.
+
+System Audio: 
+31:10-31:12
+yeah
+
+System Audio: 
+31:12-31:14
+yeah
+
+System Audio: 
+31:14-31:16
+yeah
+
+System Audio: 
+31:16-31:18
+yeah
+
+System Audio: 
+31:18-31:20
+yeah
+
+System Audio: 
+31:20-31:22
+yeah
+
+Microphone: 
+31:20-31:27
+Thank you.
+
+System Audio: 
+31:22-31:24
+yeah
+
+System Audio: 
+31:24-31:26
+yeah
+
