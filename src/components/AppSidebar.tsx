@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FileBarChart, LayoutDashboard, Clock, Variable, BarChart3, ChevronRight, ChevronLeft, Plus, Settings2, Check, Bell, User, ChevronsUpDown } from "lucide-react";
+import { FileBarChart, LayoutDashboard, Clock, Variable, BarChart3, ChevronRight, ChevronLeft, Plus, Settings2, Check, Bell, ChevronsUpDown } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -17,6 +17,7 @@ import {
   PopoverTrigger,
 } from "./ui/popover";
 import { Button } from "./ui/button";
+import { cn } from "./ui/utils";
 import svgPaths from "../imports/svg-tr8bvpyaut";
 
 function NodeScriptLogo() {
@@ -76,7 +77,7 @@ const organizations = [
 ];
 
 const workspaces = [
-  { id: "default", name: "Default Workspace" },
+  { id: "starter-graphs", name: "Starter Graphs" },
   { id: "production", name: "Production" },
   { id: "development", name: "Development" },
 ];
@@ -92,6 +93,8 @@ interface AppSidebarProps {
   onOpenOrgSettings?: (orgId: string) => void;
   showOrgSettings?: boolean;
   onNavigateToBilling?: () => void;
+  activeWorkspace?: string;
+  onWorkspaceChange?: (workspaceId: string) => void;
 }
 
 export function AppSidebar({ 
@@ -104,10 +107,12 @@ export function AppSidebar({
   onMenuItemChange,
   onOpenOrgSettings,
   showOrgSettings = false,
+  activeWorkspace = "starter-graphs",
+  onWorkspaceChange,
   onNavigateToBilling
 }: AppSidebarProps) {
   const [selectedOrg, setSelectedOrg] = useState("sjors");
-  const [selectedWorkspace, setSelectedWorkspace] = useState("default");
+  const selectedWorkspace = activeWorkspace;
   const [settingsExpanded, setSettingsExpanded] = useState(false);
   const [switcherOpen, setSwitcherOpen] = useState(false);
   const [switcherView, setSwitcherView] = useState<"main" | "orgs">("main");
@@ -118,7 +123,7 @@ export function AppSidebar({
   return (
     <Sidebar>
       <SidebarHeader className="px-4 pt-4 pb-1">
-        <div className="mb-[13px] cursor-pointer px-3" onClick={onBackToWorkspace}>
+        <div className="mb-3 cursor-pointer px-3" onClick={onBackToWorkspace}>
           <NodeScriptLogo />
         </div>
         <Popover
@@ -131,14 +136,14 @@ export function AppSidebar({
           <PopoverTrigger asChild>
             <button className="flex items-center gap-2 w-full rounded-md px-3 py-2 hover:bg-muted transition-colors text-left">
               <div className="flex-1 min-w-0">
-                <div className="text-[14px] text-sidebar-foreground truncate leading-tight">
+                <div className="text-sm text-sidebar-foreground truncate leading-tight">
                   {currentWorkspace?.name}
                 </div>
-                <div className="text-[12px] text-muted-foreground truncate leading-tight">
+                <div className="text-xs text-muted-foreground truncate leading-tight">
                   {currentOrg?.name}
                 </div>
               </div>
-              <ChevronsUpDown className="h-4 w-4 text-muted-foreground shrink-0" />
+              <ChevronsUpDown className="size-4 text-muted-foreground shrink-0" />
             </button>
           </PopoverTrigger>
           <PopoverContent
@@ -153,8 +158,8 @@ export function AppSidebar({
                   className="flex items-center gap-2 w-full px-3 py-2.5 hover:bg-muted transition-colors text-left rounded-sm"
                   onClick={() => setSwitcherView("orgs")}
                 >
-                  <span className="flex-1 text-[14px] truncate">{currentOrg?.name}</span>
-                  <ChevronRight className="h-4 w-4 text-muted-foreground" />
+                  <span className="flex-1 text-sm truncate">{currentOrg?.name}</span>
+                  <ChevronRight className="size-4 text-muted-foreground" />
                 </button>
 
                 <div className="border-t border-border" />
@@ -167,14 +172,14 @@ export function AppSidebar({
                   {workspaces.map((workspace) => (
                     <button
                       key={workspace.id}
-                      className="flex items-center gap-2 w-full px-3 py-1.5 hover:bg-muted transition-colors text-left text-[14px] rounded-sm"
+                      className="flex items-center gap-2 w-full px-3 py-1.5 hover:bg-muted transition-colors text-left text-sm rounded-sm"
                       onClick={() => {
-                        setSelectedWorkspace(workspace.id);
+                        onWorkspaceChange?.(workspace.id);
                         setSwitcherOpen(false);
                       }}
                     >
                       {selectedWorkspace === workspace.id ? (
-                        <Check className="h-4 w-4 shrink-0 text-primary" />
+                        <Check className="size-4 shrink-0 text-primary" />
                       ) : (
                         <span className="w-4" />
                       )}
@@ -188,20 +193,20 @@ export function AppSidebar({
                 {/* Actions */}
                 <div className="py-1">
                   <button
-                    className="flex items-center gap-2 w-full px-3 py-1.5 hover:bg-muted transition-colors text-left text-[14px] text-muted-foreground rounded-sm"
+                    className="flex items-center gap-2 w-full px-3 py-1.5 hover:bg-muted transition-colors text-left text-sm text-muted-foreground rounded-sm"
                     onClick={() => setSwitcherOpen(false)}
                   >
-                    <Plus className="h-4 w-4" />
+                    <Plus className="size-4" />
                     <span>Create workspace</span>
                   </button>
                   <button
-                    className="flex items-center gap-2 w-full px-3 py-1.5 hover:bg-muted transition-colors text-left text-[14px] text-muted-foreground rounded-sm"
+                    className="flex items-center gap-2 w-full px-3 py-1.5 hover:bg-muted transition-colors text-left text-sm text-muted-foreground rounded-sm"
                     onClick={() => {
                       setSwitcherOpen(false);
                       onOpenOrgSettings?.(selectedOrg);
                     }}
                   >
-                    <Settings2 className="h-4 w-4" />
+                    <Settings2 className="size-4" />
                     <span>Organization settings</span>
                   </button>
                 </div>
@@ -210,10 +215,10 @@ export function AppSidebar({
               <div>
                 {/* Back button */}
                 <button
-                  className="flex items-center gap-2 w-full px-3 py-2.5 hover:bg-muted transition-colors text-left text-[14px] rounded-sm"
+                  className="flex items-center gap-2 w-full px-3 py-2.5 hover:bg-muted transition-colors text-left text-sm rounded-sm"
                   onClick={() => setSwitcherView("main")}
                 >
-                  <ChevronLeft className="h-4 w-4 text-muted-foreground" />
+                  <ChevronLeft className="size-4 text-muted-foreground" />
                   <span className="text-muted-foreground">Back</span>
                 </button>
 
@@ -227,28 +232,28 @@ export function AppSidebar({
                   {organizations.map((org) => (
                     <div key={org.id} className="flex items-center gap-1 pr-2">
                       <button
-                        className="flex items-center gap-2 flex-1 min-w-0 px-3 py-1.5 hover:bg-muted transition-colors text-left text-[14px] rounded-sm"
+                        className="flex items-center gap-2 flex-1 min-w-0 px-3 py-1.5 hover:bg-muted transition-colors text-left text-sm rounded-sm"
                         onClick={() => {
                           setSelectedOrg(org.id);
                           setSwitcherView("main");
                         }}
                       >
                         {selectedOrg === org.id ? (
-                          <Check className="h-4 w-4 shrink-0 text-primary" />
+                          <Check className="size-4 shrink-0 text-primary" />
                         ) : (
                           <span className="w-4" />
                         )}
                         <span className="truncate">{org.name}</span>
                       </button>
                       <button
-                        className="h-7 w-7 shrink-0 flex items-center justify-center rounded hover:bg-muted transition-colors"
+                        className="size-7 shrink-0 flex items-center justify-center rounded hover:bg-muted transition-colors"
                         onClick={(e) => {
                           e.stopPropagation();
                           setSwitcherOpen(false);
                           onOpenOrgSettings?.(org.id);
                         }}
                       >
-                        <Settings2 className="h-4 w-4 text-muted-foreground" />
+                        <Settings2 className="size-4 text-muted-foreground" />
                       </button>
                     </div>
                   ))}
@@ -259,10 +264,10 @@ export function AppSidebar({
                 {/* Create org */}
                 <div className="py-1">
                   <button
-                    className="flex items-center gap-2 w-full px-3 py-1.5 hover:bg-muted transition-colors text-left text-[14px] text-muted-foreground rounded-sm"
+                    className="flex items-center gap-2 w-full px-3 py-1.5 hover:bg-muted transition-colors text-left text-sm text-muted-foreground rounded-sm"
                     onClick={() => setSwitcherOpen(false)}
                   >
-                    <Plus className="h-4 w-4" />
+                    <Plus className="size-4" />
                     <span>Create organization</span>
                   </button>
                 </div>
@@ -291,7 +296,7 @@ export function AppSidebar({
                         setSettingsExpanded(false);
                       }}
                     >
-                      <item.icon className="h-4 w-4" />
+                      <item.icon className="size-4" />
                       <span>{item.title}</span>
                     </button>
                   </SidebarMenuButton>
@@ -325,9 +330,9 @@ export function AppSidebar({
                         }
                       }}
                     >
-                      <item.icon className="h-4 w-4" />
+                      <item.icon className="size-4" />
                       <span>{item.title}</span>
-                      <ChevronRight className={`h-4 w-4 ml-auto text-muted-foreground transition-transform ${settingsExpanded ? 'rotate-90' : ''}`} />
+                      <ChevronRight className={cn('size-4 ml-auto text-muted-foreground transition-transform', settingsExpanded && 'rotate-90')} />
                     </button>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -365,8 +370,8 @@ export function AppSidebar({
           <Popover>
             <PopoverTrigger asChild>
               <button className="flex items-center gap-3 flex-1 min-w-0 px-3 hover:opacity-80 transition-opacity">
-                <User className="h-4 w-4 text-sidebar-foreground" />
-                <span className="flex-1 text-sidebar-foreground text-[14px] text-left">Sjors Timmer</span>
+                <div className="size-6 rounded-full bg-blue-100 text-blue-700 text-[10px] font-medium flex items-center justify-center shrink-0">ST</div>
+                <span className="flex-1 text-sidebar-foreground text-sm text-left">Sjors Timmer</span>
               </button>
             </PopoverTrigger>
             <PopoverContent
@@ -377,7 +382,7 @@ export function AppSidebar({
             >
               <div className="py-1">
                 <button
-                  className="flex items-center gap-2 w-full px-3 py-1.5 hover:bg-muted transition-colors text-left text-[14px] rounded-sm"
+                  className="flex items-center gap-2 w-full px-3 py-1.5 hover:bg-muted transition-colors text-left text-sm rounded-sm"
                   onClick={() => {
                     onSettingsSectionChange?.("profile");
                     onOpenSettings();
@@ -386,7 +391,7 @@ export function AppSidebar({
                   Profile settings
                 </button>
                 <button
-                  className="flex items-center gap-2 w-full px-3 py-1.5 hover:bg-muted transition-colors text-left text-[14px] rounded-sm"
+                  className="flex items-center gap-2 w-full px-3 py-1.5 hover:bg-muted transition-colors text-left text-sm rounded-sm"
                   onClick={() => {
                     onSettingsSectionChange?.("access-tokens");
                     onOpenSettings();
@@ -398,7 +403,7 @@ export function AppSidebar({
               <div className="border-t border-border" />
               <div className="py-1">
                 <button
-                  className="flex items-center gap-2 w-full px-3 py-1.5 hover:bg-muted transition-colors text-left text-[14px] text-muted-foreground rounded-sm"
+                  className="flex items-center gap-2 w-full px-3 py-1.5 hover:bg-muted transition-colors text-left text-sm text-muted-foreground rounded-sm"
                   onClick={() => console.log("Sign out")}
                 >
                   Sign out
@@ -406,8 +411,8 @@ export function AppSidebar({
               </div>
             </PopoverContent>
           </Popover>
-          <Button variant="ghost" size="icon" className="h-8 w-8 shrink-0">
-            <Bell className="h-3.5 w-3.5" />
+          <Button variant="ghost" size="icon" className="size-8 shrink-0">
+            <Bell className="size-3.5" />
           </Button>
         </div>
         
@@ -417,7 +422,7 @@ export function AppSidebar({
         {/* Plan section */}
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-1.5">
-            <span className="text-sidebar-foreground text-[14px] font-normal">Free plan</span>
+            <span className="text-sidebar-foreground text-sm font-normal">Free plan</span>
             <Popover>
               <PopoverTrigger asChild>
                 <button className="cursor-pointer transition-transform hover:scale-110">
@@ -454,7 +459,7 @@ export function AppSidebar({
                 side="top"
                 sideOffset={8}
               >
-                <div className="space-y-3 text-[13px]">
+                <div className="space-y-3 text-xs">
                   <div className="flex items-center justify-between">
                     <span className="text-foreground">Total credits</span>
                     <span className="text-foreground">10,000</span>
@@ -473,7 +478,7 @@ export function AppSidebar({
                   </div>
                   <Button 
                     variant="link" 
-                    className="h-auto p-0 text-primary text-[13px] -ml-0"
+                    className="h-auto p-0 text-primary text-xs -ml-0"
                     onClick={() => {
                       if (onNavigateToBilling) {
                         onNavigateToBilling();
@@ -489,7 +494,7 @@ export function AppSidebar({
           <Button 
             variant="outline" 
             size="sm" 
-            className="h-6 px-2.5 text-[13px] border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+            className="h-6 px-2.5 text-xs border-primary text-primary hover:bg-primary hover:text-primary-foreground"
             onClick={() => {
               if (onNavigateToBilling) {
                 onNavigateToBilling();

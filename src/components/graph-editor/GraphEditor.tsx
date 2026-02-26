@@ -1,9 +1,9 @@
 /**
  * GraphEditor — the main graph editing canvas.
- * Uses React Flow for the visual editor and our graphEngine for evaluation.
+ * Uses React Flow for the visual editor with Figma Make-styled overlay UI.
  */
 
-import { useCallback, useState, useRef } from 'react';
+import { useCallback, useMemo, useRef, useState } from 'react';
 import {
   ReactFlow,
   Controls,
@@ -19,16 +19,21 @@ import {
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 
-import { GraphNode } from './GraphNode';
-import { nodeRegistry, nodeCategories, type NodeTypeDefinition } from './nodeRegistry';
+import { FigmaNode } from './FigmaNode';
+import { TypedEdge } from './TypedEdge';
+import { EditorTitlePanel } from './EditorTitlePanel';
+import { EditorToolbar } from './EditorToolbar';
+import { EditorPublishBar } from './EditorPublishBar';
+import { NodeLibraryPanel } from './NodeLibraryPanel';
+import { NodeActionsContext } from './NodeActionsContext';
+import { type NodeTypeDefinition } from './nodeRegistry';
 import { evaluateGraph, type GraphResult } from './graphEngine';
-import { Button } from '../ui/button';
-import { ArrowLeft, Play, Trash2, Plus } from 'lucide-react';
 
-// Register custom node types
-const nodeTypes = { GraphNode: GraphNode };
+// Register custom node + edge types
+const nodeTypes = { GraphNode: FigmaNode };
+const edgeTypes = { typed: TypedEdge };
 
-// Wrap all nodes to use our custom component
+// Create a new Flow node from a registry definition
 function createFlowNode(
   typeDef: NodeTypeDefinition,
   position: { x: number; y: number }
@@ -45,30 +50,30 @@ function createFlowNode(
   };
 }
 
-// Default starting graph: a simple Add example
+// Default starting graph: Number(42) + Number(8) → Add → Output
 const defaultNodes: Node[] = [
   {
     id: 'n1',
     type: 'GraphNode',
-    position: { x: 50, y: 80 },
+    position: { x: 100, y: 120 },
     data: { nodeType: 'Number', value: '42' },
   },
   {
     id: 'n2',
     type: 'GraphNode',
-    position: { x: 50, y: 230 },
+    position: { x: 100, y: 300 },
     data: { nodeType: 'Number', value: '8' },
   },
   {
     id: 'n3',
     type: 'GraphNode',
-    position: { x: 340, y: 140 },
+    position: { x: 420, y: 200 },
     data: { nodeType: 'Add', a: '', b: '' },
   },
   {
     id: 'n4',
     type: 'GraphNode',
-    position: { x: 620, y: 140 },
+    position: { x: 720, y: 200 },
     data: { nodeType: 'Output', value: '' },
   },
 ];
@@ -79,65 +84,6 @@ const defaultEdges: Edge[] = [
   { id: 'e3', source: 'n3', target: 'n4', sourceHandle: 'result', targetHandle: 'value' },
 ];
 
-interface NodePaletteProps {
-  isOpen: boolean;
-  onClose: () => void;
-  onAddNode: (typeDef: NodeTypeDefinition) => void;
-}
-
-function NodePalette({ isOpen, onClose, onAddNode }: NodePaletteProps) {
-  const [filter, setFilter] = useState('');
-
-  if (!isOpen) return null;
-
-  const filtered = nodeRegistry.filter(
-    (n) =>
-      n.label.toLowerCase().includes(filter.toLowerCase()) ||
-      n.category.includes(filter.toLowerCase())
-  );
-
-  return (
-    <div className="absolute left-4 top-4 z-20 w-56 bg-white rounded-lg border border-slate-200 shadow-lg overflow-hidden">
-      <div className="p-2 border-b border-slate-100">
-        <input
-          autoFocus
-          type="text"
-          placeholder="Search nodes..."
-          value={filter}
-          onChange={(e) => setFilter(e.target.value)}
-          className="w-full text-xs px-2 py-1.5 border border-slate-200 rounded focus:outline-none focus:border-slate-400"
-        />
-      </div>
-      <div className="max-h-64 overflow-y-auto p-1">
-        {nodeCategories.map((cat) => {
-          const catNodes = filtered.filter((n) => n.category === cat);
-          if (catNodes.length === 0) return null;
-          return (
-            <div key={cat}>
-              <div className="px-2 py-1 text-[10px] font-medium text-slate-400 uppercase tracking-wider">
-                {cat}
-              </div>
-              {catNodes.map((n) => (
-                <button
-                  key={n.id}
-                  onClick={() => {
-                    onAddNode(n);
-                    onClose();
-                  }}
-                  className="w-full text-left px-2 py-1.5 text-xs rounded hover:bg-slate-100 transition-colors"
-                >
-                  <div className="font-medium text-slate-700">{n.label}</div>
-                  <div className="text-[10px] text-slate-400">{n.description}</div>
-                </button>
-              ))}
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
-}
-
 interface GraphEditorInnerProps {
   graphName: string;
   onBack: () => void;
@@ -146,14 +92,12 @@ interface GraphEditorInnerProps {
 function GraphEditorInner({ graphName, onBack }: GraphEditorInnerProps) {
   const [nodes, setNodes, onNodesChange] = useNodesState(defaultNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(defaultEdges);
-  const [showPalette, setShowPalette] = useState(false);
+  const [showNodeLibrary, setShowNodeLibrary] = useState(false);
   const [graphResult, setGraphResult] = useState<GraphResult | null>(null);
-  const [isRunning, setIsRunning] = useState(false);
-  const flowRef = useRef<HTMLDivElement>(null);
 
   const onConnect = useCallback(
     (connection: Connection) => {
-      setEdges((eds) => addEdge({ ...connection, animated: true }, eds));
+      setEdges((eds) => addEdge({ ...connection, type: 'typed' }, eds));
     },
     [setEdges]
   );
@@ -161,104 +105,66 @@ function GraphEditorInner({ graphName, onBack }: GraphEditorInnerProps) {
   const handleAddNode = useCallback(
     (typeDef: NodeTypeDefinition) => {
       const newNode = createFlowNode(typeDef, {
-        x: 200 + Math.random() * 200,
-        y: 100 + Math.random() * 200,
+        x: 200 + Math.random() * 300,
+        y: 100 + Math.random() * 300,
       });
       setNodes((nds) => [...nds, newNode]);
+      setShowNodeLibrary(false);
     },
     [setNodes]
   );
 
   const handleRun = useCallback(async () => {
-    setIsRunning(true);
-    try {
-      const result = await evaluateGraph(nodes, edges);
-      setGraphResult(result);
+    const result = await evaluateGraph(nodes, edges);
+    setGraphResult(result);
 
-      // Update nodes with their results for visual display
-      setNodes((nds) =>
-        nds.map((node) => {
-          const nodeResult = result.nodeResults.get(node.id);
-          if (nodeResult) {
-            return {
-              ...node,
-              data: {
-                ...node.data,
-                _result: nodeResult.outputs,
-                _error: nodeResult.error,
-                _duration: nodeResult.duration,
-              },
-            };
-          }
-          return node;
-        })
-      );
-    } finally {
-      setIsRunning(false);
-    }
+    setNodes((nds) =>
+      nds.map((node) => {
+        const nodeResult = result.nodeResults.get(node.id);
+        if (nodeResult) {
+          return {
+            ...node,
+            data: {
+              ...node.data,
+              _result: nodeResult.outputs,
+              _error: nodeResult.error,
+              _duration: nodeResult.duration,
+            },
+          };
+        }
+        return node;
+      })
+    );
   }, [nodes, edges, setNodes]);
 
-  const handleClear = useCallback(() => {
-    setNodes((nds) =>
-      nds.map((node) => ({
-        ...node,
-        data: {
-          ...node.data,
-          _result: undefined,
-          _error: undefined,
-          _duration: undefined,
-        },
-      }))
-    );
-    setGraphResult(null);
-  }, [setNodes]);
+  const handleDeleteNode = useCallback(
+    (nodeId: string) => {
+      setNodes((nds) => nds.filter((n) => n.id !== nodeId));
+      setEdges((eds) =>
+        eds.filter((e) => e.source !== nodeId && e.target !== nodeId)
+      );
+    },
+    [setNodes, setEdges]
+  );
+
+  // Stable context value using refs to avoid re-rendering all nodes
+  const runRef = useRef(handleRun);
+  runRef.current = handleRun;
+  const deleteRef = useRef(handleDeleteNode);
+  deleteRef.current = handleDeleteNode;
+
+  const nodeActions = useMemo(
+    () => ({
+      onRun: () => runRef.current(),
+      onDeleteNode: (id: string) => deleteRef.current(id),
+    }),
+    []
+  );
 
   return (
-    <div className="flex flex-col h-full">
-      {/* Toolbar */}
-      <div className="flex items-center gap-2 px-4 py-2 border-b border-slate-200 bg-white">
-        <Button variant="ghost" size="sm" onClick={onBack} className="gap-1.5">
-          <ArrowLeft className="h-3.5 w-3.5" />
-          Back
-        </Button>
-        <div className="h-4 w-px bg-slate-200" />
-        <span className="text-sm font-medium text-slate-700">{graphName}</span>
-        <div className="flex-1" />
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={() => setShowPalette(!showPalette)}
-          className="gap-1.5"
-        >
-          <Plus className="h-3.5 w-3.5" />
-          Add Node
-        </Button>
-        <Button variant="outline" size="sm" onClick={handleClear} className="gap-1.5">
-          <Trash2 className="h-3.5 w-3.5" />
-          Clear
-        </Button>
-        <Button
-          size="sm"
-          onClick={handleRun}
-          disabled={isRunning}
-          className="gap-1.5 bg-emerald-600 hover:bg-emerald-700"
-        >
-          <Play className="h-3.5 w-3.5" />
-          {isRunning ? 'Running...' : 'Run'}
-        </Button>
-
-        {graphResult && (
-          <span className="text-[11px] text-slate-400">
-            {graphResult.duration.toFixed(0)}ms
-            {graphResult.errors.length > 0 && (
-              <span className="text-red-500 ml-1">({graphResult.errors.length} errors)</span>
-            )}
-          </span>
-        )}
-      </div>
-
-      {/* Canvas */}
-      <div className="flex-1 relative" ref={flowRef}>
+    <div className="relative w-full h-full">
+      {/* React Flow canvas — full size */}
+      <NodeActionsContext.Provider value={nodeActions}>
         <ReactFlow
           nodes={nodes}
           edges={edges}
@@ -266,24 +172,65 @@ function GraphEditorInner({ graphName, onBack }: GraphEditorInnerProps) {
           onEdgesChange={onEdgesChange}
           onConnect={onConnect}
           nodeTypes={nodeTypes}
+          edgeTypes={edgeTypes}
           fitView
           deleteKeyCode={['Backspace', 'Delete']}
-          className="bg-slate-50"
           defaultEdgeOptions={{
-            type: 'smoothstep',
+            type: 'typed',
             animated: false,
-            style: { stroke: '#94a3b8', strokeWidth: 1.5 },
           }}
         >
           <Background variant={BackgroundVariant.Dots} gap={20} size={1} color="#cbd5e1" />
           <Controls className="!bottom-4 !left-4" />
         </ReactFlow>
+      </NodeActionsContext.Provider>
 
-        <NodePalette
-          isOpen={showPalette}
-          onClose={() => setShowPalette(false)}
-          onAddNode={handleAddNode}
+      {/* Overlay: Title panel — top left */}
+      <div className="absolute top-4 left-4 z-10">
+        <EditorTitlePanel title={graphName} onBack={onBack} />
+      </div>
+
+      {/* Overlay: Toolbar — left, below title */}
+      <div className="absolute top-[72px] left-4 z-10">
+        <EditorToolbar
+          onAddNodeClick={() => setShowNodeLibrary(!showNodeLibrary)}
+          isNodeLibraryActive={showNodeLibrary}
         />
+      </div>
+
+      {/* Overlay: Node Library panel — left, next to toolbar */}
+      {showNodeLibrary && (
+        <>
+          <div
+            className="absolute inset-0 z-[9]"
+            onClick={() => setShowNodeLibrary(false)}
+          />
+          <div className="absolute top-[72px] left-[76px] z-10">
+            <NodeLibraryPanel
+              onSelectNode={handleAddNode}
+              onClose={() => setShowNodeLibrary(false)}
+            />
+          </div>
+        </>
+      )}
+
+      {/* Overlay: Publish bar + result indicator — top right */}
+      <div className="absolute top-4 right-4 z-10 flex flex-col items-end gap-2">
+        <EditorPublishBar
+          hasOutput={nodes.some((n) => n.data.nodeType === 'Output')}
+        />
+        {graphResult && (
+          <div className="bg-sidebar border border-border rounded-lg shadow-sm px-4 py-2">
+            <span className="text-xs text-muted-foreground">
+              {graphResult.duration.toFixed(0)}ms
+              {graphResult.errors.length > 0 && (
+                <span className="text-red-500 ml-2">
+                  {graphResult.errors.length} error{graphResult.errors.length > 1 ? 's' : ''}
+                </span>
+              )}
+            </span>
+          </div>
+        )}
       </div>
     </div>
   );

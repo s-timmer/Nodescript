@@ -1,6 +1,6 @@
-import { Pencil, ChevronDown, MoreVertical, RotateCcw, Layers, Copy } from "lucide-react";
+import { ChevronDown, MoreVertical, RotateCcw, Layers, Copy } from "lucide-react";
 import { Button } from "./ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { cn } from "./ui/utils";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "./ui/collapsible";
 import {
   DropdownMenu,
@@ -10,7 +10,6 @@ import {
 } from "./ui/dropdown-menu";
 import { motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
-import imgAvatar from "figma:asset/802a7173fba4480b8b5e95594e6644dfc35553ff.png";
 
 interface GraphDetailsPanelProps {
   isOpen: boolean;
@@ -108,11 +107,11 @@ const historyEntries = [
   },
 ];
 
-export function GraphDetailsPanel({ isOpen, graphName }: GraphDetailsPanelProps) {
+export function GraphDetailsPanel({ isOpen, onClose: _onClose, graphName }: GraphDetailsPanelProps) {
   const [isDependenciesOpen, setIsDependenciesOpen] = useState(false);
   const [isDependentsOpen, setIsDependentsOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<"details" | "history">("details");
-  
+
   // Get graph details based on name
   const details = graphDetails[graphName] || {
     dependencies: [],
@@ -131,25 +130,42 @@ export function GraphDetailsPanel({ isOpen, graphName }: GraphDetailsPanelProps)
             className="h-full border-l border-border bg-background flex flex-col shadow-sm"
           >
             <div className="flex flex-col h-full">
-              <div className="px-6 pt-6 pb-0 border-b border-border">
+              {/* Panel header — graph name + edit */}
+              <div className="border-b border-border px-6 py-3">
+                <div className="flex items-center justify-between gap-4 min-h-[40px]">
+                  <h2 className="text-base font-medium m-0 truncate">{graphName}</h2>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="h-8 px-3 text-xs text-muted-foreground shrink-0"
+                  >
+                    Open
+                  </Button>
+                </div>
+              </div>
+
+              {/* Tabs */}
+              <div className="px-6 border-b border-border flex items-end">
                 <div className="flex gap-8">
-                  <button 
+                  <button
                     onClick={() => setActiveTab("details")}
-                    className={`pb-3 px-1 border-b-2 transition-colors ${
-                      activeTab === "details"
-                        ? "border-primary text-foreground"
-                        : "border-transparent text-muted-foreground hover:text-foreground"
-                    }`}
+                    className={cn(
+                      'pb-3 pt-3 px-1 text-sm border-b-2 -mb-px transition-colors',
+                      activeTab === 'details'
+                        ? 'border-primary text-foreground'
+                        : 'border-transparent text-muted-foreground hover:text-foreground'
+                    )}
                   >
                     Details
                   </button>
-                  <button 
+                  <button
                     onClick={() => setActiveTab("history")}
-                    className={`pb-3 px-1 border-b-2 transition-colors ${
-                      activeTab === "history"
-                        ? "border-primary text-foreground"
-                        : "border-transparent text-muted-foreground hover:text-foreground"
-                    }`}
+                    className={cn(
+                      'pb-3 pt-3 px-1 text-sm border-b-2 -mb-px transition-colors',
+                      activeTab === 'history'
+                        ? 'border-primary text-foreground'
+                        : 'border-transparent text-muted-foreground hover:text-foreground'
+                    )}
                   >
                     History
                   </button>
@@ -158,36 +174,26 @@ export function GraphDetailsPanel({ isOpen, graphName }: GraphDetailsPanelProps)
 
               <div className="flex-1 overflow-auto">
                 {activeTab === "details" && (
-                  <div className="p-6 space-y-6 flex-1 overflow-auto">
-                    {/* Primary Action */}
-                    <Button 
-                      variant="outline"
-                      className="w-full justify-center gap-2"
-                    >
-                      <Pencil className="h-4 w-4" />
-                      Edit graph
-                    </Button>
+                  <div>
 
-                    {/* Endpoint Section - only show if graph is exposed as endpoint */}
+                    {/* Endpoint — only if exposed */}
                     {details.isEndpoint && (
-                      <div>
-                        <label className="block mb-3">Endpoint</label>
+                      <div className="py-4 px-6 border-b border-border">
                         <div className="flex items-center gap-2">
-                          <span
-                            className="px-2 py-1 text-[12px] uppercase text-green-500 font-semibold"
-                          >
+                          <span className="text-xs text-muted-foreground shrink-0">Endpoint</span>
+                          <span className="px-1.5 py-0.5 text-[11px] uppercase text-green-500 font-semibold">
                             {details.endpointMethod}
                           </span>
-                          <span className="flex-1 truncate text-muted-foreground">{details.endpointPath}</span>
-                          <Button 
-                            variant="ghost" 
-                            size="icon" 
-                            className="h-8 w-8 flex-shrink-0"
+                          <span className="flex-1 truncate text-xs text-muted-foreground">{details.endpointPath}</span>
+                          <Button
+                            variant="ghost"
+                            size="icon"
+                            className="size-7 shrink-0"
                             onClick={() => {
                               navigator.clipboard.writeText(details.endpointPath || '');
                             }}
                           >
-                            <Copy className="h-4 w-4" />
+                            <Copy className="size-3.5" />
                           </Button>
                         </div>
                       </div>
@@ -195,91 +201,29 @@ export function GraphDetailsPanel({ isOpen, graphName }: GraphDetailsPanelProps)
 
                     {/* Module Preview */}
                     {details.modulePath && (
-                      <div>
-                        <label className="block mb-3">Module Preview</label>
-                        
-                        {/* Module Path */}
-                        <div
-                          className="border border-border bg-background relative rounded-md"
-                        >
-                          {/* Output connector at the top right */}
+                      <div className="py-4 px-6 border-b border-border">
+                        <label className="block mb-2 text-xs text-muted-foreground">Module Preview</label>
+                        <div className="border border-border bg-background relative rounded-lg">
                           <div
-                            className="absolute -right-[6px] top-6 w-3 h-3 rounded-full border-2 border-background bg-slate-500"
+                            className="absolute -right-[6px] top-6 size-3 rounded-full border-2 border-background bg-muted-foreground"
                             title="Any"
                           />
-
-                          {/* Input list */}
-                          <div className="py-2">
-                            {/* Input: Registry */}
-                            <div className="flex items-center gap-2 py-1.5 px-3 relative">
-                              <div 
-                                className="w-3 h-3 rounded-full border-2 border-background absolute -left-[6px] bg-muted-foreground"
-                                title="Any"
-                              />
-                              <span className="pl-3">Registry</span>
-                            </div>
-
-                            {/* Input: nodescript */}
-                            <div className="flex items-center gap-2 py-1.5 px-3 relative">
-                              <div 
-                                className="w-3 h-3 rounded-full border-2 border-background absolute -left-[6px] bg-muted-foreground"
-                                title="Any"
-                              />
-                              <span className="pl-3">nodescript</span>
-                            </div>
-
-                            {/* Input: Image */}
-                            <div className="flex items-center gap-2 py-1.5 px-3 relative">
-                              <div 
-                                className="w-3 h-3 rounded-full border-2 border-background absolute -left-[6px] bg-muted-foreground"
-                                title="Any"
-                              />
-                              <span className="pl-3">Image</span>
-                            </div>
-
-                            {/* Input: Tag */}
-                            <div className="flex items-center gap-2 py-1.5 px-3 relative">
-                              <div 
-                                className="w-3 h-3 rounded-full border-2 border-background absolute -left-[6px] bg-muted-foreground"
-                                title="Any"
-                              />
-                              <span className="pl-3">Tag</span>
-                            </div>
-
-                            {/* Input: Name */}
-                            <div className="flex items-center gap-2 py-1.5 px-3 relative">
-                              <div 
-                                className="w-3 h-3 rounded-full border-2 border-background absolute -left-[6px] bg-muted-foreground"
-                                title="Any"
-                              />
-                              <span className="pl-3">Name</span>
-                            </div>
-
-                            {/* Input: Repo */}
-                            <div className="flex items-center gap-2 py-1.5 px-3 relative">
-                              <div 
-                                className="w-3 h-3 rounded-full border-2 border-background absolute -left-[6px] bg-muted-foreground"
-                                title="Any"
-                              />
-                              <span className="pl-3">Repo</span>
-                            </div>
-
-                            {/* Input: Author */}
-                            <div className="flex items-center gap-2 py-1.5 px-3 relative">
-                              <div 
-                                className="w-3 h-3 rounded-full border-2 border-background absolute -left-[6px] bg-muted-foreground"
-                                title="Any"
-                              />
-                              <span className="pl-3">Author</span>
-                            </div>
-
-                            {/* Input: ARGOCD SLACK TOKEN (String type) */}
-                            <div className="flex items-center gap-2 py-1.5 px-3 relative">
-                              <div 
-                                className="w-3 h-3 rounded-full border-2 border-background absolute -left-[6px] bg-green-500"
+                          <div className="py-1.5">
+                            {["Registry", "nodescript", "Image", "Tag", "Name", "Repo", "Author"].map((name) => (
+                              <div key={name} className="flex items-center py-1 px-3 relative">
+                                <div
+                                  className="size-3 rounded-full border-2 border-background absolute -left-[6px] bg-muted-foreground"
+                                  title="Any"
+                                />
+                                <span className="pl-3 text-xs">{name}</span>
+                              </div>
+                            ))}
+                            <div className="flex items-center py-1 px-3 relative">
+                              <div
+                                className="size-3 rounded-full border-2 border-background absolute -left-[6px] bg-green-500"
                                 title="String"
                               />
-                              <span className="pl-3">ARGOCD SLACK TOKEN</span>
+                              <span className="pl-3 text-xs">ARGOCD SLACK TOKEN</span>
                             </div>
                           </div>
                         </div>
@@ -287,150 +231,125 @@ export function GraphDetailsPanel({ isOpen, graphName }: GraphDetailsPanelProps)
                     )}
 
                     {/* Description */}
-                    <div>
-                      <label className="block mb-3">Description</label>
-                      <p className="text-muted-foreground">
-                        No description provided.
-                      </p>
-                    </div>
-
-                    {/* Dependencies */}
-                    <div>
-                      <Collapsible open={isDependenciesOpen} onOpenChange={setIsDependenciesOpen}>
-                        <CollapsibleTrigger className="flex items-center justify-between w-full group mb-3">
-                          <label>Dependencies ({details.dependencies?.length || 0})</label>
-                          <div 
-                            className="h-8 w-8 rounded-full flex items-center justify-center hover:bg-muted transition-colors"
-                          >
-                            <ChevronDown 
-                              className="h-4 w-4 text-muted-foreground transition-transform"
-                              style={{ transform: isDependenciesOpen ? 'rotate(0deg)' : 'rotate(180deg)' }}
-                            />
-                          </div>
-                        </CollapsibleTrigger>
-                        <CollapsibleContent>
-                          <div className="space-y-2">
-                            {details.dependencies?.map((dep, index) => (
-                              <div key={index} className="py-1">
-                                <span className="text-muted-foreground">{dep}</span>
-                              </div>
-                            ))}
-                          </div>
-                        </CollapsibleContent>
-                      </Collapsible>
-                    </div>
-
-                    {/* Dependents */}
-                    <div>
-                      <Collapsible open={isDependentsOpen} onOpenChange={setIsDependentsOpen}>
-                        <CollapsibleTrigger className="flex items-center justify-between w-full group mb-3">
-                          <label>Dependents ({details.dependents?.length || 0})</label>
-                          <div 
-                            className="h-8 w-8 rounded-full flex items-center justify-center hover:bg-muted transition-colors"
-                          >
-                            <ChevronDown 
-                              className="h-4 w-4 text-muted-foreground transition-transform"
-                              style={{ transform: isDependentsOpen ? 'rotate(0deg)' : 'rotate(180deg)' }}
-                            />
-                          </div>
-                        </CollapsibleTrigger>
-                        <CollapsibleContent>
-                          <div className="space-y-2">
-                            {details.dependents?.map((dep, index) => (
-                              <div key={index} className="py-1">
-                                <span className="text-muted-foreground">{dep}</span>
-                              </div>
-                            ))}
-                          </div>
-                        </CollapsibleContent>
-                      </Collapsible>
-                    </div>
-
-                    {/* Graph last modified */}
-                    <div>
-                      <label className="block mb-3">Graph last modified</label>
-                      <div className="flex items-center gap-2">
-                        <Avatar className="h-6 w-6">
-                          <AvatarImage src={imgAvatar} alt="User" />
-                          <AvatarFallback className="text-[11px]">ST</AvatarFallback>
-                        </Avatar>
-                        <span className="text-muted-foreground">{details.lastModified}</span>
+                    <div className="py-4 px-6 border-b border-border">
+                      <div className="flex items-baseline justify-between gap-4">
+                        <span className="text-xs text-muted-foreground shrink-0">Description</span>
+                        <span className="text-xs text-muted-foreground italic text-right">No description</span>
                       </div>
                     </div>
 
-                    {/* Module last published - only show if published */}
-                    {details.lastPublished && (
-                      <div>
-                        <label className="block mb-3">Module last published</label>
-                        <div className="flex items-center gap-2">
-                          <Avatar className="h-6 w-6">
-                            <AvatarImage src={imgAvatar} alt="User" />
-                            <AvatarFallback className="text-[11px]">ST</AvatarFallback>
-                          </Avatar>
-                          <span className="text-muted-foreground">{details.lastPublished}</span>
+                    {/* Relations — Dependencies + Dependents */}
+                    <div className="border-b border-border">
+                      <div className="px-6">
+                        <Collapsible open={isDependenciesOpen} onOpenChange={setIsDependenciesOpen}>
+                          <CollapsibleTrigger className="flex items-center justify-between w-full py-3">
+                            <span className="text-xs text-muted-foreground">Dependencies ({details.dependencies?.length || 0})</span>
+                            <ChevronDown
+                              className={cn('size-3.5 text-muted-foreground transition-transform', isDependenciesOpen ? 'rotate-0' : '-rotate-90')}
+                            />
+                          </CollapsibleTrigger>
+                          <CollapsibleContent>
+                            <div className="pb-3 space-y-0.5">
+                              {details.dependencies?.map((dep, index) => (
+                                <div key={index} className="py-0.5">
+                                  <span className="text-xs">{dep}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </CollapsibleContent>
+                        </Collapsible>
+                      </div>
+
+                      <div className="border-t border-border" />
+
+                      <div className="px-6">
+                        <Collapsible open={isDependentsOpen} onOpenChange={setIsDependentsOpen}>
+                          <CollapsibleTrigger className="flex items-center justify-between w-full py-3">
+                            <span className="text-xs text-muted-foreground">Dependents ({details.dependents?.length || 0})</span>
+                            <ChevronDown
+                              className={cn('size-3.5 text-muted-foreground transition-transform', isDependentsOpen ? 'rotate-0' : '-rotate-90')}
+                            />
+                          </CollapsibleTrigger>
+                          <CollapsibleContent>
+                            <div className="pb-3 space-y-0.5">
+                              {details.dependents?.map((dep, index) => (
+                                <div key={index} className="py-0.5">
+                                  <span className="text-xs">{dep}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </CollapsibleContent>
+                        </Collapsible>
+                      </div>
+                    </div>
+
+                    {/* Activity — timestamps */}
+                    <div className="py-4 px-6 flex justify-between">
+                      <div className="space-y-2.5">
+                        <span className="text-xs text-muted-foreground block">Modified</span>
+                        {details.lastPublished && (
+                          <span className="text-xs text-muted-foreground block">Published</span>
+                        )}
+                      </div>
+                      <div className="space-y-2.5">
+                        <div className="flex items-center gap-1.5">
+                          <div className="size-4 rounded-full bg-blue-100 text-blue-700 text-[8px] font-medium flex items-center justify-center shrink-0">ST</div>
+                          <span className="text-xs">{details.lastModified}</span>
                         </div>
+                        {details.lastPublished && (
+                          <div className="flex items-center gap-1.5">
+                            <div className="size-4 rounded-full bg-blue-100 text-blue-700 text-[8px] font-medium flex items-center justify-center shrink-0">ST</div>
+                            <span className="text-xs">{details.lastPublished}</span>
+                          </div>
+                        )}
                       </div>
-                    )}
+                    </div>
                   </div>
                 )}
 
                 {activeTab === "history" && (
-                  <div className="p-6 space-y-5">
+                  <div>
                     {historyEntries.map((entry, index) => (
-                      <div key={entry.id}>
-                        {/* Version and Menu */}
-                        <div className="flex items-start justify-between gap-4 mb-2">
-                          <div className="flex-1">
-                            <div className="flex items-baseline gap-2">
-                              <label>Revision {entry.version}</label>
-                              {entry.isMostRecent && (
-                                <span className="text-muted-foreground text-[14px]">(most recent)</span>
-                              )}
-                            </div>
+                      <div key={entry.id} className={cn('py-4 px-6', index < historyEntries.length - 1 && 'border-b border-border')}>
+                        <div className="flex items-start justify-between gap-4 mb-1.5">
+                          <div className="flex items-baseline gap-2">
+                            <span className="text-sm font-medium">Revision {entry.version}</span>
+                            {entry.isMostRecent && (
+                              <span className="text-xs text-muted-foreground">(most recent)</span>
+                            )}
                           </div>
 
-                          {/* Actions Menu */}
                           <DropdownMenu>
                             <DropdownMenuTrigger asChild>
                               <Button
                                 variant="ghost"
                                 size="icon"
-                                className="h-7 w-7 -mt-1 hover:bg-muted"
+                                className="size-7 -mt-1 hover:bg-muted"
                               >
-                                <MoreVertical className="h-4 w-4 text-muted-foreground" />
+                                <MoreVertical className="size-4 text-muted-foreground" />
                               </Button>
                             </DropdownMenuTrigger>
                             <DropdownMenuContent align="end" className="w-56">
                               <DropdownMenuItem className="gap-3 py-2">
-                                <RotateCcw className="h-4 w-4 text-muted-foreground" />
+                                <RotateCcw className="size-4 text-muted-foreground" />
                                 <span>Revert to this version</span>
                               </DropdownMenuItem>
                               <DropdownMenuItem className="gap-3 py-2">
-                                <Layers className="h-4 w-4 text-muted-foreground" />
+                                <Layers className="size-4 text-muted-foreground" />
                                 <span>Compare to current version</span>
                               </DropdownMenuItem>
                             </DropdownMenuContent>
                           </DropdownMenu>
                         </div>
 
-                        {/* Description */}
-                        <p className="text-muted-foreground mb-2 text-[14px] leading-relaxed">
+                        <p className="text-xs text-muted-foreground mb-2 leading-relaxed">
                           {entry.description}
                         </p>
 
-                        {/* Time and Author combined */}
-                        <div className="flex items-center gap-2 text-[14px] text-muted-foreground">
-                          <Avatar className="h-5 w-5">
-                            <AvatarImage src={imgAvatar} alt={entry.author} />
-                            <AvatarFallback className="text-[11px]">ST</AvatarFallback>
-                          </Avatar>
-                          <span>{entry.date} by {entry.author}</span>
+                        <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
+                          <div className="size-4 rounded-full bg-blue-100 text-blue-700 text-[8px] font-medium flex items-center justify-center shrink-0">ST</div>
+                          <span>{entry.date}</span>
                         </div>
-
-                        {/* Divider */}
-                        {index < historyEntries.length - 1 && (
-                          <div className="border-b border-border mt-5" />
-                        )}
                       </div>
                     ))}
                   </div>

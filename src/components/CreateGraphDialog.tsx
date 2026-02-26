@@ -31,7 +31,7 @@ export function CreateGraphDialog({ open, onOpenChange, onConfirm }: CreateGraph
       <DialogContent className="sm:max-w-[720px] p-0 gap-0" aria-describedby={undefined}>
         {/* Header */}
         <div className="px-6 pt-6 pb-5">
-          <DialogTitle className="text-[20px] font-medium m-0">Create graph</DialogTitle>
+          <DialogTitle className="text-xl font-medium m-0">Create graph</DialogTitle>
         </div>
 
         {/* Content */}
@@ -46,13 +46,13 @@ export function CreateGraphDialog({ open, onOpenChange, onConfirm }: CreateGraph
                 id="graph-name"
                 value={graphName}
                 onChange={(e) => setGraphName(e.target.value)}
-                className="h-12 text-[16px]"
+                className="h-12 text-base"
                 autoFocus
               />
             </div>
 
             {/* Helper text */}
-            <div className="text-muted-foreground text-[14px]">
+            <div className="text-muted-foreground text-sm">
               <span>Tip: Use / to create folder structure.</span>
             </div>
           </div>
